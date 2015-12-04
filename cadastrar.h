@@ -4,7 +4,10 @@
 #include <QMainWindow>
 #include <string>
 #include <QStringList>
+
 #include "adicionar.h"
+#include "alterar.h"
+#include "delete.h"
 
 namespace Ui {
 class Cadastrar;
@@ -13,7 +16,9 @@ class Cadastrar;
 class Cadastrar : public QMainWindow{
     Q_OBJECT
     Adicionar newEmployee;
-    //Gerente manager;
+    Alterar changeEmployee;
+    Delete deleteEmployee;
+
 public:
     explicit Cadastrar(QWidget *parent = 0);
     ~Cadastrar();
@@ -22,7 +27,8 @@ public:
 private slots:
     void adicionar();
     void back();
-    void selected();
+    void change();
+    void delet();
 private:
     Ui::Cadastrar *ui;
 };

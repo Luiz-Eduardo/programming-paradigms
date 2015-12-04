@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="cadastrar_8h" kind="file">
+    <compoundname>cadastrar.h</compoundname>
+    <includes local="no">QMainWindow</includes>
+    <includes local="no">string</includes>
+    <includes local="no">QStringList</includes>
+    <includes refid="adicionar_8h" local="yes">adicionar.h</includes>
+    <includes refid="alterar_8h" local="yes">alterar.h</includes>
+    <includes refid="delete_8h" local="yes">delete.h</includes>
+    <includedby refid="cadastrar_8cpp" local="yes">cadastrar.cpp</includedby>
+    <includedby refid="gerente_8h" local="yes">gerente.h</includedby>
+    <incdepgraph>
+      <node id="78">
+        <label>string</label>
+      </node>
+      <node id="77">
+        <label>QMainWindow</label>
+      </node>
+      <node id="80">
+        <label>adicionar.h</label>
+        <link refid="adicionar_8h"/>
+        <childnode refid="81" relation="include">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>QDialog</label>
+      </node>
+      <node id="76">
+        <label>cadastrar.h</label>
+        <link refid="cadastrar.h"/>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>alterar.h</label>
+        <link refid="alterar_8h"/>
+        <childnode refid="77" relation="include">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>delete.h</label>
+        <link refid="delete_8h"/>
+        <childnode refid="77" relation="include">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>QStringList</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="89">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="85">
+        <label>cadastrar.cpp</label>
+        <link refid="cadastrar_8cpp"/>
+      </node>
+      <node id="88">
+        <label>mainwindow.h</label>
+        <link refid="mainwindow_8h"/>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>gerente.h</label>
+        <link refid="gerente_8h"/>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>cadastrar.h</label>
+        <link refid="cadastrar.h"/>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+      </node>
+      <node id="90">
+        <label>mainwindow.cpp</label>
+        <link refid="mainwindow_8cpp"/>
+      </node>
+      <node id="87">
+        <label>gerente.cpp</label>
+        <link refid="gerente_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_cadastrar" prot="public">Cadastrar</innerclass>
+    <innernamespace refid="namespace_ui">Ui</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>CADASTRAR_H</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CADASTRAR_H</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QMainWindow&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QStringList&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="adicionar_8h" kindref="compound">adicionar.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="alterar_8h" kindref="compound">alterar.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="delete_8h" kindref="compound">delete.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Ui<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_cadastrar" kindref="compound">Cadastrar</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="class_cadastrar" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_cadastrar" kindref="compound">Cadastrar</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QMainWindow{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_adicionar" kindref="compound">Adicionar</ref><sp/>newEmployee;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_alterar" kindref="compound">Alterar</ref><sp/>changeEmployee;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_delete" kindref="compound">Delete</ref><sp/>deleteEmployee;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_cadastrar_1a84aa3e559f92b83f205ed7222630259c" kindref="member">Cadastrar</ref>(QWidget<sp/>*parent<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_cadastrar_1a22237f919185021666bc82fce25b580c" kindref="member">~Cadastrar</ref>();</highlight></codeline>
+<codeline lineno="25" refid="class_cadastrar_1a7d59843eb5af64922e84a9d613c2447a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QStringList<sp/><ref refid="class_cadastrar_1a7d59843eb5af64922e84a9d613c2447a" kindref="member">funcionarios</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>adicionar();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>back();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>change();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>delet();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>Ui::Cadastrar<sp/>*ui;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>CADASTRAR_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/luiz/Paradigmas de Programação/Estoque/cadastrar.h"/>
+  </compounddef>
+</doxygen>

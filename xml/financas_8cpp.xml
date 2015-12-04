@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="financas_8cpp" kind="file">
+    <compoundname>financas.cpp</compoundname>
+    <includes refid="financas_8h" local="yes">financas.h</includes>
+    <includes local="yes">ui_financas.h</includes>
+    <includes refid="conexao_8h" local="yes">conexao.h</includes>
+    <includes local="no">sstream</includes>
+    <includes local="no">QStandardItem</includes>
+    <includes local="no">QStandardItemModel</includes>
+    <incdepgraph>
+      <node id="194">
+        <label>iomanip</label>
+      </node>
+      <node id="187">
+        <label>conexao.h</label>
+        <link refid="conexao_8h"/>
+        <childnode refid="188" relation="include">
+        </childnode>
+        <childnode refid="189" relation="include">
+        </childnode>
+        <childnode refid="190" relation="include">
+        </childnode>
+        <childnode refid="191" relation="include">
+        </childnode>
+        <childnode refid="192" relation="include">
+        </childnode>
+        <childnode refid="193" relation="include">
+        </childnode>
+        <childnode refid="194" relation="include">
+        </childnode>
+        <childnode refid="195" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+      </node>
+      <node id="188">
+        <label>QObject</label>
+      </node>
+      <node id="186">
+        <label>ui_financas.h</label>
+      </node>
+      <node id="199">
+        <label>QStandardItemModel</label>
+      </node>
+      <node id="192">
+        <label>string</label>
+      </node>
+      <node id="185">
+        <label>QMainWindow</label>
+      </node>
+      <node id="198">
+        <label>QStandardItem</label>
+      </node>
+      <node id="183">
+        <label>financas.cpp</label>
+        <link refid="financas.cpp"/>
+        <childnode refid="184" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+        <childnode refid="187" relation="include">
+        </childnode>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="198" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+      </node>
+      <node id="197">
+        <label>sstream</label>
+      </node>
+      <node id="189">
+        <label>QString</label>
+      </node>
+      <node id="195">
+        <label>clocale</label>
+      </node>
+      <node id="191">
+        <label>iostream</label>
+      </node>
+      <node id="196">
+        <label>mysql/mysql.h</label>
+      </node>
+      <node id="184">
+        <label>financas.h</label>
+        <link refid="financas_8h"/>
+        <childnode refid="185" relation="include">
+        </childnode>
+      </node>
+      <node id="190">
+        <label>QStringList</label>
+      </node>
+      <node id="193">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//includes<sp/>das<sp/>Classes<sp/>criadas<sp/>pelo<sp/>Desenvolvedor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="financas_8h" kindref="compound">financas.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ui_financas.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="conexao_8h" kindref="compound">conexao.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//include<sp/>da<sp/>Classe<sp/>de<sp/>Manipulação<sp/>de<sp/>stringstreams</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//includes<sp/>das<sp/>Bibliotecas<sp/>do<sp/>Qt</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QStandardItem&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QStandardItemModel&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="class_financas_1a5edcf40960a2ef053084b369fb1235bf" refkind="member"><highlight class="normal"><ref refid="class_financas_1a5edcf40960a2ef053084b369fb1235bf" kindref="member">Financas::Financas</ref>(QWidget<sp/>*parent)<sp/>:<sp/>QMainWindow(parent),<sp/>ui(new<sp/>Ui::<ref refid="class_financas" kindref="compound">Financas</ref>){</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;setupUi(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;setWindowTitle(</highlight><highlight class="stringliteral">&quot;Finanças<sp/>da<sp/>Empresa&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(ui-&gt;closeButton,<sp/>SIGNAL(clicked(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">)),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(close()));</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(ui-&gt;expensesEdit,<sp/>SIGNAL(textChanged(QString)),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(showProfit()));</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_financas_1a0fe4dd58e9cf24f5ef2920027975d510" kindref="member">employeePayment</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_conexao" kindref="compound">Conexao</ref><sp/>conn;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tamanho<sp/>=<sp/>conn.<ref refid="class_conexao_1a821a9c7e6d6fc2e67fd0b5cebb2fb375" kindref="member">funcionarios</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>i<sp/>:<sp/>conn.<ref refid="class_conexao_1a037d3ee84ec8629c1a4bffef8d67378f" kindref="member">employees_salary</ref>)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_financas_1a0fe4dd58e9cf24f5ef2920027975d510" kindref="member">employeePayment</ref><sp/>+=<sp/>i.toDouble();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_financas_1adf668ad1e95bac0074f89f926a5f70be" kindref="member">productExpenses</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_conexao" kindref="compound">Conexao</ref><sp/>secondConn;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>secondConn.<ref refid="class_conexao_1aa0617deb68c402dae6fbd08ffef56f93" kindref="member">selectProducts</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>secondConn.<ref refid="class_conexao_1abed04b03f82ce6cb47cce91a3999ed89" kindref="member">products_purchaseprice</ref>.size();<sp/>i++)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_financas_1adf668ad1e95bac0074f89f926a5f70be" kindref="member">productExpenses</ref><sp/>+=<sp/>(secondConn.<ref refid="class_conexao_1abed04b03f82ce6cb47cce91a3999ed89" kindref="member">products_purchaseprice</ref>[i].toDouble())*(secondConn.<ref refid="class_conexao_1aaa60e00115d399944cde0869516cf0d1" kindref="member">products_quantity</ref>[i].toDouble());</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;payEdit-&gt;setEnabled(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;productsEdit-&gt;setEnabled(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;totalEdit-&gt;setEnabled(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;payEdit-&gt;setText(</highlight><highlight class="stringliteral">&quot;R$<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>QString::number(<ref refid="class_financas_1a0fe4dd58e9cf24f5ef2920027975d510" kindref="member">employeePayment</ref>));</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;productsEdit-&gt;setText(</highlight><highlight class="stringliteral">&quot;R$<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>QString::number(<ref refid="class_financas_1adf668ad1e95bac0074f89f926a5f70be" kindref="member">productExpenses</ref>));</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>QStandardItemModel<sp/>*model<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItemModel(tamanho,<sp/>3,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//Quantidade<sp/>de<sp/>linhas<sp/>recebida<sp/>pelo<sp/>metodo<sp/>e<sp/>3<sp/>colunas.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;employeesView-&gt;setEditTriggers(QAbstractItemView::NoEditTriggers);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>model-&gt;setHorizontalHeaderItem(0,<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(QString(</highlight><highlight class="stringliteral">&quot;Nome&quot;</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>model-&gt;setHorizontalHeaderItem(1,<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(QString(</highlight><highlight class="stringliteral">&quot;Cargo&quot;</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>model-&gt;setHorizontalHeaderItem(2,<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(QString(</highlight><highlight class="stringliteral">&quot;Salário&quot;</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>tamanho;<sp/>i++){</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStandardItem<sp/>*name<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(QString(conn.<ref refid="class_conexao_1a840ddef255453274939c138a5e70e78e" kindref="member">employees_name</ref>[i]));</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStandardItem<sp/>*role;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!conn.<ref refid="class_conexao_1ae6dd52256ae13d3a08c67af499f052df" kindref="member">employees_role</ref>[i].compare(</highlight><highlight class="stringliteral">&quot;1&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>role<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(QString(</highlight><highlight class="stringliteral">&quot;Caixa&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!conn.<ref refid="class_conexao_1ae6dd52256ae13d3a08c67af499f052df" kindref="member">employees_role</ref>[i].compare(</highlight><highlight class="stringliteral">&quot;2&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>role<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(QString(</highlight><highlight class="stringliteral">&quot;Gerente&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>role<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(QString(</highlight><highlight class="stringliteral">&quot;Erro&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/>_salary<sp/>=<sp/>conn.<ref refid="class_conexao_1a037d3ee84ec8629c1a4bffef8d67378f" kindref="member">employees_salary</ref>[i];</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>_salary.size();<sp/>i++)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(_salary[i]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;.&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_salary[i]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;,&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStandardItem<sp/>*salary<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(QString(</highlight><highlight class="stringliteral">&quot;R$<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>_salary));</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model-&gt;setItem(i,<sp/>0,<sp/>name);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model-&gt;setItem(i,<sp/>1,<sp/>role);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model-&gt;setItem(i,<sp/>2,<sp/>salary);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;employeesView-&gt;setModel(model);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_financas_1a0d2db177c47f41d66ff71eac7e7e66f6" kindref="member">total</ref><sp/>=<sp/>1000;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="class_financas_1a3acb713866dd2e6d0b5be6d75b90e829" refkind="member"><highlight class="normal"><ref refid="class_financas_1a3acb713866dd2e6d0b5be6d75b90e829" kindref="member">Financas::~Financas</ref>(){</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>ui;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">//Quando<sp/>for<sp/>digitado<sp/>o<sp/>campo<sp/>Despesas<sp/>Externas</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">//QString<sp/>total<sp/>=</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment">//QString<sp/>profit<sp/>=<sp/>(total<sp/>-</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment">//ui-&gt;profitEdit-&gt;setText()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Financas::showProfit(){</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>expenses<sp/>=<sp/>ui-&gt;expensesEdit-&gt;text();</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>gastos<sp/>=<sp/>expenses.toUtf8().constData();</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>stringstream<sp/>buffer;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>buffer<sp/>&lt;&lt;<sp/>gastos;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>prejuizo;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>buffer<sp/>&gt;&gt;<sp/>prejuizo;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;profitEdit-&gt;setText(</highlight><highlight class="stringliteral">&quot;R$<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>QString::number(<ref refid="class_financas_1a0d2db177c47f41d66ff71eac7e7e66f6" kindref="member">total</ref><sp/>-<sp/>(prejuizo<sp/>+<sp/><ref refid="class_financas_1a0fe4dd58e9cf24f5ef2920027975d510" kindref="member">employeePayment</ref><sp/>+<sp/><ref refid="class_financas_1adf668ad1e95bac0074f89f926a5f70be" kindref="member">productExpenses</ref>)));</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/luiz/Paradigmas de Programação/Estoque/financas.cpp"/>
+  </compounddef>
+</doxygen>

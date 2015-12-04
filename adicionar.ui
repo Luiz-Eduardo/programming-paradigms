@@ -169,13 +169,9 @@
     </layout>
    </item>
   </layout>
+  <zorder></zorder>
+  <zorder></zorder>
   <zorder>label</zorder>
-  <zorder></zorder>
-  <zorder></zorder>
-  <zorder></zorder>
-  <zorder>addButton</zorder>
-  <zorder>cancelButton</zorder>
-  <zorder>cleanButton</zorder>
  </widget>
  <resources/>
  <connections/>

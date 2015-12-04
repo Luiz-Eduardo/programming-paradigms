@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.6">
+  <compound refid="class_adicionar" kind="class"><name>Adicionar</name>
+    <member refid="class_adicionar_1a63e07adc8c23668989c2d2f550e1e918" kind="variable"><name>ui</name></member>
+    <member refid="class_adicionar_1a0cc8b665e756cc80631e42a952861571" kind="function"><name>Adicionar</name></member>
+    <member refid="class_adicionar_1a51bda631ea8d8968759df5959de9ba5c" kind="function"><name>~Adicionar</name></member>
+    <member refid="class_adicionar_1ab638508f096506d0b4ae828f79448afb" kind="slot"><name>clean</name></member>
+    <member refid="class_adicionar_1acff9ba65f1d4e23973cbadc65dcb49d6" kind="slot"><name>add</name></member>
+  </compound>
+  <compound refid="class_alterar" kind="class"><name>Alterar</name>
+    <member refid="class_alterar_1a52b0f64cde196e74784b2faf7dd85047" kind="variable"><name>ui</name></member>
+    <member refid="class_alterar_1a475ed79b0350531816c7f6275bf137df" kind="function"><name>Alterar</name></member>
+    <member refid="class_alterar_1a1b77b99a2040b5914842ba0cd19cc719" kind="function"><name>~Alterar</name></member>
+    <member refid="class_alterar_1a68caf0604ac5f009387b37b7d4bc489e" kind="slot"><name>searchEmployee</name></member>
+    <member refid="class_alterar_1afbb4427c0c5cf4e8f8f00fc6dc8cd138" kind="slot"><name>update</name></member>
+    <member refid="class_alterar_1a46f0199a05d2bf15202d3e31de65fd78" kind="slot"><name>clean</name></member>
+  </compound>
+  <compound refid="class_cadastrar" kind="class"><name>Cadastrar</name>
+    <member refid="class_cadastrar_1ada10c5556d8370ea1ff9a7659501eec1" kind="variable"><name>newEmployee</name></member>
+    <member refid="class_cadastrar_1abc139091374c5f283f9950708afa38d2" kind="variable"><name>changeEmployee</name></member>
+    <member refid="class_cadastrar_1ad7e3674585ed439a130317b8fbc5b33b" kind="variable"><name>deleteEmployee</name></member>
+    <member refid="class_cadastrar_1a880379dcd001f93c782cdcceb5ec9963" kind="variable"><name>ui</name></member>
+    <member refid="class_cadastrar_1a7d59843eb5af64922e84a9d613c2447a" kind="variable"><name>funcionarios</name></member>
+    <member refid="class_cadastrar_1a84aa3e559f92b83f205ed7222630259c" kind="function"><name>Cadastrar</name></member>
+    <member refid="class_cadastrar_1a22237f919185021666bc82fce25b580c" kind="function"><name>~Cadastrar</name></member>
+    <member refid="class_cadastrar_1af2c5b0be264c0eb44eebfd7acd2bea41" kind="slot"><name>adicionar</name></member>
+    <member refid="class_cadastrar_1a72f632edcdbda2e3d93713bedf728f6d" kind="slot"><name>back</name></member>
+    <member refid="class_cadastrar_1a1ef2b344999744f6f6f21945fbaeebd2" kind="slot"><name>change</name></member>
+    <member refid="class_cadastrar_1a820639c8be5ef1f928b39d8dc926c7fa" kind="slot"><name>delet</name></member>
+  </compound>
+  <compound refid="class_caixa" kind="class"><name>Caixa</name>
+    <member refid="class_caixa_1a693f2d2f0053a8208b07f8b4e6dc83e6" kind="variable"><name>total</name></member>
+    <member refid="class_caixa_1a1806f71fd0ef06ed02268776e0d17f3d" kind="variable"><name>tamanho</name></member>
+    <member refid="class_caixa_1a2f100135ff72c627a8a79f04533eedbc" kind="variable"><name>ui</name></member>
+    <member refid="class_caixa_1ab04ad65d52273f561562a1e28672869d" kind="function"><name>Caixa</name></member>
+    <member refid="class_caixa_1a3c83a69e735b33cb42b90147bf94563e" kind="function"><name>~Caixa</name></member>
+    <member refid="class_caixa_1a23471f9609ad0ada663c5fa5519e8d17" kind="slot"><name>nextPurchase</name></member>
+    <member refid="class_caixa_1ada4ac086033bc1b89f0fb1689de236e7" kind="slot"><name>addProduct</name></member>
+  </compound>
+  <compound refid="class_conexao" kind="class"><name>Conexao</name>
+    <member refid="class_conexao_1a840ddef255453274939c138a5e70e78e" kind="variable"><name>employees_name</name></member>
+    <member refid="class_conexao_1afe469c76fdb5fb62d82f17e479281fc3" kind="variable"><name>employees_age</name></member>
+    <member refid="class_conexao_1af4a86c84b703836abc8581ddb695e46d" kind="variable"><name>employees_email</name></member>
+    <member refid="class_conexao_1ae6dd52256ae13d3a08c67af499f052df" kind="variable"><name>employees_role</name></member>
+    <member refid="class_conexao_1a037d3ee84ec8629c1a4bffef8d67378f" kind="variable"><name>employees_salary</name></member>
+    <member refid="class_conexao_1a0555d343539f432f30bf84f5ddb7406d" kind="variable"><name>products_id</name></member>
+    <member refid="class_conexao_1abe66e554804d884483dcf1e4657899bf" kind="variable"><name>products_name</name></member>
+    <member refid="class_conexao_1abed04b03f82ce6cb47cce91a3999ed89" kind="variable"><name>products_purchaseprice</name></member>
+    <member refid="class_conexao_1a2a3f06465299441de03ce264557490d3" kind="variable"><name>products_saleprice</name></member>
+    <member refid="class_conexao_1aaa60e00115d399944cde0869516cf0d1" kind="variable"><name>products_quantity</name></member>
+    <member refid="class_conexao_1adaa68247f31efd7be455087a0e983f31" kind="variable"><name>products_validity</name></member>
+    <member refid="class_conexao_1ad07b7be6fc9e8b60c354debaa9469b47" kind="variable"><name>vendidos</name></member>
+    <member refid="class_conexao_1a603c91bfb3838491ba3e8caececc5b0c" kind="variable"><name>conn</name></member>
+    <member refid="class_conexao_1abbc7bc621739afc0364615ae52ba941f" kind="function"><name>Conexao</name></member>
+    <member refid="class_conexao_1ac108094083aa4dfba0834682adf6784f" kind="function"><name>~Conexao</name></member>
+    <member refid="class_conexao_1a9b048f81f98738f10119f9a3e9d66af0" kind="function"><name>addEmployee</name></member>
+    <member refid="class_conexao_1a8bd6d93f96f3e460e79bd0a29484aff5" kind="function"><name>deletar</name></member>
+    <member refid="class_conexao_1a1f8f4a489c2e1ad7ba8bb5378dc9339d" kind="function"><name>updateEmployee</name></member>
+    <member refid="class_conexao_1a5d40ad1d9c18222223c4aa404e59731d" kind="function"><name>logar</name></member>
+    <member refid="class_conexao_1a821a9c7e6d6fc2e67fd0b5cebb2fb375" kind="function"><name>funcionarios</name></member>
+    <member refid="class_conexao_1a19e6ec92c69bac27459081dc2df6b2c1" kind="function"><name>validaCpf</name></member>
+    <member refid="class_conexao_1a628a3b1c7b05f10aa9f8a29ceab6d465" kind="function"><name>select</name></member>
+    <member refid="class_conexao_1ae82a9a4ed8068686b5b768ad9743317d" kind="function"><name>insertProducts</name></member>
+    <member refid="class_conexao_1aa0617deb68c402dae6fbd08ffef56f93" kind="function"><name>selectProducts</name></member>
+    <member refid="class_conexao_1a0d26b08b0f383c179f580200cf508e94" kind="function"><name>delEmployees</name></member>
+    <member refid="class_conexao_1a1d30adc1b4f8a956cbc458fe75d94e26" kind="function"><name>selectByCode</name></member>
+    <member refid="class_conexao_1a74687ccdc642d76e84029007abd2d084" kind="function"><name>getName</name></member>
+  </compound>
+  <compound refid="class_delete" kind="class"><name>Delete</name>
+    <member refid="class_delete_1a386825485fe9ec00a6b3ea26206963ca" kind="variable"><name>ui</name></member>
+    <member refid="class_delete_1a3d7de30f6c22b253d1621e659eb9e4bb" kind="function"><name>Delete</name></member>
+    <member refid="class_delete_1a8d7f363340d734e4adced38687d09722" kind="function"><name>~Delete</name></member>
+    <member refid="class_delete_1a5039aec40b2999176eab5f6d8bdabfa4" kind="slot"><name>cancel</name></member>
+    <member refid="class_delete_1ae961a4b46ae6e1e942313331a007e80a" kind="slot"><name>delEmployee</name></member>
+  </compound>
+  <compound refid="class_financas" kind="class"><name>Financas</name>
+    <member refid="class_financas_1a0fe4dd58e9cf24f5ef2920027975d510" kind="variable"><name>employeePayment</name></member>
+    <member refid="class_financas_1adf668ad1e95bac0074f89f926a5f70be" kind="variable"><name>productExpenses</name></member>
+    <member refid="class_financas_1a0d2db177c47f41d66ff71eac7e7e66f6" kind="variable"><name>total</name></member>
+    <member refid="class_financas_1ae0432dffe5ddbd3e2a45a94fd084bba1" kind="variable"><name>ui</name></member>
+    <member refid="class_financas_1a5edcf40960a2ef053084b369fb1235bf" kind="function"><name>Financas</name></member>
+    <member refid="class_financas_1a3acb713866dd2e6d0b5be6d75b90e829" kind="function"><name>~Financas</name></member>
+    <member refid="class_financas_1a18acb7b4cbcfb46ba0c64fe6f7889187" kind="slot"><name>showProfit</name></member>
+  </compound>
+  <compound refid="class_gerente" kind="class"><name>Gerente</name>
+    <member refid="class_gerente_1a8975424429ed3e15560bdc572c8f73da" kind="variable"><name>caixa</name></member>
+    <member refid="class_gerente_1a2345050dbe8f33e98224060b89ed1396" kind="variable"><name>funcionario</name></member>
+    <member refid="class_gerente_1a67426a53ebc18d277c378e657a7c8b00" kind="variable"><name>produtos</name></member>
+    <member refid="class_gerente_1a518d71e4ca47481a86e9080865968cb0" kind="variable"><name>balanco</name></member>
+    <member refid="class_gerente_1a68d5bae2d6a0c46f918ac8e64029dbf3" kind="variable"><name>ui</name></member>
+    <member refid="class_gerente_1a63ea201bae1d6d0faa0ed0a5a5e3c623" kind="function"><name>Gerente</name></member>
+    <member refid="class_gerente_1a3510430c8a6c4e83883b6cab24854592" kind="function"><name>~Gerente</name></member>
+    <member refid="class_gerente_1a31295ac69915b694b1fe99ab30b422b2" kind="slot"><name>vendas</name></member>
+    <member refid="class_gerente_1a382f520553d5ad0fbd486de7f56f67d8" kind="slot"><name>cadastrar</name></member>
+    <member refid="class_gerente_1a3de912def140a8c2b8fd7e7a274349ff" kind="slot"><name>estoque</name></member>
+    <member refid="class_gerente_1a4b45b343bb54f09a8f02264a722f5876" kind="slot"><name>financas</name></member>
+  </compound>
+  <compound refid="class_main_window" kind="class"><name>MainWindow</name>
+    <member refid="class_main_window_1a35466a70ed47252a0191168126a352a5" kind="variable"><name>ui</name></member>
+    <member refid="class_main_window_1abc36eaee53de92069e8a27f711691caa" kind="variable"><name>caixa</name></member>
+    <member refid="class_main_window_1a702e0f4891a317610ae9b606b65895a6" kind="variable"><name>gerente</name></member>
+    <member refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" kind="function"><name>MainWindow</name></member>
+    <member refid="class_main_window_1ae98d00a93bc118200eeef9f9bba1dba7" kind="function"><name>~MainWindow</name></member>
+    <member refid="class_main_window_1aec5d1a6d59f5a80583ea809a4bc69010" kind="slot"><name>fechar</name></member>
+    <member refid="class_main_window_1ab9798fd22f8c1461a249544907f7dcc3" kind="slot"><name>entrar</name></member>
+  </compound>
+  <compound refid="class_produtos" kind="class"><name>Produtos</name>
+    <member refid="class_produtos_1a7ae9483dab0eb8d44a4e707291c47bd5" kind="variable"><name>ui</name></member>
+    <member refid="class_produtos_1aa4b106134de071ee74a3aae9b73e7268" kind="function"><name>Produtos</name></member>
+    <member refid="class_produtos_1a79bdf156ec709680842b8f1425e57370" kind="function"><name>~Produtos</name></member>
+    <member refid="class_produtos_1a7498e38634d46f5d14cab07aff010aa7" kind="slot"><name>add</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="namespace_ui" kind="namespace"><name>Ui</name>
+  </compound>
+  <compound refid="adicionar_8cpp" kind="file"><name>adicionar.cpp</name>
+  </compound>
+  <compound refid="adicionar_8h" kind="file"><name>adicionar.h</name>
+  </compound>
+  <compound refid="alterar_8cpp" kind="file"><name>alterar.cpp</name>
+  </compound>
+  <compound refid="alterar_8h" kind="file"><name>alterar.h</name>
+  </compound>
+  <compound refid="cadastrar_8cpp" kind="file"><name>cadastrar.cpp</name>
+  </compound>
+  <compound refid="cadastrar_8h" kind="file"><name>cadastrar.h</name>
+  </compound>
+  <compound refid="caixa_8cpp" kind="file"><name>caixa.cpp</name>
+  </compound>
+  <compound refid="caixa_8h" kind="file"><name>caixa.h</name>
+  </compound>
+  <compound refid="conexao_8cpp" kind="file"><name>conexao.cpp</name>
+    <member refid="conexao_8cpp_1a26abb48e61341655822321f0577ca293" kind="define"><name>hostname</name></member>
+    <member refid="conexao_8cpp_1a6f34effad0a360e80baf8b4f19f03673" kind="define"><name>username</name></member>
+    <member refid="conexao_8cpp_1ae59dfb8ffddb9128834034516c45e7ce" kind="define"><name>password</name></member>
+    <member refid="conexao_8cpp_1a1a789f556948682fb96b753774500f67" kind="define"><name>dbname</name></member>
+    <member refid="conexao_8cpp_1a1a33424630fbccabe6eb750d952a814a" kind="define"><name>socketname</name></member>
+    <member refid="conexao_8cpp_1ac90bf154ee03c3f2731c60b1c4ac6977" kind="define"><name>portnumber</name></member>
+    <member refid="conexao_8cpp_1abb0829cce9dd20a40ae0d86890ae85c6" kind="define"><name>flags</name></member>
+  </compound>
+  <compound refid="conexao_8h" kind="file"><name>conexao.h</name>
+  </compound>
+  <compound refid="delete_8cpp" kind="file"><name>delete.cpp</name>
+  </compound>
+  <compound refid="delete_8h" kind="file"><name>delete.h</name>
+  </compound>
+  <compound refid="financas_8cpp" kind="file"><name>financas.cpp</name>
+  </compound>
+  <compound refid="financas_8h" kind="file"><name>financas.h</name>
+  </compound>
+  <compound refid="gerente_8cpp" kind="file"><name>gerente.cpp</name>
+  </compound>
+  <compound refid="gerente_8h" kind="file"><name>gerente.h</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="mainwindow_8cpp" kind="file"><name>mainwindow.cpp</name>
+  </compound>
+  <compound refid="mainwindow_8h" kind="file"><name>mainwindow.h</name>
+  </compound>
+  <compound refid="produtos_8cpp" kind="file"><name>produtos.cpp</name>
+  </compound>
+  <compound refid="produtos_8h" kind="file"><name>produtos.h</name>
+  </compound>
+  <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="md__r_e_a_d_m_e" kind="page"><name>md_README</name>
+  </compound>
+</doxygenindex>

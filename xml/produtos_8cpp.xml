@@ -1,0 +1,247 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="produtos_8cpp" kind="file">
+    <compoundname>produtos.cpp</compoundname>
+    <includes refid="produtos_8h" local="yes">produtos.h</includes>
+    <includes local="yes">ui_produtos.h</includes>
+    <includes refid="conexao_8h" local="yes">conexao.h</includes>
+    <includes local="no">QString</includes>
+    <includes local="no">QMessageBox</includes>
+    <includes local="no">QStandardItem</includes>
+    <includes local="no">QStandardItemModel</includes>
+    <incdepgraph>
+      <node id="310">
+        <label>iomanip</label>
+      </node>
+      <node id="300">
+        <label>produtos.h</label>
+        <link refid="produtos_8h"/>
+        <childnode refid="301" relation="include">
+        </childnode>
+      </node>
+      <node id="303">
+        <label>conexao.h</label>
+        <link refid="conexao_8h"/>
+        <childnode refid="304" relation="include">
+        </childnode>
+        <childnode refid="305" relation="include">
+        </childnode>
+        <childnode refid="306" relation="include">
+        </childnode>
+        <childnode refid="307" relation="include">
+        </childnode>
+        <childnode refid="308" relation="include">
+        </childnode>
+        <childnode refid="309" relation="include">
+        </childnode>
+        <childnode refid="310" relation="include">
+        </childnode>
+        <childnode refid="311" relation="include">
+        </childnode>
+        <childnode refid="312" relation="include">
+        </childnode>
+      </node>
+      <node id="313">
+        <label>QMessageBox</label>
+      </node>
+      <node id="304">
+        <label>QObject</label>
+      </node>
+      <node id="315">
+        <label>QStandardItemModel</label>
+      </node>
+      <node id="308">
+        <label>string</label>
+      </node>
+      <node id="301">
+        <label>QMainWindow</label>
+      </node>
+      <node id="314">
+        <label>QStandardItem</label>
+      </node>
+      <node id="302">
+        <label>ui_produtos.h</label>
+      </node>
+      <node id="299">
+        <label>produtos.cpp</label>
+        <link refid="produtos.cpp"/>
+        <childnode refid="300" relation="include">
+        </childnode>
+        <childnode refid="302" relation="include">
+        </childnode>
+        <childnode refid="303" relation="include">
+        </childnode>
+        <childnode refid="305" relation="include">
+        </childnode>
+        <childnode refid="313" relation="include">
+        </childnode>
+        <childnode refid="314" relation="include">
+        </childnode>
+        <childnode refid="315" relation="include">
+        </childnode>
+      </node>
+      <node id="305">
+        <label>QString</label>
+      </node>
+      <node id="311">
+        <label>clocale</label>
+      </node>
+      <node id="307">
+        <label>iostream</label>
+      </node>
+      <node id="312">
+        <label>mysql/mysql.h</label>
+      </node>
+      <node id="306">
+        <label>QStringList</label>
+      </node>
+      <node id="309">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//includes<sp/>das<sp/>Classes<sp/>criadas<sp/>pelo<sp/>Desenvolvedor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="produtos_8h" kindref="compound">produtos.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ui_produtos.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="conexao_8h" kindref="compound">conexao.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//includes<sp/>das<sp/>Bibliotecas<sp/>do<sp/>Qt</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QString&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QMessageBox&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QStandardItem&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QStandardItemModel&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_produtos_1aa4b106134de071ee74a3aae9b73e7268" refkind="member"><highlight class="normal"><ref refid="class_produtos_1aa4b106134de071ee74a3aae9b73e7268" kindref="member">Produtos::Produtos</ref>(QWidget<sp/>*parent)<sp/>:<sp/>QMainWindow(parent),<sp/>ui(new<sp/>Ui::<ref refid="class_produtos" kindref="compound">Produtos</ref>){</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;setupUi(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;setWindowTitle(</highlight><highlight class="stringliteral">&quot;Cadastro<sp/>de<sp/>Produtos&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(ui-&gt;exitButton,<sp/>SIGNAL(clicked(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">)),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(close()));</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(ui-&gt;addButton,<sp/>SIGNAL(clicked(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">)),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(add()));</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_conexao" kindref="compound">Conexao</ref><sp/>connection;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tamanho<sp/>=<sp/>connection.<ref refid="class_conexao_1aa0617deb68c402dae6fbd08ffef56f93" kindref="member">selectProducts</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>QStandardItemModel<sp/>*model<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItemModel(tamanho,6,</highlight><highlight class="keyword">this</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//Quantidade<sp/>de<sp/>linhas<sp/>recebida<sp/>pelo<sp/>metodo<sp/>e<sp/>5<sp/>colunas.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;productsView-&gt;setEditTriggers(QAbstractItemView::NoEditTriggers);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>model-&gt;setHorizontalHeaderItem(0,<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(QString(</highlight><highlight class="stringliteral">&quot;Código&quot;</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>model-&gt;setHorizontalHeaderItem(1,<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(QString(</highlight><highlight class="stringliteral">&quot;Nome&quot;</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>model-&gt;setHorizontalHeaderItem(2,<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(QString(</highlight><highlight class="stringliteral">&quot;Preço<sp/>de<sp/>Compra&quot;</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>model-&gt;setHorizontalHeaderItem(3,<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(QString(</highlight><highlight class="stringliteral">&quot;Preço<sp/>de<sp/>Venda&quot;</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>model-&gt;setHorizontalHeaderItem(4,<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(QString(</highlight><highlight class="stringliteral">&quot;Quantidade<sp/>em<sp/>Estoque&quot;</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>model-&gt;setHorizontalHeaderItem(5,<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(QString(</highlight><highlight class="stringliteral">&quot;Valido<sp/>até&quot;</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>tamanho;<sp/>i++){</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStandardItem<sp/>*</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(connection.<ref refid="class_conexao_1a0555d343539f432f30bf84f5ddb7406d" kindref="member">products_id</ref>[i]);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStandardItem<sp/>*name<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(connection.<ref refid="class_conexao_1abe66e554804d884483dcf1e4657899bf" kindref="member">products_name</ref>[i]);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStandardItem<sp/>*purchaseprice<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(connection.<ref refid="class_conexao_1abed04b03f82ce6cb47cce91a3999ed89" kindref="member">products_purchaseprice</ref>[i]);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStandardItem<sp/>*sellprice<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(connection.<ref refid="class_conexao_1a2a3f06465299441de03ce264557490d3" kindref="member">products_saleprice</ref>[i]);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStandardItem<sp/>*quantity<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(connection.<ref refid="class_conexao_1aaa60e00115d399944cde0869516cf0d1" kindref="member">products_quantity</ref>[i]);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStandardItem<sp/>*validity<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(connection.<ref refid="class_conexao_1adaa68247f31efd7be455087a0e983f31" kindref="member">products_validity</ref>[i]);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model-&gt;setItem(i,<sp/>0,<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model-&gt;setItem(i,<sp/>1,<sp/>name);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model-&gt;setItem(i,<sp/>2,<sp/>purchaseprice);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model-&gt;setItem(i,<sp/>3,<sp/>sellprice);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model-&gt;setItem(i,<sp/>4,<sp/>quantity);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model-&gt;setItem(i,<sp/>5,<sp/>validity);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;productsView-&gt;setModel(model);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="class_produtos_1a79bdf156ec709680842b8f1425e57370" refkind="member"><highlight class="normal"><ref refid="class_produtos_1a79bdf156ec709680842b8f1425e57370" kindref="member">Produtos::~Produtos</ref>(){</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>ui;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Produtos::add(){</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_conexao" kindref="compound">Conexao</ref><sp/>conn;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>name<sp/>=<sp/>ui-&gt;nameEdit-&gt;text();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>validity<sp/>=<sp/>ui-&gt;validityEdit-&gt;text();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>purchasePrice<sp/>=<sp/>ui-&gt;purchaseEdit-&gt;text();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>sellPrice<sp/>=<sp/>ui-&gt;sellEdit-&gt;text();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>quantity<sp/>=<sp/>ui-&gt;quantityEdit-&gt;text();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>QRegExp<sp/>valida(</highlight><highlight class="stringliteral">&quot;^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[012])/[12][0-9]{3}$&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>valida.setCaseSensitivity(Qt::CaseInsensitive);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>valida.setPatternSyntax(QRegExp::RegExp);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>QMessageBox<sp/>token;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!valida.exactMatch(validity)){</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>token.setText(</highlight><highlight class="stringliteral">&quot;Digite<sp/>uma<sp/>data<sp/>de<sp/>validade<sp/>válida&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>token.exec();</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>flag<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>sellPrice.size();<sp/>i++){</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(sellPrice[i]<sp/>&lt;<sp/></highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal"><sp/>||<sp/>sellPrice[i]<sp/>&gt;<sp/></highlight><highlight class="charliteral">&apos;9&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>flag<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>purchasePrice.size();<sp/>i++){</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(purchasePrice[i]<sp/>&lt;<sp/></highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal"><sp/>||<sp/>purchasePrice[i]<sp/>&gt;<sp/></highlight><highlight class="charliteral">&apos;9&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>flag<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(flag){</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>token.setText(</highlight><highlight class="stringliteral">&quot;Digite<sp/>apenas<sp/>números<sp/>nos<sp/>preços.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>token.exec();</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>flag<sp/>=<sp/>conn.<ref refid="class_conexao_1ae82a9a4ed8068686b5b768ad9743317d" kindref="member">insertProducts</ref>(name,<sp/>purchasePrice,<sp/>sellPrice,<sp/>quantity,<sp/>validity);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(flag){</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>token.setText(</highlight><highlight class="stringliteral">&quot;Inserido<sp/>com<sp/>sucesso&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_conexao" kindref="compound">Conexao</ref><sp/>connection;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tamanho<sp/>=<sp/>connection.<ref refid="class_conexao_1aa0617deb68c402dae6fbd08ffef56f93" kindref="member">selectProducts</ref>();</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStandardItemModel<sp/>*model<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItemModel(tamanho,6,</highlight><highlight class="keyword">this</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//Quantidade<sp/>de<sp/>linhas<sp/>recebida<sp/>pelo<sp/>metodo<sp/>e<sp/>6<sp/>colunas.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;productsView-&gt;setEditTriggers(QAbstractItemView::NoEditTriggers);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model-&gt;setHorizontalHeaderItem(0,<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(QString(</highlight><highlight class="stringliteral">&quot;Código&quot;</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model-&gt;setHorizontalHeaderItem(1,<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(QString(</highlight><highlight class="stringliteral">&quot;Nome&quot;</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model-&gt;setHorizontalHeaderItem(2,<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(QString(</highlight><highlight class="stringliteral">&quot;Preço<sp/>de<sp/>Compra&quot;</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model-&gt;setHorizontalHeaderItem(3,<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(QString(</highlight><highlight class="stringliteral">&quot;Preço<sp/>de<sp/>Venda&quot;</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model-&gt;setHorizontalHeaderItem(4,<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(QString(</highlight><highlight class="stringliteral">&quot;Quantidade<sp/>em<sp/>Estoque&quot;</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model-&gt;setHorizontalHeaderItem(5,<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(QString(</highlight><highlight class="stringliteral">&quot;Valido<sp/>até&quot;</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>tamanho;<sp/>i++){</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStandardItem<sp/>*</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(connection.<ref refid="class_conexao_1a0555d343539f432f30bf84f5ddb7406d" kindref="member">products_id</ref>[i]);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStandardItem<sp/>*name<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(connection.<ref refid="class_conexao_1abe66e554804d884483dcf1e4657899bf" kindref="member">products_name</ref>[i]);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStandardItem<sp/>*purchaseprice<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(connection.<ref refid="class_conexao_1abed04b03f82ce6cb47cce91a3999ed89" kindref="member">products_purchaseprice</ref>[i]);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStandardItem<sp/>*sellprice<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(connection.<ref refid="class_conexao_1a2a3f06465299441de03ce264557490d3" kindref="member">products_saleprice</ref>[i]);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStandardItem<sp/>*quantity<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(connection.<ref refid="class_conexao_1aaa60e00115d399944cde0869516cf0d1" kindref="member">products_quantity</ref>[i]);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStandardItem<sp/>*validity<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(connection.<ref refid="class_conexao_1adaa68247f31efd7be455087a0e983f31" kindref="member">products_validity</ref>[i]);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model-&gt;setItem(i,<sp/>0,<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model-&gt;setItem(i,<sp/>1,<sp/>name);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model-&gt;setItem(i,<sp/>2,<sp/>purchaseprice);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model-&gt;setItem(i,<sp/>3,<sp/>sellprice);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model-&gt;setItem(i,<sp/>4,<sp/>quantity);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model-&gt;setItem(i,<sp/>5,<sp/>validity);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;productsView-&gt;setModel(model);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;sellEdit-&gt;setText(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;purchaseEdit-&gt;setText(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;nameEdit-&gt;setText(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;quantityEdit-&gt;setText(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;validityEdit-&gt;setText(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>token.setText(</highlight><highlight class="stringliteral">&quot;Erro<sp/>no<sp/>sistema,<sp/>contate<sp/>o<sp/>desenvolvedor&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>token.exec();</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/luiz/Paradigmas de Programação/Estoque/produtos.cpp"/>
+  </compounddef>
+</doxygen>

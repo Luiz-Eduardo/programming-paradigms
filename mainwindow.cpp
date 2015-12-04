@@ -1,5 +1,8 @@
+//includes das Bibliotecas do Qt
 #include <QString>
 #include <QMessageBox>
+
+//includes das Classes criadas pelo Desenvolvedor
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "conexao.h"

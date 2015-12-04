@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_produtos" kind="class" prot="public">
+    <compoundname>Produtos</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QMainWindow</basecompoundref>
+    <includes refid="produtos_8h" local="no">produtos.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_produtos_1a7ae9483dab0eb8d44a4e707291c47bd5" prot="private" static="no" mutable="no">
+        <type>Ui::Produtos *</type>
+        <definition>Ui::Produtos* Produtos::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/produtos.h" line="18" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/produtos.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_produtos_1aa4b106134de071ee74a3aae9b73e7268" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Produtos::Produtos</definition>
+        <argsstring>(QWidget *parent=0)</argsstring>
+        <name>Produtos</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/produtos.h" line="14" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/produtos.cpp" bodystart="12" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_produtos_1a79bdf156ec709680842b8f1425e57370" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Produtos::~Produtos</definition>
+        <argsstring>()</argsstring>
+        <name>~Produtos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/produtos.h" line="15" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/produtos.cpp" bodystart="51" bodyend="53"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="class_produtos_1a7498e38634d46f5d14cab07aff010aa7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Produtos::add</definition>
+        <argsstring>()</argsstring>
+        <name>add</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/produtos.h" line="21" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/produtos.cpp" bodystart="55" bodyend="137"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="41">
+        <label>QMainWindow</label>
+      </node>
+      <node id="40">
+        <label>Produtos</label>
+        <link refid="class_produtos"/>
+        <childnode refid="41" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="43">
+        <label>QMainWindow</label>
+      </node>
+      <node id="42">
+        <label>Produtos</label>
+        <link refid="class_produtos"/>
+        <childnode refid="43" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/luiz/Paradigmas de Programação/Estoque/produtos.h" line="10" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/produtos.h" bodystart="10" bodyend="22"/>
+    <listofallmembers>
+      <member refid="class_produtos_1a7498e38634d46f5d14cab07aff010aa7" prot="private" virt="non-virtual"><scope>Produtos</scope><name>add</name></member>
+      <member refid="class_produtos_1aa4b106134de071ee74a3aae9b73e7268" prot="public" virt="non-virtual"><scope>Produtos</scope><name>Produtos</name></member>
+      <member refid="class_produtos_1a7ae9483dab0eb8d44a4e707291c47bd5" prot="private" virt="non-virtual"><scope>Produtos</scope><name>ui</name></member>
+      <member refid="class_produtos_1a79bdf156ec709680842b8f1425e57370" prot="public" virt="non-virtual"><scope>Produtos</scope><name>~Produtos</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_delete" kind="class" prot="public">
+    <compoundname>Delete</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QMainWindow</basecompoundref>
+    <includes refid="delete_8h" local="no">delete.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_delete_1a386825485fe9ec00a6b3ea26206963ca" prot="private" static="no" mutable="no">
+        <type>Ui::Delete *</type>
+        <definition>Ui::Delete* Delete::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/delete.h" line="18" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/delete.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_delete_1a3d7de30f6c22b253d1621e659eb9e4bb" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Delete::Delete</definition>
+        <argsstring>(QWidget *parent=0)</argsstring>
+        <name>Delete</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/delete.h" line="14" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/delete.cpp" bodystart="9" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_delete_1a8d7f363340d734e4adced38687d09722" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Delete::~Delete</definition>
+        <argsstring>()</argsstring>
+        <name>~Delete</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/delete.h" line="15" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/delete.cpp" bodystart="16" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="class_delete_1a5039aec40b2999176eab5f6d8bdabfa4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Delete::cancel</definition>
+        <argsstring>()</argsstring>
+        <name>cancel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/delete.h" line="21" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/delete.cpp" bodystart="20" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_delete_1ae961a4b46ae6e1e942313331a007e80a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Delete::delEmployee</definition>
+        <argsstring>()</argsstring>
+        <name>delEmployee</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/delete.h" line="22" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/delete.cpp" bodystart="24" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="20">
+        <label>Delete</label>
+        <link refid="class_delete"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>QMainWindow</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="22">
+        <label>Delete</label>
+        <link refid="class_delete"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>QMainWindow</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/luiz/Paradigmas de Programação/Estoque/delete.h" line="10" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/delete.h" bodystart="10" bodyend="23"/>
+    <listofallmembers>
+      <member refid="class_delete_1a5039aec40b2999176eab5f6d8bdabfa4" prot="private" virt="non-virtual"><scope>Delete</scope><name>cancel</name></member>
+      <member refid="class_delete_1ae961a4b46ae6e1e942313331a007e80a" prot="private" virt="non-virtual"><scope>Delete</scope><name>delEmployee</name></member>
+      <member refid="class_delete_1a3d7de30f6c22b253d1621e659eb9e4bb" prot="public" virt="non-virtual"><scope>Delete</scope><name>Delete</name></member>
+      <member refid="class_delete_1a386825485fe9ec00a6b3ea26206963ca" prot="private" virt="non-virtual"><scope>Delete</scope><name>ui</name></member>
+      <member refid="class_delete_1a8d7f363340d734e4adced38687d09722" prot="public" virt="non-virtual"><scope>Delete</scope><name>~Delete</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

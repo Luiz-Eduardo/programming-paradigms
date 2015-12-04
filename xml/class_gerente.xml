@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_gerente" kind="class" prot="public">
+    <compoundname>Gerente</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QMainWindow</basecompoundref>
+    <includes refid="gerente_8h" local="no">gerente.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_gerente_1a8975424429ed3e15560bdc572c8f73da" prot="public" static="no" mutable="no">
+        <type><ref refid="class_caixa" kindref="compound">Caixa</ref></type>
+        <definition>Caixa Gerente::caixa</definition>
+        <argsstring></argsstring>
+        <name>caixa</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/gerente.h" line="20" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/gerente.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gerente_1a2345050dbe8f33e98224060b89ed1396" prot="public" static="no" mutable="no">
+        <type><ref refid="class_cadastrar" kindref="compound">Cadastrar</ref></type>
+        <definition>Cadastrar Gerente::funcionario</definition>
+        <argsstring></argsstring>
+        <name>funcionario</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/gerente.h" line="21" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/gerente.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gerente_1a67426a53ebc18d277c378e657a7c8b00" prot="public" static="no" mutable="no">
+        <type><ref refid="class_produtos" kindref="compound">Produtos</ref></type>
+        <definition>Produtos Gerente::produtos</definition>
+        <argsstring></argsstring>
+        <name>produtos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/gerente.h" line="22" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/gerente.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gerente_1a518d71e4ca47481a86e9080865968cb0" prot="public" static="no" mutable="no">
+        <type><ref refid="class_financas" kindref="compound">Financas</ref></type>
+        <definition>Financas Gerente::balanco</definition>
+        <argsstring></argsstring>
+        <name>balanco</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/gerente.h" line="23" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/gerente.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_gerente_1a68d5bae2d6a0c46f918ac8e64029dbf3" prot="private" static="no" mutable="no">
+        <type>Ui::Gerente *</type>
+        <definition>Ui::Gerente* Gerente::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/gerente.h" line="32" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/gerente.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_gerente_1a63ea201bae1d6d0faa0ed0a5a5e3c623" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gerente::Gerente</definition>
+        <argsstring>(QWidget *parent=0)</argsstring>
+        <name>Gerente</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/gerente.h" line="18" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/gerente.cpp" bodystart="5" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gerente_1a3510430c8a6c4e83883b6cab24854592" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gerente::~Gerente</definition>
+        <argsstring>()</argsstring>
+        <name>~Gerente</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/gerente.h" line="19" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/gerente.cpp" bodystart="15" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="class_gerente_1a31295ac69915b694b1fe99ab30b422b2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gerente::vendas</definition>
+        <argsstring>()</argsstring>
+        <name>vendas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/gerente.h" line="26" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/gerente.cpp" bodystart="19" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_gerente_1a382f520553d5ad0fbd486de7f56f67d8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gerente::cadastrar</definition>
+        <argsstring>()</argsstring>
+        <name>cadastrar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/gerente.h" line="27" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/gerente.cpp" bodystart="24" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_gerente_1a3de912def140a8c2b8fd7e7a274349ff" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gerente::estoque</definition>
+        <argsstring>()</argsstring>
+        <name>estoque</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/gerente.h" line="28" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/gerente.cpp" bodystart="28" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_gerente_1a4b45b343bb54f09a8f02264a722f5876" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gerente::financas</definition>
+        <argsstring>()</argsstring>
+        <name>financas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/gerente.h" line="29" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/gerente.cpp" bodystart="32" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="29">
+        <label>QMainWindow</label>
+      </node>
+      <node id="28">
+        <label>Gerente</label>
+        <link refid="class_gerente"/>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="35">
+        <label>Financas</label>
+        <link refid="class_financas"/>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>Caixa</label>
+        <link refid="class_caixa"/>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>QMainWindow</label>
+      </node>
+      <node id="33">
+        <label>Cadastrar</label>
+        <link refid="class_cadastrar"/>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>Produtos</label>
+        <link refid="class_produtos"/>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>Gerente</label>
+        <link refid="class_gerente"/>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+        <childnode refid="32" relation="usage">
+          <edgelabel>caixa</edgelabel>
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>funcionario</edgelabel>
+        </childnode>
+        <childnode refid="34" relation="usage">
+          <edgelabel>produtos</edgelabel>
+        </childnode>
+        <childnode refid="35" relation="usage">
+          <edgelabel>balanco</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/luiz/Paradigmas de Programação/Estoque/gerente.h" line="14" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/gerente.h" bodystart="14" bodyend="33"/>
+    <listofallmembers>
+      <member refid="class_gerente_1a518d71e4ca47481a86e9080865968cb0" prot="public" virt="non-virtual"><scope>Gerente</scope><name>balanco</name></member>
+      <member refid="class_gerente_1a382f520553d5ad0fbd486de7f56f67d8" prot="private" virt="non-virtual"><scope>Gerente</scope><name>cadastrar</name></member>
+      <member refid="class_gerente_1a8975424429ed3e15560bdc572c8f73da" prot="public" virt="non-virtual"><scope>Gerente</scope><name>caixa</name></member>
+      <member refid="class_gerente_1a3de912def140a8c2b8fd7e7a274349ff" prot="private" virt="non-virtual"><scope>Gerente</scope><name>estoque</name></member>
+      <member refid="class_gerente_1a4b45b343bb54f09a8f02264a722f5876" prot="private" virt="non-virtual"><scope>Gerente</scope><name>financas</name></member>
+      <member refid="class_gerente_1a2345050dbe8f33e98224060b89ed1396" prot="public" virt="non-virtual"><scope>Gerente</scope><name>funcionario</name></member>
+      <member refid="class_gerente_1a63ea201bae1d6d0faa0ed0a5a5e3c623" prot="public" virt="non-virtual"><scope>Gerente</scope><name>Gerente</name></member>
+      <member refid="class_gerente_1a67426a53ebc18d277c378e657a7c8b00" prot="public" virt="non-virtual"><scope>Gerente</scope><name>produtos</name></member>
+      <member refid="class_gerente_1a68d5bae2d6a0c46f918ac8e64029dbf3" prot="private" virt="non-virtual"><scope>Gerente</scope><name>ui</name></member>
+      <member refid="class_gerente_1a31295ac69915b694b1fe99ab30b422b2" prot="private" virt="non-virtual"><scope>Gerente</scope><name>vendas</name></member>
+      <member refid="class_gerente_1a3510430c8a6c4e83883b6cab24854592" prot="public" virt="non-virtual"><scope>Gerente</scope><name>~Gerente</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

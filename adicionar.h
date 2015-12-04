@@ -7,8 +7,15 @@ namespace Ui {
 class Adicionar;
 }
 
-class Adicionar : public QDialog
-{
+/*! @brief Classe Adicionar.
+ *      Interface Gráfica responsável por adicionar novos funcionários no projeto.
+ *
+ * A Classe Adicionar consiste em uma QDialog e possui os dados principais de um funcionário,
+ * que serão colocados no Banco de Dados employees, além disso, inclui no Banco user um usuário
+ * e senha para se logar no sistema, sendo este segundo composto de login: (primeiro nome da pessoa)
+ * e senha: cpf da pessoa.
+ */
+class Adicionar : public QDialog{
     Q_OBJECT
 
 public:
@@ -16,8 +23,19 @@ public:
     ~Adicionar();
 
 private slots:
+    /*! @brief Método clean().
+     *      Método da classe Adicionar.
+     *
+     * O Método clean() sem nenhum parâmetro e sem retorno, é responsável apenas por
+     * limpar todos os campos da interface Adicionar.
+     */
     void clean();
-    void cancel();
+    /*! @brief Método add().
+     *      Método da classe Adicionar.
+     *
+     * O Método add() sem nenhum parâmetro e sem retorno, é responsável - ao incluir a
+     * classe Conexao - por inserir no Banco de Dados o novo funcionário.
+     */
     void add();
 
 private:

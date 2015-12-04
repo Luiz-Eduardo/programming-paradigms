@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_adicionar" kind="class" prot="public">
+    <compoundname>Adicionar</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QDialog</basecompoundref>
+    <includes refid="adicionar_8h" local="no">adicionar.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_adicionar_1a63e07adc8c23668989c2d2f550e1e918" prot="private" static="no" mutable="no">
+        <type>Ui::Adicionar *</type>
+        <definition>Ui::Adicionar* Adicionar::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/adicionar.h" line="42" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/adicionar.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_adicionar_1a0cc8b665e756cc80631e42a952861571" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Adicionar::Adicionar</definition>
+        <argsstring>(QWidget *parent=0)</argsstring>
+        <name>Adicionar</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/adicionar.h" line="22" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/adicionar.cpp" bodystart="10" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adicionar_1a51bda631ea8d8968759df5959de9ba5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Adicionar::~Adicionar</definition>
+        <argsstring>()</argsstring>
+        <name>~Adicionar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/adicionar.h" line="23" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/adicionar.cpp" bodystart="18" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="class_adicionar_1ab638508f096506d0b4ae828f79448afb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Adicionar::clean</definition>
+        <argsstring>()</argsstring>
+        <name>clean</name>
+        <briefdescription>
+<para>Método clean(). Método da classe <ref refid="class_adicionar" kindref="compound">Adicionar</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>O Método clean() sem nenhum parâmetro e sem retorno, é responsável apenas por limpar todos os campos da interface <ref refid="class_adicionar" kindref="compound">Adicionar</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/adicionar.h" line="32" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/adicionar.cpp" bodystart="22" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_adicionar_1acff9ba65f1d4e23973cbadc65dcb49d6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Adicionar::add</definition>
+        <argsstring>()</argsstring>
+        <name>add</name>
+        <briefdescription>
+<para>Método add(). Método da classe <ref refid="class_adicionar" kindref="compound">Adicionar</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>O Método add() sem nenhum parâmetro e sem retorno, é responsável - ao incluir a classe <ref refid="class_conexao" kindref="compound">Conexao</ref> - por inserir no Banco de Dados o novo funcionário. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/adicionar.h" line="39" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/adicionar.cpp" bodystart="32" bodyend="110"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Classe <ref refid="class_adicionar" kindref="compound">Adicionar</ref>. Interface Gráfica responsável por adicionar novos funcionários no projeto. </para>    </briefdescription>
+    <detaileddescription>
+<para>A Classe <ref refid="class_adicionar" kindref="compound">Adicionar</ref> consiste em uma QDialog e possui os dados principais de um funcionário, que serão colocados no Banco de Dados employees, além disso, inclui no Banco user um usuário e senha para se logar no sistema, sendo este segundo composto de login: (primeiro nome da pessoa) e senha: cpf da pessoa. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>QDialog</label>
+      </node>
+      <node id="0">
+        <label>Adicionar</label>
+        <link refid="class_adicionar"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>QDialog</label>
+      </node>
+      <node id="2">
+        <label>Adicionar</label>
+        <link refid="class_adicionar"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/luiz/Paradigmas de Programação/Estoque/adicionar.h" line="18" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/adicionar.h" bodystart="18" bodyend="43"/>
+    <listofallmembers>
+      <member refid="class_adicionar_1acff9ba65f1d4e23973cbadc65dcb49d6" prot="private" virt="non-virtual"><scope>Adicionar</scope><name>add</name></member>
+      <member refid="class_adicionar_1a0cc8b665e756cc80631e42a952861571" prot="public" virt="non-virtual"><scope>Adicionar</scope><name>Adicionar</name></member>
+      <member refid="class_adicionar_1ab638508f096506d0b4ae828f79448afb" prot="private" virt="non-virtual"><scope>Adicionar</scope><name>clean</name></member>
+      <member refid="class_adicionar_1a63e07adc8c23668989c2d2f550e1e918" prot="private" virt="non-virtual"><scope>Adicionar</scope><name>ui</name></member>
+      <member refid="class_adicionar_1a51bda631ea8d8968759df5959de9ba5c" prot="public" virt="non-virtual"><scope>Adicionar</scope><name>~Adicionar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

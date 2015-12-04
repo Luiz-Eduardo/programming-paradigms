@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_cadastrar" kind="class" prot="public">
+    <compoundname>Cadastrar</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QMainWindow</basecompoundref>
+    <includes refid="cadastrar_8h" local="no">cadastrar.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_cadastrar_1ada10c5556d8370ea1ff9a7659501eec1" prot="private" static="no" mutable="no">
+        <type><ref refid="class_adicionar" kindref="compound">Adicionar</ref></type>
+        <definition>Adicionar Cadastrar::newEmployee</definition>
+        <argsstring></argsstring>
+        <name>newEmployee</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/cadastrar.h" line="18" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/cadastrar.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_cadastrar_1abc139091374c5f283f9950708afa38d2" prot="private" static="no" mutable="no">
+        <type><ref refid="class_alterar" kindref="compound">Alterar</ref></type>
+        <definition>Alterar Cadastrar::changeEmployee</definition>
+        <argsstring></argsstring>
+        <name>changeEmployee</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/cadastrar.h" line="19" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/cadastrar.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_cadastrar_1ad7e3674585ed439a130317b8fbc5b33b" prot="private" static="no" mutable="no">
+        <type><ref refid="class_delete" kindref="compound">Delete</ref></type>
+        <definition>Delete Cadastrar::deleteEmployee</definition>
+        <argsstring></argsstring>
+        <name>deleteEmployee</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/cadastrar.h" line="20" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/cadastrar.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_cadastrar_1a880379dcd001f93c782cdcceb5ec9963" prot="private" static="no" mutable="no">
+        <type>Ui::Cadastrar *</type>
+        <definition>Ui::Cadastrar* Cadastrar::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/cadastrar.h" line="33" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/cadastrar.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_cadastrar_1a7d59843eb5af64922e84a9d613c2447a" prot="public" static="no" mutable="no">
+        <type>QStringList</type>
+        <definition>QStringList Cadastrar::funcionarios</definition>
+        <argsstring></argsstring>
+        <name>funcionarios</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/cadastrar.h" line="25" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/cadastrar.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_cadastrar_1a84aa3e559f92b83f205ed7222630259c" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Cadastrar::Cadastrar</definition>
+        <argsstring>(QWidget *parent=0)</argsstring>
+        <name>Cadastrar</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/cadastrar.h" line="23" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/cadastrar.cpp" bodystart="11" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_cadastrar_1a22237f919185021666bc82fce25b580c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Cadastrar::~Cadastrar</definition>
+        <argsstring>()</argsstring>
+        <name>~Cadastrar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/cadastrar.h" line="24" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/cadastrar.cpp" bodystart="61" bodyend="63"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="class_cadastrar_1af2c5b0be264c0eb44eebfd7acd2bea41" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cadastrar::adicionar</definition>
+        <argsstring>()</argsstring>
+        <name>adicionar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/cadastrar.h" line="28" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/cadastrar.cpp" bodystart="65" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_cadastrar_1a72f632edcdbda2e3d93713bedf728f6d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cadastrar::back</definition>
+        <argsstring>()</argsstring>
+        <name>back</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/cadastrar.h" line="29" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/cadastrar.cpp" bodystart="69" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_cadastrar_1a1ef2b344999744f6f6f21945fbaeebd2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cadastrar::change</definition>
+        <argsstring>()</argsstring>
+        <name>change</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/cadastrar.h" line="30" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/cadastrar.cpp" bodystart="73" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_cadastrar_1a820639c8be5ef1f928b39d8dc926c7fa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cadastrar::delet</definition>
+        <argsstring>()</argsstring>
+        <name>delet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/cadastrar.h" line="31" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/cadastrar.cpp" bodystart="77" bodyend="79"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="9">
+        <label>QMainWindow</label>
+      </node>
+      <node id="8">
+        <label>Cadastrar</label>
+        <link refid="class_cadastrar"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="11">
+        <label>QMainWindow</label>
+      </node>
+      <node id="10">
+        <label>Cadastrar</label>
+        <link refid="class_cadastrar"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/luiz/Paradigmas de Programação/Estoque/cadastrar.h" line="16" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/cadastrar.h" bodystart="16" bodyend="34"/>
+    <listofallmembers>
+      <member refid="class_cadastrar_1af2c5b0be264c0eb44eebfd7acd2bea41" prot="private" virt="non-virtual"><scope>Cadastrar</scope><name>adicionar</name></member>
+      <member refid="class_cadastrar_1a72f632edcdbda2e3d93713bedf728f6d" prot="private" virt="non-virtual"><scope>Cadastrar</scope><name>back</name></member>
+      <member refid="class_cadastrar_1a84aa3e559f92b83f205ed7222630259c" prot="public" virt="non-virtual"><scope>Cadastrar</scope><name>Cadastrar</name></member>
+      <member refid="class_cadastrar_1a1ef2b344999744f6f6f21945fbaeebd2" prot="private" virt="non-virtual"><scope>Cadastrar</scope><name>change</name></member>
+      <member refid="class_cadastrar_1abc139091374c5f283f9950708afa38d2" prot="private" virt="non-virtual"><scope>Cadastrar</scope><name>changeEmployee</name></member>
+      <member refid="class_cadastrar_1a820639c8be5ef1f928b39d8dc926c7fa" prot="private" virt="non-virtual"><scope>Cadastrar</scope><name>delet</name></member>
+      <member refid="class_cadastrar_1ad7e3674585ed439a130317b8fbc5b33b" prot="private" virt="non-virtual"><scope>Cadastrar</scope><name>deleteEmployee</name></member>
+      <member refid="class_cadastrar_1a7d59843eb5af64922e84a9d613c2447a" prot="public" virt="non-virtual"><scope>Cadastrar</scope><name>funcionarios</name></member>
+      <member refid="class_cadastrar_1ada10c5556d8370ea1ff9a7659501eec1" prot="private" virt="non-virtual"><scope>Cadastrar</scope><name>newEmployee</name></member>
+      <member refid="class_cadastrar_1a880379dcd001f93c782cdcceb5ec9963" prot="private" virt="non-virtual"><scope>Cadastrar</scope><name>ui</name></member>
+      <member refid="class_cadastrar_1a22237f919185021666bc82fce25b580c" prot="public" virt="non-virtual"><scope>Cadastrar</scope><name>~Cadastrar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

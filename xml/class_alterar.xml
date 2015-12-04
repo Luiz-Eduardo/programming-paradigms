@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_alterar" kind="class" prot="public">
+    <compoundname>Alterar</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QMainWindow</basecompoundref>
+    <includes refid="alterar_8h" local="no">alterar.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_alterar_1a52b0f64cde196e74784b2faf7dd85047" prot="private" static="no" mutable="no">
+        <type>Ui::alterar *</type>
+        <definition>Ui::alterar* Alterar::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/alterar.h" line="18" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/alterar.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_alterar_1a475ed79b0350531816c7f6275bf137df" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Alterar::Alterar</definition>
+        <argsstring>(QWidget *parent=0)</argsstring>
+        <name>Alterar</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/alterar.h" line="14" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/alterar.cpp" bodystart="9" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_alterar_1a1b77b99a2040b5914842ba0cd19cc719" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Alterar::~Alterar</definition>
+        <argsstring>()</argsstring>
+        <name>~Alterar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/alterar.h" line="15" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/alterar.cpp" bodystart="23" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="class_alterar_1a68caf0604ac5f009387b37b7d4bc489e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Alterar::searchEmployee</definition>
+        <argsstring>()</argsstring>
+        <name>searchEmployee</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/alterar.h" line="21" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/alterar.cpp" bodystart="27" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_alterar_1afbb4427c0c5cf4e8f8f00fc6dc8cd138" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Alterar::update</definition>
+        <argsstring>()</argsstring>
+        <name>update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/alterar.h" line="22" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/alterar.cpp" bodystart="66" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_alterar_1a46f0199a05d2bf15202d3e31de65fd78" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Alterar::clean</definition>
+        <argsstring>()</argsstring>
+        <name>clean</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/alterar.h" line="23" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/alterar.cpp" bodystart="90" bodyend="102"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>QMainWindow</label>
+      </node>
+      <node id="4">
+        <label>Alterar</label>
+        <link refid="class_alterar"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7">
+        <label>QMainWindow</label>
+      </node>
+      <node id="6">
+        <label>Alterar</label>
+        <link refid="class_alterar"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/luiz/Paradigmas de Programação/Estoque/alterar.h" line="10" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/alterar.h" bodystart="10" bodyend="24"/>
+    <listofallmembers>
+      <member refid="class_alterar_1a475ed79b0350531816c7f6275bf137df" prot="public" virt="non-virtual"><scope>Alterar</scope><name>Alterar</name></member>
+      <member refid="class_alterar_1a46f0199a05d2bf15202d3e31de65fd78" prot="private" virt="non-virtual"><scope>Alterar</scope><name>clean</name></member>
+      <member refid="class_alterar_1a68caf0604ac5f009387b37b7d4bc489e" prot="private" virt="non-virtual"><scope>Alterar</scope><name>searchEmployee</name></member>
+      <member refid="class_alterar_1a52b0f64cde196e74784b2faf7dd85047" prot="private" virt="non-virtual"><scope>Alterar</scope><name>ui</name></member>
+      <member refid="class_alterar_1afbb4427c0c5cf4e8f8f00fc6dc8cd138" prot="private" virt="non-virtual"><scope>Alterar</scope><name>update</name></member>
+      <member refid="class_alterar_1a1b77b99a2040b5914842ba0cd19cc719" prot="public" virt="non-virtual"><scope>Alterar</scope><name>~Alterar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

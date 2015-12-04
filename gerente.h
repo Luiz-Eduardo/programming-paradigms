@@ -4,6 +4,8 @@
 #include <QMainWindow>
 #include "caixa.h"
 #include "cadastrar.h"
+#include "produtos.h"
+#include "financas.h"
 
 namespace Ui {
 class Gerente;
@@ -17,11 +19,14 @@ public:
     ~Gerente();
     Caixa caixa;
     Cadastrar funcionario;
+    Produtos produtos;
+    Financas balanco;
 
 private slots:
     void vendas();
-    void logout();
     void cadastrar();
+    void estoque();
+    void financas();
 
 private:
     Ui::Gerente *ui;

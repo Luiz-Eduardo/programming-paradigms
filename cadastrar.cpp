@@ -1,13 +1,15 @@
+//includes das Classes criadas pelo Desenvolvedor
 #include "cadastrar.h"
 #include "ui_cadastrar.h"
 #include "conexao.h"
+
+//includes das Bibliotecas do Qt
 #include <QStandardItemModel>
 #include <QStandardItem>
 #include <QString>
 
 Cadastrar::Cadastrar(QWidget *parent) : QMainWindow(parent), ui(new Ui::Cadastrar){
     ui->setupUi(this);
-
     this->setWindowTitle("Cadastrar funcionários");
 
 
@@ -52,8 +54,8 @@ Cadastrar::Cadastrar(QWidget *parent) : QMainWindow(parent), ui(new Ui::Cadastra
     ui->employeesView->setModel(model);
 
    connect(ui->addButton, SIGNAL(clicked(bool)), this, SLOT(adicionar()));
-   connect(ui->backButton, SIGNAL(clicked(bool)), this, SLOT(back()));
-   connect(ui->employeesView, SIGNAL(activated(QModelIndex)), this, SLOT(selected()));
+   connect(ui->changeButton, SIGNAL(clicked()), this, SLOT(change()));
+   connect(ui->deleteButton, SIGNAL(clicked(bool)), this, SLOT(delet()));
 }
 
 Cadastrar::~Cadastrar(){
@@ -65,10 +67,13 @@ void Cadastrar::adicionar(){
 }
 
 void Cadastrar::back(){
-    //manager.show();
     this->close();
 }
 
-void Cadastrar::selected(){
+void Cadastrar::change(){
+    changeEmployee.show();
+}
 
+void Cadastrar::delet(){
+    deleteEmployee.show();
 }

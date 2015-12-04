@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="cadastrar_8cpp" kind="file">
+    <compoundname>cadastrar.cpp</compoundname>
+    <includes refid="cadastrar_8h" local="yes">cadastrar.h</includes>
+    <includes local="yes">ui_cadastrar.h</includes>
+    <includes refid="conexao_8h" local="yes">conexao.h</includes>
+    <includes local="no">QStandardItemModel</includes>
+    <includes local="no">QStandardItem</includes>
+    <includes local="no">QString</includes>
+    <incdepgraph>
+      <node id="70">
+        <label>iomanip</label>
+      </node>
+      <node id="65">
+        <label>conexao.h</label>
+        <link refid="conexao_8h"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>cadastrar.cpp</label>
+        <link refid="cadastrar.cpp"/>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>QObject</label>
+      </node>
+      <node id="73">
+        <label>QStandardItemModel</label>
+      </node>
+      <node id="58">
+        <label>string</label>
+      </node>
+      <node id="57">
+        <label>QMainWindow</label>
+      </node>
+      <node id="74">
+        <label>QStandardItem</label>
+      </node>
+      <node id="60">
+        <label>adicionar.h</label>
+        <link refid="adicionar_8h"/>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>ui_cadastrar.h</label>
+      </node>
+      <node id="61">
+        <label>QDialog</label>
+      </node>
+      <node id="56">
+        <label>cadastrar.h</label>
+        <link refid="cadastrar_8h"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>alterar.h</label>
+        <link refid="alterar_8h"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>QString</label>
+      </node>
+      <node id="71">
+        <label>clocale</label>
+      </node>
+      <node id="68">
+        <label>iostream</label>
+      </node>
+      <node id="72">
+        <label>mysql/mysql.h</label>
+      </node>
+      <node id="63">
+        <label>delete.h</label>
+        <link refid="delete_8h"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>QStringList</label>
+      </node>
+      <node id="69">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//includes<sp/>das<sp/>Classes<sp/>criadas<sp/>pelo<sp/>Desenvolvedor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cadastrar_8h" kindref="compound">cadastrar.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ui_cadastrar.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="conexao_8h" kindref="compound">conexao.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//includes<sp/>das<sp/>Bibliotecas<sp/>do<sp/>Qt</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QStandardItemModel&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QStandardItem&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QString&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="class_cadastrar_1a84aa3e559f92b83f205ed7222630259c" refkind="member"><highlight class="normal"><ref refid="class_cadastrar_1a84aa3e559f92b83f205ed7222630259c" kindref="member">Cadastrar::Cadastrar</ref>(QWidget<sp/>*parent)<sp/>:<sp/>QMainWindow(parent),<sp/>ui(new<sp/>Ui::<ref refid="class_cadastrar" kindref="compound">Cadastrar</ref>){</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;setupUi(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;setWindowTitle(</highlight><highlight class="stringliteral">&quot;Cadastrar<sp/>funcionários&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_conexao" kindref="compound">Conexao</ref><sp/>connection;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tamanho<sp/>=<sp/>connection.<ref refid="class_conexao_1a821a9c7e6d6fc2e67fd0b5cebb2fb375" kindref="member">funcionarios</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>QStandardItemModel<sp/>*model<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItemModel(tamanho,5,</highlight><highlight class="keyword">this</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//Quantidade<sp/>de<sp/>linhas<sp/>recebida<sp/>pelo<sp/>metodo<sp/>e<sp/>5<sp/>colunas.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;employeesView-&gt;setEditTriggers(QAbstractItemView::NoEditTriggers);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>model-&gt;setHorizontalHeaderItem(0,<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(QString(</highlight><highlight class="stringliteral">&quot;Nome&quot;</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>model-&gt;setHorizontalHeaderItem(1,<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(QString(</highlight><highlight class="stringliteral">&quot;Idade&quot;</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>model-&gt;setHorizontalHeaderItem(2,<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(QString(</highlight><highlight class="stringliteral">&quot;Email&quot;</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>model-&gt;setHorizontalHeaderItem(3,<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(QString(</highlight><highlight class="stringliteral">&quot;Cargo&quot;</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>model-&gt;setHorizontalHeaderItem(4,<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(QString(</highlight><highlight class="stringliteral">&quot;Salário&quot;</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>tamanho;<sp/>i++){</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStandardItem<sp/>*name<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(QString(connection.<ref refid="class_conexao_1a840ddef255453274939c138a5e70e78e" kindref="member">employees_name</ref>[i]));</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStandardItem<sp/>*age<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(QString(connection.<ref refid="class_conexao_1afe469c76fdb5fb62d82f17e479281fc3" kindref="member">employees_age</ref>[i]<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>anos&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStandardItem<sp/>*email<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(connection.<ref refid="class_conexao_1af4a86c84b703836abc8581ddb695e46d" kindref="member">employees_email</ref>[i]);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStandardItem<sp/>*role;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!connection.<ref refid="class_conexao_1ae6dd52256ae13d3a08c67af499f052df" kindref="member">employees_role</ref>[i].compare(</highlight><highlight class="stringliteral">&quot;1&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>role<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(QString(</highlight><highlight class="stringliteral">&quot;Caixa&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!connection.<ref refid="class_conexao_1ae6dd52256ae13d3a08c67af499f052df" kindref="member">employees_role</ref>[i].compare(</highlight><highlight class="stringliteral">&quot;2&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>role<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(QString(</highlight><highlight class="stringliteral">&quot;Gerente&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>role<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(QString(</highlight><highlight class="stringliteral">&quot;Erro&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/>_salary<sp/>=<sp/>connection.<ref refid="class_conexao_1a037d3ee84ec8629c1a4bffef8d67378f" kindref="member">employees_salary</ref>[i];</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>_salary.size();<sp/>i++)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(_salary[i]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;.&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_salary[i]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;,&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStandardItem<sp/>*salary<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(QString(</highlight><highlight class="stringliteral">&quot;R$<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>_salary));</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model-&gt;setItem(i,<sp/>0,<sp/>name);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model-&gt;setItem(i,<sp/>1,<sp/>age);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model-&gt;setItem(i,<sp/>2,<sp/>email);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model-&gt;setItem(i,<sp/>3,<sp/>role);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model-&gt;setItem(i,<sp/>4,<sp/>salary);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;employeesView-&gt;setModel(model);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;addButton,<sp/>SIGNAL(clicked(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">)),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(adicionar()));</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;changeButton,<sp/>SIGNAL(clicked()),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(change()));</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;deleteButton,<sp/>SIGNAL(clicked(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">)),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(delet()));</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="class_cadastrar_1a22237f919185021666bc82fce25b580c" refkind="member"><highlight class="normal"><ref refid="class_cadastrar_1a22237f919185021666bc82fce25b580c" kindref="member">Cadastrar::~Cadastrar</ref>(){</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>ui;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Cadastrar::adicionar(){</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>newEmployee.show();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Cadastrar::back(){</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;close();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Cadastrar::change(){</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>changeEmployee.show();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Cadastrar::delet(){</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>deleteEmployee.show();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/luiz/Paradigmas de Programação/Estoque/cadastrar.cpp"/>
+  </compounddef>
+</doxygen>

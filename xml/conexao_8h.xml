@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="conexao_8h" kind="file">
+    <compoundname>conexao.h</compoundname>
+    <includes local="no">QObject</includes>
+    <includes local="no">QString</includes>
+    <includes local="no">QStringList</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">string</includes>
+    <includes local="no">cstring</includes>
+    <includes local="no">iomanip</includes>
+    <includes local="no">clocale</includes>
+    <includes local="no">mysql/mysql.h</includes>
+    <includedby refid="adicionar_8cpp" local="yes">adicionar.cpp</includedby>
+    <includedby refid="alterar_8cpp" local="yes">alterar.cpp</includedby>
+    <includedby refid="cadastrar_8cpp" local="yes">cadastrar.cpp</includedby>
+    <includedby refid="caixa_8cpp" local="yes">caixa.cpp</includedby>
+    <includedby refid="conexao_8cpp" local="yes">conexao.cpp</includedby>
+    <includedby refid="delete_8cpp" local="yes">delete.cpp</includedby>
+    <includedby refid="financas_8cpp" local="yes">financas.cpp</includedby>
+    <includedby refid="mainwindow_8cpp" local="yes">mainwindow.cpp</includedby>
+    <includedby refid="produtos_8cpp" local="yes">produtos.cpp</includedby>
+    <incdepgraph>
+      <node id="143">
+        <label>iomanip</label>
+      </node>
+      <node id="136">
+        <label>conexao.h</label>
+        <link refid="conexao.h"/>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="142" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+        <childnode refid="145" relation="include">
+        </childnode>
+      </node>
+      <node id="137">
+        <label>QObject</label>
+      </node>
+      <node id="141">
+        <label>string</label>
+      </node>
+      <node id="138">
+        <label>QString</label>
+      </node>
+      <node id="144">
+        <label>clocale</label>
+      </node>
+      <node id="140">
+        <label>iostream</label>
+      </node>
+      <node id="145">
+        <label>mysql/mysql.h</label>
+      </node>
+      <node id="139">
+        <label>QStringList</label>
+      </node>
+      <node id="142">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="152">
+        <label>delete.cpp</label>
+        <link refid="delete_8cpp"/>
+      </node>
+      <node id="146">
+        <label>conexao.h</label>
+        <link refid="conexao.h"/>
+        <childnode refid="147" relation="include">
+        </childnode>
+        <childnode refid="148" relation="include">
+        </childnode>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+      </node>
+      <node id="149">
+        <label>cadastrar.cpp</label>
+        <link refid="cadastrar_8cpp"/>
+      </node>
+      <node id="148">
+        <label>alterar.cpp</label>
+        <link refid="alterar_8cpp"/>
+      </node>
+      <node id="153">
+        <label>financas.cpp</label>
+        <link refid="financas_8cpp"/>
+      </node>
+      <node id="147">
+        <label>adicionar.cpp</label>
+        <link refid="adicionar_8cpp"/>
+      </node>
+      <node id="155">
+        <label>produtos.cpp</label>
+        <link refid="produtos_8cpp"/>
+      </node>
+      <node id="154">
+        <label>mainwindow.cpp</label>
+        <link refid="mainwindow_8cpp"/>
+      </node>
+      <node id="150">
+        <label>caixa.cpp</label>
+        <link refid="caixa_8cpp"/>
+      </node>
+      <node id="151">
+        <label>conexao.cpp</label>
+        <link refid="conexao_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_conexao" prot="public">Conexao</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>CONEXAO_H</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CONEXAO_H</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//includes<sp/>Bibliotecas<sp/>Qt</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QObject&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QString&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QStringList&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//includes<sp/>C++</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//Biblioteca<sp/>padrão<sp/>de<sp/>entrada<sp/>e<sp/>saída.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//Biblioteca<sp/>padrão<sp/>para<sp/>manipulação<sp/>de<sp/>strings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//Biblioteca<sp/>para<sp/>utilizar<sp/>funções<sp/>para<sp/>facilitar<sp/>a<sp/>cópia,<sp/>comparação<sp/>e<sp/>concatenação<sp/>de<sp/>strings<sp/>no<sp/>estilo<sp/>char[].</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iomanip&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;clocale&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//include<sp/>MySQL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mysql/mysql.h&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//Biblioteca<sp/>para<sp/>utilizar<sp/>o<sp/>CRUD<sp/>(Create,<sp/>Remove,<sp/>Update<sp/>and<sp/>Delete)<sp/>entre<sp/>C++<sp/>e<sp/>MySQL<sp/>no<sp/>Banco<sp/>de<sp/>Dados.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="class_conexao" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_conexao" kindref="compound">Conexao</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QObject{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35" refid="class_conexao_1a840ddef255453274939c138a5e70e78e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QStringList<sp/><ref refid="class_conexao_1a840ddef255453274939c138a5e70e78e" kindref="member">employees_name</ref>;</highlight></codeline>
+<codeline lineno="36" refid="class_conexao_1afe469c76fdb5fb62d82f17e479281fc3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QStringList<sp/><ref refid="class_conexao_1afe469c76fdb5fb62d82f17e479281fc3" kindref="member">employees_age</ref>;</highlight></codeline>
+<codeline lineno="37" refid="class_conexao_1af4a86c84b703836abc8581ddb695e46d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QStringList<sp/><ref refid="class_conexao_1af4a86c84b703836abc8581ddb695e46d" kindref="member">employees_email</ref>;</highlight></codeline>
+<codeline lineno="38" refid="class_conexao_1ae6dd52256ae13d3a08c67af499f052df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QStringList<sp/><ref refid="class_conexao_1ae6dd52256ae13d3a08c67af499f052df" kindref="member">employees_role</ref>;</highlight></codeline>
+<codeline lineno="39" refid="class_conexao_1a037d3ee84ec8629c1a4bffef8d67378f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QStringList<sp/><ref refid="class_conexao_1a037d3ee84ec8629c1a4bffef8d67378f" kindref="member">employees_salary</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="class_conexao_1a0555d343539f432f30bf84f5ddb7406d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QStringList<sp/><ref refid="class_conexao_1a0555d343539f432f30bf84f5ddb7406d" kindref="member">products_id</ref>;</highlight></codeline>
+<codeline lineno="42" refid="class_conexao_1abe66e554804d884483dcf1e4657899bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QStringList<sp/><ref refid="class_conexao_1abe66e554804d884483dcf1e4657899bf" kindref="member">products_name</ref>;</highlight></codeline>
+<codeline lineno="43" refid="class_conexao_1abed04b03f82ce6cb47cce91a3999ed89" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QStringList<sp/><ref refid="class_conexao_1abed04b03f82ce6cb47cce91a3999ed89" kindref="member">products_purchaseprice</ref>;</highlight></codeline>
+<codeline lineno="44" refid="class_conexao_1a2a3f06465299441de03ce264557490d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QStringList<sp/><ref refid="class_conexao_1a2a3f06465299441de03ce264557490d3" kindref="member">products_saleprice</ref>;</highlight></codeline>
+<codeline lineno="45" refid="class_conexao_1aaa60e00115d399944cde0869516cf0d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QStringList<sp/><ref refid="class_conexao_1aaa60e00115d399944cde0869516cf0d1" kindref="member">products_quantity</ref>;</highlight></codeline>
+<codeline lineno="46" refid="class_conexao_1adaa68247f31efd7be455087a0e983f31" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QStringList<sp/><ref refid="class_conexao_1adaa68247f31efd7be455087a0e983f31" kindref="member">products_validity</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="class_conexao_1ad07b7be6fc9e8b60c354debaa9469b47" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>map&lt;int,<sp/>string&gt;<sp/><ref refid="class_conexao_1ad07b7be6fc9e8b60c354debaa9469b47" kindref="member">vendidos</ref>;<sp/></highlight><highlight class="comment">//Codigo<sp/>do<sp/>produto<sp/>e<sp/>quantidade<sp/>de<sp/>vendas<sp/>do<sp/>mesmo.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_conexao" kindref="compound">Conexao</ref>(QObject<sp/>*parent<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="class_conexao" kindref="compound">Conexao</ref>();</highlight></codeline>
+<codeline lineno="52" refid="class_conexao_1a603c91bfb3838491ba3e8caececc5b0c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>MYSQL<sp/><ref refid="class_conexao_1a603c91bfb3838491ba3e8caececc5b0c" kindref="member">conn</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addEmployee(QString<sp/>_name,<sp/>QString<sp/>_age,<sp/>QString<sp/>_role,<sp/>QString<sp/>_salary,<sp/>QString<sp/>_cpf,<sp/>QString<sp/>_email,<sp/>QString<sp/>_address);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>deletar(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>nome,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>age);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>updateEmployee(QString<sp/>_name,<sp/>QString<sp/>_cpf,<sp/>QString<sp/>_salary,<sp/>QString<sp/>_email,<sp/>QString<sp/>_address,<sp/>QString<sp/>_role);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>logar(QString<sp/>login,<sp/>QString<sp/>senha);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>funcionarios();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>validaCpf(QString<sp/>cpf);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>select(QString<sp/>name,<sp/>QString<sp/>&amp;cpf,<sp/>QString<sp/>&amp;email,<sp/>QString<sp/>&amp;address,<sp/>QString<sp/>&amp;role,<sp/>QString<sp/>&amp;salary);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>insertProducts(QString<sp/>_name,<sp/>QString<sp/>_purchasePrice,<sp/>QString<sp/>_sellPrice,<sp/>QString<sp/>_quantity,<sp/>QString<sp/>_validity);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>selectProducts();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>delEmployees(QString<sp/>name,<sp/>QString<sp/>email);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>selectByCode(QString<sp/>_id);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>getName(QString<sp/>_id);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">signals:</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>CONEXAO_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/luiz/Paradigmas de Programação/Estoque/conexao.h"/>
+  </compounddef>
+</doxygen>

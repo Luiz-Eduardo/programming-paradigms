@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="mainwindow_8h" kind="file">
+    <compoundname>mainwindow.h</compoundname>
+    <includes local="no">QMainWindow</includes>
+    <includes refid="caixa_8h" local="yes">caixa.h</includes>
+    <includes refid="gerente_8h" local="yes">gerente.h</includes>
+    <includedby refid="main_8cpp" local="yes">main.cpp</includedby>
+    <includedby refid="mainwindow_8cpp" local="yes">mainwindow.cpp</includedby>
+    <incdepgraph>
+      <node id="294">
+        <label>produtos.h</label>
+        <link refid="produtos_8h"/>
+        <childnode refid="284" relation="include">
+        </childnode>
+      </node>
+      <node id="283">
+        <label>mainwindow.h</label>
+        <link refid="mainwindow.h"/>
+        <childnode refid="284" relation="include">
+        </childnode>
+        <childnode refid="285" relation="include">
+        </childnode>
+        <childnode refid="286" relation="include">
+        </childnode>
+      </node>
+      <node id="288">
+        <label>string</label>
+      </node>
+      <node id="284">
+        <label>QMainWindow</label>
+      </node>
+      <node id="290">
+        <label>adicionar.h</label>
+        <link refid="adicionar_8h"/>
+        <childnode refid="291" relation="include">
+        </childnode>
+      </node>
+      <node id="285">
+        <label>caixa.h</label>
+        <link refid="caixa_8h"/>
+        <childnode refid="284" relation="include">
+        </childnode>
+      </node>
+      <node id="291">
+        <label>QDialog</label>
+      </node>
+      <node id="286">
+        <label>gerente.h</label>
+        <link refid="gerente_8h"/>
+        <childnode refid="284" relation="include">
+        </childnode>
+        <childnode refid="285" relation="include">
+        </childnode>
+        <childnode refid="287" relation="include">
+        </childnode>
+        <childnode refid="294" relation="include">
+        </childnode>
+        <childnode refid="295" relation="include">
+        </childnode>
+      </node>
+      <node id="287">
+        <label>cadastrar.h</label>
+        <link refid="cadastrar_8h"/>
+        <childnode refid="284" relation="include">
+        </childnode>
+        <childnode refid="288" relation="include">
+        </childnode>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="290" relation="include">
+        </childnode>
+        <childnode refid="292" relation="include">
+        </childnode>
+        <childnode refid="293" relation="include">
+        </childnode>
+      </node>
+      <node id="292">
+        <label>alterar.h</label>
+        <link refid="alterar_8h"/>
+        <childnode refid="284" relation="include">
+        </childnode>
+      </node>
+      <node id="295">
+        <label>financas.h</label>
+        <link refid="financas_8h"/>
+        <childnode refid="284" relation="include">
+        </childnode>
+      </node>
+      <node id="293">
+        <label>delete.h</label>
+        <link refid="delete_8h"/>
+        <childnode refid="284" relation="include">
+        </childnode>
+      </node>
+      <node id="289">
+        <label>QStringList</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="297">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="296">
+        <label>mainwindow.h</label>
+        <link refid="mainwindow.h"/>
+        <childnode refid="297" relation="include">
+        </childnode>
+        <childnode refid="298" relation="include">
+        </childnode>
+      </node>
+      <node id="298">
+        <label>mainwindow.cpp</label>
+        <link refid="mainwindow_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_main_window" prot="public">MainWindow</innerclass>
+    <innernamespace refid="namespace_ui">Ui</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>MAINWINDOW_H</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MAINWINDOW_H</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QMainWindow&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="caixa_8h" kindref="compound">caixa.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="gerente_8h" kindref="compound">gerente.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Ui<sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_main_window" kindref="compound">MainWindow</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_main_window" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_main_window" kindref="compound">MainWindow</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QMainWindow{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" kindref="member">MainWindow</ref>(QWidget<sp/>*parent<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1ae98d00a93bc118200eeef9f9bba1dba7" kindref="member">~MainWindow</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fechar();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>entrar();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>Ui::MainWindow<sp/>*ui;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_caixa" kindref="compound">Caixa</ref><sp/>caixa;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_gerente" kindref="compound">Gerente</ref><sp/>gerente;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>MAINWINDOW_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/luiz/Paradigmas de Programação/Estoque/mainwindow.h"/>
+  </compounddef>
+</doxygen>

@@ -13,20 +13,32 @@ SOURCES += main.cpp\
     caixa.cpp \
     gerente.cpp \
     adicionar.cpp \
-    cadastrar.cpp
+    cadastrar.cpp \
+    alterar.cpp \
+    delete.cpp \
+    produtos.cpp \
+    financas.cpp
 
 HEADERS  += mainwindow.h \
     conexao.h \
     caixa.h \
     gerente.h \
     adicionar.h \
-    cadastrar.h
+    cadastrar.h \
+    alterar.h \
+    delete.h \
+    produtos.h \
+    financas.h
 
 FORMS    += mainwindow.ui \
     caixa.ui \
     gerente.ui \
     adicionar.ui \
-    cadastrar.ui
+    cadastrar.ui \
+    alterar.ui \
+    delete.ui \
+    produtos.ui \
+    financas.ui
 
 LIBS += -lmysqlclient
 

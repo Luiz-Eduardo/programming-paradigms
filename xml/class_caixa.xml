@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_caixa" kind="class" prot="public">
+    <compoundname>Caixa</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QMainWindow</basecompoundref>
+    <includes refid="caixa_8h" local="no">caixa.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_caixa_1a693f2d2f0053a8208b07f8b4e6dc83e6" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Caixa::total</definition>
+        <argsstring></argsstring>
+        <name>total</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/caixa.h" line="12" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/caixa.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_caixa_1a1806f71fd0ef06ed02268776e0d17f3d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Caixa::tamanho</definition>
+        <argsstring></argsstring>
+        <name>tamanho</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/caixa.h" line="13" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/caixa.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_caixa_1a2f100135ff72c627a8a79f04533eedbc" prot="private" static="no" mutable="no">
+        <type>Ui::Caixa *</type>
+        <definition>Ui::Caixa* Caixa::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/caixa.h" line="20" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/caixa.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_caixa_1ab04ad65d52273f561562a1e28672869d" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Caixa::Caixa</definition>
+        <argsstring>(QWidget *parent=0)</argsstring>
+        <name>Caixa</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/caixa.h" line="16" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/caixa.cpp" bodystart="17" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_caixa_1a3c83a69e735b33cb42b90147bf94563e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Caixa::~Caixa</definition>
+        <argsstring>()</argsstring>
+        <name>~Caixa</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/caixa.h" line="17" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/caixa.cpp" bodystart="29" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="class_caixa_1a23471f9609ad0ada663c5fa5519e8d17" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Caixa::nextPurchase</definition>
+        <argsstring>()</argsstring>
+        <name>nextPurchase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/caixa.h" line="22" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/caixa.cpp" bodystart="33" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_caixa_1ada4ac086033bc1b89f0fb1689de236e7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Caixa::addProduct</definition>
+        <argsstring>()</argsstring>
+        <name>addProduct</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/caixa.h" line="23" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/caixa.cpp" bodystart="42" bodyend="70"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="12">
+        <label>Caixa</label>
+        <link refid="class_caixa"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>QMainWindow</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="14">
+        <label>Caixa</label>
+        <link refid="class_caixa"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>QMainWindow</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/luiz/Paradigmas de Programação/Estoque/caixa.h" line="10" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/caixa.h" bodystart="10" bodyend="24"/>
+    <listofallmembers>
+      <member refid="class_caixa_1ada4ac086033bc1b89f0fb1689de236e7" prot="private" virt="non-virtual"><scope>Caixa</scope><name>addProduct</name></member>
+      <member refid="class_caixa_1ab04ad65d52273f561562a1e28672869d" prot="public" virt="non-virtual"><scope>Caixa</scope><name>Caixa</name></member>
+      <member refid="class_caixa_1a23471f9609ad0ada663c5fa5519e8d17" prot="private" virt="non-virtual"><scope>Caixa</scope><name>nextPurchase</name></member>
+      <member refid="class_caixa_1a1806f71fd0ef06ed02268776e0d17f3d" prot="private" virt="non-virtual"><scope>Caixa</scope><name>tamanho</name></member>
+      <member refid="class_caixa_1a693f2d2f0053a8208b07f8b4e6dc83e6" prot="private" virt="non-virtual"><scope>Caixa</scope><name>total</name></member>
+      <member refid="class_caixa_1a2f100135ff72c627a8a79f04533eedbc" prot="private" virt="non-virtual"><scope>Caixa</scope><name>ui</name></member>
+      <member refid="class_caixa_1a3c83a69e735b33cb42b90147bf94563e" prot="public" virt="non-virtual"><scope>Caixa</scope><name>~Caixa</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

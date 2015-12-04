@@ -1,0 +1,256 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="mainwindow_8cpp" kind="file">
+    <compoundname>mainwindow.cpp</compoundname>
+    <includes local="no">QString</includes>
+    <includes local="no">QMessageBox</includes>
+    <includes refid="mainwindow_8h" local="yes">mainwindow.h</includes>
+    <includes local="yes">ui_mainwindow.h</includes>
+    <includes refid="conexao_8h" local="yes">conexao.h</includes>
+    <incdepgraph>
+      <node id="279">
+        <label>iomanip</label>
+      </node>
+      <node id="272">
+        <label>produtos.h</label>
+        <link refid="produtos_8h"/>
+        <childnode refid="262" relation="include">
+        </childnode>
+      </node>
+      <node id="275">
+        <label>conexao.h</label>
+        <link refid="conexao_8h"/>
+        <childnode refid="276" relation="include">
+        </childnode>
+        <childnode refid="259" relation="include">
+        </childnode>
+        <childnode refid="267" relation="include">
+        </childnode>
+        <childnode refid="277" relation="include">
+        </childnode>
+        <childnode refid="266" relation="include">
+        </childnode>
+        <childnode refid="278" relation="include">
+        </childnode>
+        <childnode refid="279" relation="include">
+        </childnode>
+        <childnode refid="280" relation="include">
+        </childnode>
+        <childnode refid="281" relation="include">
+        </childnode>
+      </node>
+      <node id="260">
+        <label>QMessageBox</label>
+      </node>
+      <node id="276">
+        <label>QObject</label>
+      </node>
+      <node id="261">
+        <label>mainwindow.h</label>
+        <link refid="mainwindow_8h"/>
+        <childnode refid="262" relation="include">
+        </childnode>
+        <childnode refid="263" relation="include">
+        </childnode>
+        <childnode refid="264" relation="include">
+        </childnode>
+      </node>
+      <node id="266">
+        <label>string</label>
+      </node>
+      <node id="262">
+        <label>QMainWindow</label>
+      </node>
+      <node id="268">
+        <label>adicionar.h</label>
+        <link refid="adicionar_8h"/>
+        <childnode refid="269" relation="include">
+        </childnode>
+      </node>
+      <node id="263">
+        <label>caixa.h</label>
+        <link refid="caixa_8h"/>
+        <childnode refid="262" relation="include">
+        </childnode>
+      </node>
+      <node id="274">
+        <label>ui_mainwindow.h</label>
+      </node>
+      <node id="269">
+        <label>QDialog</label>
+      </node>
+      <node id="264">
+        <label>gerente.h</label>
+        <link refid="gerente_8h"/>
+        <childnode refid="262" relation="include">
+        </childnode>
+        <childnode refid="263" relation="include">
+        </childnode>
+        <childnode refid="265" relation="include">
+        </childnode>
+        <childnode refid="272" relation="include">
+        </childnode>
+        <childnode refid="273" relation="include">
+        </childnode>
+      </node>
+      <node id="265">
+        <label>cadastrar.h</label>
+        <link refid="cadastrar_8h"/>
+        <childnode refid="262" relation="include">
+        </childnode>
+        <childnode refid="266" relation="include">
+        </childnode>
+        <childnode refid="267" relation="include">
+        </childnode>
+        <childnode refid="268" relation="include">
+        </childnode>
+        <childnode refid="270" relation="include">
+        </childnode>
+        <childnode refid="271" relation="include">
+        </childnode>
+      </node>
+      <node id="270">
+        <label>alterar.h</label>
+        <link refid="alterar_8h"/>
+        <childnode refid="262" relation="include">
+        </childnode>
+      </node>
+      <node id="258">
+        <label>mainwindow.cpp</label>
+        <link refid="mainwindow.cpp"/>
+        <childnode refid="259" relation="include">
+        </childnode>
+        <childnode refid="260" relation="include">
+        </childnode>
+        <childnode refid="261" relation="include">
+        </childnode>
+        <childnode refid="274" relation="include">
+        </childnode>
+        <childnode refid="275" relation="include">
+        </childnode>
+      </node>
+      <node id="259">
+        <label>QString</label>
+      </node>
+      <node id="280">
+        <label>clocale</label>
+      </node>
+      <node id="277">
+        <label>iostream</label>
+      </node>
+      <node id="281">
+        <label>mysql/mysql.h</label>
+      </node>
+      <node id="273">
+        <label>financas.h</label>
+        <link refid="financas_8h"/>
+        <childnode refid="262" relation="include">
+        </childnode>
+      </node>
+      <node id="271">
+        <label>delete.h</label>
+        <link refid="delete_8h"/>
+        <childnode refid="262" relation="include">
+        </childnode>
+      </node>
+      <node id="267">
+        <label>QStringList</label>
+      </node>
+      <node id="278">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//includes<sp/>das<sp/>Bibliotecas<sp/>do<sp/>Qt</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QString&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QMessageBox&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//includes<sp/>das<sp/>Classes<sp/>criadas<sp/>pelo<sp/>Desenvolvedor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mainwindow_8h" kindref="compound">mainwindow.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ui_mainwindow.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="conexao_8h" kindref="compound">conexao.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" refkind="member"><highlight class="normal"><ref refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" kindref="member">MainWindow::MainWindow</ref>(QWidget<sp/>*parent)<sp/>:<sp/>QMainWindow(parent),<sp/>ui(new<sp/>Ui::<ref refid="class_main_window" kindref="compound">MainWindow</ref>){</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;setupUi(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;setWindowTitle(</highlight><highlight class="stringliteral">&quot;Login<sp/>Page&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;linePass-&gt;setEchoMode(QLineEdit::Password);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(ui-&gt;pushButton,<sp/>SIGNAL(clicked(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">)),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(fechar()));</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(ui-&gt;enterButton,SIGNAL(clicked(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">)),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(entrar()));</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(ui-&gt;linePass,<sp/>SIGNAL(returnPressed()),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(entrar()));</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="class_main_window_1ae98d00a93bc118200eeef9f9bba1dba7" refkind="member"><highlight class="normal"><ref refid="class_main_window_1ae98d00a93bc118200eeef9f9bba1dba7" kindref="member">MainWindow::~MainWindow</ref>(){</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>ui;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MainWindow::fechar(){</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>QMessageBox<sp/>mensagem;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>mensagem.setWindowTitle(</highlight><highlight class="stringliteral">&quot;Controle<sp/>de<sp/>Estoque&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>mensagem.setText(</highlight><highlight class="stringliteral">&quot;Finalizando<sp/>o<sp/>programa&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>mensagem.exec();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>exit(0);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MainWindow::entrar(){</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_conexao" kindref="compound">Conexao</ref><sp/>connection;<sp/></highlight><highlight class="comment">//Instancia<sp/>a<sp/>classe<sp/>de<sp/>conexão.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Ao<sp/>clicar<sp/>no<sp/>botão,<sp/>o<sp/>sinal<sp/>clicked()<sp/>é<sp/>emitido,</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>o<sp/>login<sp/>e<sp/>a<sp/>senha<sp/>são<sp/>atribuidos<sp/>a<sp/>objetos<sp/>do<sp/>tipo</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>QString<sp/>sendo<sp/>eles:<sp/>login<sp/>e<sp/>senha<sp/>que<sp/>são<sp/>recebidos</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>através<sp/>dos<sp/>textEdits:<sp/>lineLogin<sp/>e<sp/>linePass.</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>login,<sp/>senha;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>login<sp/>=<sp/>ui-&gt;lineLogin-&gt;text();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>senha<sp/>=<sp/>ui-&gt;linePass-&gt;text();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>QMessageBox<sp/>token;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!login.compare(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>||<sp/>!senha.compare(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)){<sp/></highlight><highlight class="comment">//Campos<sp/>login<sp/>e/ou<sp/>senha<sp/>vazios.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>token.setText(</highlight><highlight class="stringliteral">&quot;Preencha<sp/>todos<sp/>os<sp/>campos!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>token.exec();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(senha.size()<sp/>&lt;<sp/>8<sp/>&amp;&amp;<sp/>senha.compare(</highlight><highlight class="stringliteral">&quot;O&quot;</highlight><highlight class="normal">))<sp/>{<sp/></highlight><highlight class="comment">//Campo<sp/>linePass<sp/>com<sp/>o<sp/>tamanho<sp/>menor<sp/>que<sp/>8.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>token.setText(</highlight><highlight class="stringliteral">&quot;A<sp/>senha<sp/>deve<sp/>conter<sp/>no<sp/>mínimo<sp/>8<sp/>dígitos!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>token.exec();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{<sp/></highlight><highlight class="comment">//Campos<sp/>login<sp/>e<sp/>senha<sp/>preenchidos.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>resposta<sp/>=<sp/>connection.<ref refid="class_conexao_1a5d40ad1d9c18222223c4aa404e59731d" kindref="member">logar</ref>(login,<sp/>senha);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{<sp/>FALHA,<sp/>CAIXA,<sp/>GERENTE<sp/>};</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(resposta){</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>FALHA:{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QMessageBox<sp/>erro;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>erro.setText(</highlight><highlight class="stringliteral">&quot;Contate<sp/>o<sp/>desenvolvedor&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>erro.exec();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CAIXA:<sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Caso<sp/>a<sp/>resposta<sp/>seja<sp/>igual<sp/>a<sp/>1:<sp/>vá<sp/>para<sp/>a<sp/>página<sp/>do<sp/>caixa.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>caixa.show();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;close();<sp/></highlight><highlight class="comment">//Como<sp/>usuário<sp/>já<sp/>está<sp/>logado,<sp/>fecha<sp/>a<sp/>tela<sp/>de<sp/>login.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>GERENTE:<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Caso<sp/>a<sp/>resposta<sp/>seja<sp/>igual<sp/>a<sp/>2:<sp/>vá<sp/>para<sp/>a<sp/>página<sp/>do<sp/>gerente.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gerente.show();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;close();<sp/></highlight><highlight class="comment">//Como<sp/>usuário<sp/>já<sp/>está<sp/>logado,<sp/>fecha<sp/>a<sp/>tela<sp/>de<sp/>login.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:<sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Login<sp/>ou<sp/>senha<sp/>incorretos.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QMessageBox<sp/>usuario;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usuario.setText(</highlight><highlight class="stringliteral">&quot;Funcionário<sp/>não<sp/>cadastrado<sp/>no<sp/>sistema<sp/>ou<sp/>login/senha<sp/>incorretos&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usuario.exec();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/luiz/Paradigmas de Programação/Estoque/mainwindow.cpp"/>
+  </compounddef>
+</doxygen>

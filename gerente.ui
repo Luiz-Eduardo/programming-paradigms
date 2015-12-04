@@ -6,71 +6,59 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>316</width>
-    <height>187</height>
+    <width>246</width>
+    <height>195</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="logoutButton">
-    <property name="geometry">
-     <rect>
-      <x>228</x>
-      <y>110</y>
-      <width>81</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Deslogar</string>
-    </property>
-   </widget>
-   <widget class="QWidget" name="">
-    <property name="geometry">
-     <rect>
-      <x>9</x>
-      <y>9</y>
-      <width>169</width>
-      <height>97</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout_2">
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout">
-       <item>
-        <widget class="QPushButton" name="cadastrarButton">
-         <property name="text">
-          <string>Cadastrar funcionário</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="financasButton">
-         <property name="text">
-          <string>Finanças</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <widget class="QPushButton" name="vendasButton">
-       <property name="text">
-        <string>Terminal de Vendas</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QPushButton" name="cadastrarButton">
+          <property name="text">
+           <string>Cadastrar funcionário</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="estoqueButton">
+          <property name="text">
+           <string>Estoque</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="financasButton">
+          <property name="text">
+           <string>Finanças</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="vendasButton">
+          <property name="text">
+           <string>Terminal de Vendas</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>316</width>
+     <width>246</width>
      <height>25</height>
     </rect>
    </property>

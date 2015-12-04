@@ -1,6 +1,9 @@
+//includes das Classes criadas pelo Desenvolvedor
 #include "adicionar.h"
 #include "ui_adicionar.h"
 #include "conexao.h"
+
+//includes das Bibliotecas do Qt
 #include <QRegExp>
 #include <QMessageBox>
 
@@ -8,7 +11,7 @@ Adicionar::Adicionar(QWidget *parent) : QDialog(parent), ui(new Ui::Adicionar){
     ui->setupUi(this);
     this->setWindowTitle("Adicionar novo funcionário");
     connect(ui->cleanButton, SIGNAL(clicked(bool)), this, SLOT(clean()));
-    connect(ui->cancelButton, SIGNAL(clicked(bool)), this, SLOT(cancel()));
+    connect(ui->cancelButton, SIGNAL(clicked(bool)), this, SLOT(close()));
     connect(ui->addButton, SIGNAL(clicked(bool)), this, SLOT(add()));
 }
 
@@ -24,10 +27,6 @@ void Adicionar::clean(){
     ui->roleEdit->setText("");
     ui->emailEdit->setText("");
     ui->addressEdit->setText("");
-}
-
-void Adicionar::cancel(){
-    this->close();
 }
 
 void Adicionar::add(){
@@ -62,7 +61,7 @@ void Adicionar::add(){
     if(!name.compare("") || !age.compare("") || !role.compare("") || !salary.compare("") || !address.compare("") || !email.compare("") || !cpf.compare("") ){ //Campos vazios.
         token.setText("Preencha todos os campos!");
         token.exec();
-    } else if(age.size() > 2) { //Campo linePass com o tamanho menor que 8.
+    } else if(age.size() > 2) { //Campo linePass com o tamanho maior que 2.
         token.setText("Digite uma idade válida!");
         token.exec();
     } else if(!valida.exactMatch(email)){
@@ -72,6 +71,7 @@ void Adicionar::add(){
         for(int i = 0; i < salary.size(); i++)
             if(salary[i] == ',')
                 salary[i] = '.';
+
         bool flag = false;
 
         for(int i = 0; i < age.size(); i++)

@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_main_window" kind="class" prot="public">
+    <compoundname>MainWindow</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QMainWindow</basecompoundref>
+    <includes refid="mainwindow_8h" local="no">mainwindow.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_main_window_1a35466a70ed47252a0191168126a352a5" prot="private" static="no" mutable="no">
+        <type>Ui::MainWindow *</type>
+        <definition>Ui::MainWindow* MainWindow::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/mainwindow.h" line="24" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/mainwindow.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1abc36eaee53de92069e8a27f711691caa" prot="private" static="no" mutable="no">
+        <type><ref refid="class_caixa" kindref="compound">Caixa</ref></type>
+        <definition>Caixa MainWindow::caixa</definition>
+        <argsstring></argsstring>
+        <name>caixa</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/mainwindow.h" line="25" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/mainwindow.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1a702e0f4891a317610ae9b606b65895a6" prot="private" static="no" mutable="no">
+        <type><ref refid="class_gerente" kindref="compound">Gerente</ref></type>
+        <definition>Gerente MainWindow::gerente</definition>
+        <argsstring></argsstring>
+        <name>gerente</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/mainwindow.h" line="26" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/mainwindow.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MainWindow::MainWindow</definition>
+        <argsstring>(QWidget *parent=0)</argsstring>
+        <name>MainWindow</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/mainwindow.h" line="16" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/mainwindow.cpp" bodystart="10" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_main_window_1ae98d00a93bc118200eeef9f9bba1dba7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MainWindow::~MainWindow</definition>
+        <argsstring>()</argsstring>
+        <name>~MainWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/mainwindow.h" line="17" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/mainwindow.cpp" bodystart="21" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="class_main_window_1aec5d1a6d59f5a80583ea809a4bc69010" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::fechar</definition>
+        <argsstring>()</argsstring>
+        <name>fechar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/mainwindow.h" line="20" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/mainwindow.cpp" bodystart="25" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1ab9798fd22f8c1461a249544907f7dcc3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::entrar</definition>
+        <argsstring>()</argsstring>
+        <name>entrar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/mainwindow.h" line="21" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/mainwindow.cpp" bodystart="35" bodyend="85"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="37">
+        <label>QMainWindow</label>
+      </node>
+      <node id="36">
+        <label>MainWindow</label>
+        <link refid="class_main_window"/>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="39">
+        <label>QMainWindow</label>
+      </node>
+      <node id="38">
+        <label>MainWindow</label>
+        <link refid="class_main_window"/>
+        <childnode refid="39" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/luiz/Paradigmas de Programação/Estoque/mainwindow.h" line="12" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/mainwindow.h" bodystart="12" bodyend="27"/>
+    <listofallmembers>
+      <member refid="class_main_window_1abc36eaee53de92069e8a27f711691caa" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>caixa</name></member>
+      <member refid="class_main_window_1ab9798fd22f8c1461a249544907f7dcc3" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>entrar</name></member>
+      <member refid="class_main_window_1aec5d1a6d59f5a80583ea809a4bc69010" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>fechar</name></member>
+      <member refid="class_main_window_1a702e0f4891a317610ae9b606b65895a6" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>gerente</name></member>
+      <member refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>MainWindow</name></member>
+      <member refid="class_main_window_1a35466a70ed47252a0191168126a352a5" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>ui</name></member>
+      <member refid="class_main_window_1ae98d00a93bc118200eeef9f9bba1dba7" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>~MainWindow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

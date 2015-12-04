@@ -1,0 +1,227 @@
+.TH "Conexao" 3 "Fri Dec 4 2015" "Sistema de Controle e Estoque de Produção" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Conexao \- 
+.PP
+Classe Conexão\&. Classe C++ que inclui bibliotecas do Qt, C++ e MySQL para realizar a conexão entre Interface Gráfica, C++ e Banco de Dados\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <conexao\&.h>\fP
+.PP
+Inherits QObject\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBConexao\fP (QObject *parent=0)"
+.br
+.ti -1c
+.RI "\fB~Conexao\fP ()"
+.br
+.ti -1c
+.RI "void \fBaddEmployee\fP (QString _name, QString _age, QString _role, QString _salary, QString _cpf, QString _email, QString _address)"
+.br
+.ti -1c
+.RI "void \fBdeletar\fP (string nome, int age)"
+.br
+.ti -1c
+.RI "bool \fBupdateEmployee\fP (QString _name, QString _cpf, QString _salary, QString _email, QString _address, QString _role)"
+.br
+.ti -1c
+.RI "int \fBlogar\fP (QString login, QString senha)"
+.br
+.ti -1c
+.RI "int \fBfuncionarios\fP ()"
+.br
+.ti -1c
+.RI "bool \fBvalidaCpf\fP (QString cpf)"
+.br
+.ti -1c
+.RI "bool \fBselect\fP (QString name, QString &cpf, QString &email, QString &address, QString &role, QString &salary)"
+.br
+.ti -1c
+.RI "bool \fBinsertProducts\fP (QString _name, QString _purchasePrice, QString _sellPrice, QString _quantity, QString _validity)"
+.br
+.ti -1c
+.RI "int \fBselectProducts\fP ()"
+.br
+.ti -1c
+.RI "bool \fBdelEmployees\fP (QString name, QString email)"
+.br
+.ti -1c
+.RI "int \fBselectByCode\fP (QString _id)"
+.br
+.ti -1c
+.RI "QString \fBgetName\fP (QString _id)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "QStringList \fBemployees_name\fP"
+.br
+.ti -1c
+.RI "QStringList \fBemployees_age\fP"
+.br
+.ti -1c
+.RI "QStringList \fBemployees_email\fP"
+.br
+.ti -1c
+.RI "QStringList \fBemployees_role\fP"
+.br
+.ti -1c
+.RI "QStringList \fBemployees_salary\fP"
+.br
+.ti -1c
+.RI "QStringList \fBproducts_id\fP"
+.br
+.ti -1c
+.RI "QStringList \fBproducts_name\fP"
+.br
+.ti -1c
+.RI "QStringList \fBproducts_purchaseprice\fP"
+.br
+.ti -1c
+.RI "QStringList \fBproducts_saleprice\fP"
+.br
+.ti -1c
+.RI "QStringList \fBproducts_quantity\fP"
+.br
+.ti -1c
+.RI "QStringList \fBproducts_validity\fP"
+.br
+.ti -1c
+.RI "map< int, string > \fBvendidos\fP"
+.br
+.ti -1c
+.RI "MYSQL \fBconn\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Classe Conexão\&. Classe C++ que inclui bibliotecas do Qt, C++ e MySQL para realizar a conexão entre Interface Gráfica, C++ e Banco de Dados\&. 
+
+A Classe Conexão consiste em uma Classe com suporte para Interface Gráfica responsável por realizar toda a conexão do sistema com o Banco de Dados, esta é responsável pela validação e criptografia dos dados dos funcionários que são cadastrados no Sistema de Controle de Estoque e Produção\&. A Classe é capaz de inserir dados, alterar dados existentes, remover dados e selecionar dados, tornando-a a Classe que gerencia o projeto inteiro\&. 
+.PP
+Definition at line 32 of file conexao\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Conexao::Conexao (QObject *parent = \fC0\fP)\fC [explicit]\fP"
+
+.PP
+Definition at line 21 of file conexao\&.cpp\&.
+.SS "Conexao::~Conexao ()"
+
+.PP
+Definition at line 27 of file conexao\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void Conexao::addEmployee (QString_name, QString_age, QString_role, QString_salary, QString_cpf, QString_email, QString_address)"
+
+.PP
+Definition at line 31 of file conexao\&.cpp\&.
+.SS "bool Conexao::delEmployees (QStringname, QStringemail)"
+
+.PP
+Definition at line 70 of file conexao\&.cpp\&.
+.SS "void Conexao::deletar (stringnome, intage)"
+
+.SS "int Conexao::funcionarios ()"
+
+.PP
+Definition at line 162 of file conexao\&.cpp\&.
+.SS "QString Conexao::getName (QString_id)"
+
+.PP
+Definition at line 429 of file conexao\&.cpp\&.
+.SS "bool Conexao::insertProducts (QString_name, QString_purchasePrice, QString_sellPrice, QString_quantity, QString_validity)"
+
+.PP
+Definition at line 296 of file conexao\&.cpp\&.
+.SS "int Conexao::logar (QStringlogin, QStringsenha)"
+
+.PP
+Definition at line 213 of file conexao\&.cpp\&.
+.SS "bool Conexao::select (QStringname, QString &cpf, QString &email, QString &address, QString &role, QString &salary)"
+
+.PP
+Definition at line 89 of file conexao\&.cpp\&.
+.SS "int Conexao::selectByCode (QString_id)"
+
+.PP
+Definition at line 374 of file conexao\&.cpp\&.
+.SS "int Conexao::selectProducts ()"
+
+.PP
+Definition at line 321 of file conexao\&.cpp\&.
+.SS "bool Conexao::updateEmployee (QString_name, QString_cpf, QString_salary, QString_email, QString_address, QString_role)"
+
+.PP
+Definition at line 141 of file conexao\&.cpp\&.
+.SS "bool Conexao::validaCpf (QStringcpf)"
+
+.PP
+Definition at line 257 of file conexao\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "MYSQL Conexao::conn"
+
+.PP
+Definition at line 52 of file conexao\&.h\&.
+.SS "QStringList Conexao::employees_age"
+
+.PP
+Definition at line 36 of file conexao\&.h\&.
+.SS "QStringList Conexao::employees_email"
+
+.PP
+Definition at line 37 of file conexao\&.h\&.
+.SS "QStringList Conexao::employees_name"
+
+.PP
+Definition at line 35 of file conexao\&.h\&.
+.SS "QStringList Conexao::employees_role"
+
+.PP
+Definition at line 38 of file conexao\&.h\&.
+.SS "QStringList Conexao::employees_salary"
+
+.PP
+Definition at line 39 of file conexao\&.h\&.
+.SS "QStringList Conexao::products_id"
+
+.PP
+Definition at line 41 of file conexao\&.h\&.
+.SS "QStringList Conexao::products_name"
+
+.PP
+Definition at line 42 of file conexao\&.h\&.
+.SS "QStringList Conexao::products_purchaseprice"
+
+.PP
+Definition at line 43 of file conexao\&.h\&.
+.SS "QStringList Conexao::products_quantity"
+
+.PP
+Definition at line 45 of file conexao\&.h\&.
+.SS "QStringList Conexao::products_saleprice"
+
+.PP
+Definition at line 44 of file conexao\&.h\&.
+.SS "QStringList Conexao::products_validity"
+
+.PP
+Definition at line 46 of file conexao\&.h\&.
+.SS "map<int, string> Conexao::vendidos"
+
+.PP
+Definition at line 48 of file conexao\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Sistema de Controle e Estoque de Produção from the source code\&.

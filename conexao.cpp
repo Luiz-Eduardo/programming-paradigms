@@ -1,5 +1,10 @@
+//includes das Classes criadas pelo Desenvolvedor.
 #include "conexao.h"
+
+//includes das Bibliotecas do Qt
 #include <QMessageBox>
+
+//includes Bibliotecas do C++
 #include <cstdlib>
 #include <sstream>
 #include <ctime>
@@ -13,9 +18,7 @@
 #define flags 0
 
 
-Conexao::Conexao(QObject *parent) :
-    QObject(parent){
-
+Conexao::Conexao(QObject *parent) : QObject(parent){
     setlocale(LC_ALL, "Portuguese");
 
     mysql_init(&conn);
@@ -64,24 +67,96 @@ void Conexao::addEmployee(QString _name, QString _age, QString _role, QString _s
     }
 }
 
-void Conexao::deletar(string nome, int age){
-    //if(mysql_real_connect(&conn, hostname, username, password, dbname, portnumber, socketname, flags)){
-    //string sql = "DELETE FROM pessoa WHERE name='" + nome + "' AND age='" + to_string(age) + "'";
+bool Conexao::delEmployees(QString _name, QString _email){
+    if(mysql_real_connect(&conn, hostname, username, password, dbname, portnumber, socketname, flags)){
+        string name = _name.toUtf8().constData();
+        string email = _email.toUtf8().constData();
 
-    //char query[sql.size()];
+        string sql = "DELETE FROM employees WHERE name = AES_ENCRYPT('" + name + "', \"estoque\") AND email='" + email + "'";
 
-   // strcpy(query, sql.c_str());
-   // mysql_query(&conn, query);
-    //}
+        char query[sql.size()];
+
+        strcpy(query, sql.c_str());
+        mysql_query(&conn, query);
+
+        return true;
+    } else {
+        return false;
+    }
+
 }
 
-void Conexao::alterar(string newname, string age){
-    string sql = "UPDATE pessoa SET name='" + newname + "' WHERE age='" + age +"'";
+bool Conexao::select(QString name, QString &cpf, QString &email, QString &address, QString &role, QString &salary){
+    if(mysql_real_connect(&conn, hostname, username, password, dbname, portnumber, socketname, flags)){
+        MYSQL_RES *res; //Ponteiro que receberá os resultados.
+        MYSQL_ROW row;
 
-    char query[sql.size()];
+        char query[] = "SELECT id, AES_DECRYPT(name, \"estoque\"), age, role, salary, cpf, email, address FROM employees";
 
-    strcpy(query, sql.c_str());
-    mysql_query(&conn, query);
+        if(mysql_query(&conn, query)){
+            printf("Error %u: %s\n", mysql_errno(&conn), mysql_error(&conn));
+            return false;
+        }
+
+        if(!(res = mysql_store_result(&conn))){
+            printf("Error %u: %s\n", mysql_errno(&conn), mysql_error(&conn));
+            return false;
+        }
+
+        while((row = mysql_fetch_row(res))){
+            if(row[1] && row[2] && row[3] && row[4] && row[6]){
+                QString nome = row[1];
+                QString cargo = row[3];
+                QString salario = row[4];
+                QString doc = row[5];
+                QString mail = row[6];
+                QString endereco = row[7];
+
+                if(!nome.compare(name)){
+                    email = mail;
+                    role = cargo;
+                    salary = salario;
+                    cpf = doc;
+                    address = endereco;
+                }
+            }
+        }
+
+        if(!mysql_eof(res)){
+            printf("Error %u: %s\n", mysql_errno(&conn), mysql_error(&conn));
+            return false;
+        }
+
+        mysql_free_result(res);
+        return true;
+    } else {
+        cout << "Falha de conexao\n";
+        cout << "Erro << " << mysql_errno(&conn) << " : " << mysql_error(&conn) << endl;
+        return false;
+    }
+
+    return false;
+}
+
+bool Conexao::updateEmployee(QString _name, QString _cpf, QString _salary, QString _email, QString _address, QString _role){
+    if(mysql_real_connect(&conn, hostname, username, password, dbname, portnumber, socketname, flags)){
+        string name = _name.toUtf8().constData();
+        string cpf = _cpf.toUtf8().constData();
+        string salary = _salary.toUtf8().constData();
+        string email = _email.toUtf8().constData();
+        string address = _address.toUtf8().constData();
+        string role = _role.toUtf8().constData();
+
+        string sql = "UPDATE employees SET salary='" + salary + "', email='" + email + "', address = '" + address + "', role='" + role +  "' WHERE name=AES_ENCRYPT('" + name + "', \"estoque\") AND cpf='" + cpf + "'";
+
+        char query[sql.size()];
+        strcpy(query, sql.c_str());
+
+        mysql_query(&conn, query);
+        return true;
+    }
+
+    return false;
 }
 
 int Conexao::funcionarios(){
@@ -216,4 +291,184 @@ bool Conexao::validaCpf(QString cpf){
     if(!resultado.compare(teste))
         return true;
     return false;
+}
+
+bool Conexao::insertProducts(QString _name, QString _purchasePrice, QString _sellPrice, QString _quantity, QString _validity){
+    if(mysql_real_connect(&conn, hostname, username, password, dbname, portnumber, socketname, flags)){
+        string name = _name.toUtf8().constData();
+        string purchasePrice = _purchasePrice.toUtf8().constData();
+        string sellPrice = _sellPrice.toUtf8().constData();
+        string quantity = _quantity.toUtf8().constData();
+        string validity = _validity.toUtf8().constData();
+        string sql = "INSERT INTO products(name, purchaseprice, saleprice, quantity, validity) VALUES ('" + name + "', '" + purchasePrice + "', '" + sellPrice + "', '" + quantity + "', '" + validity + "')";
+        //AES_ENCRYPT("CHAVE", "VALOR");
+
+        char query[sql.size()];
+        strcpy(query, sql.c_str());
+
+        mysql_query(&conn, query);
+        return true;
+    } else {
+        QMessageBox erro;
+        erro.setText("Falha de Conexão");
+        erro.exec();
+        return false;
+    }
+
+    return false;
+}
+
+int Conexao::selectProducts(){
+    int tamanho = 0;
+
+    if(mysql_real_connect(&conn, hostname, username, password, dbname, portnumber, socketname, flags)){
+        MYSQL_RES *res; //Ponteiro que receberá os resultados.
+        MYSQL_ROW row;
+
+        char query[] = "SELECT id, name, purchaseprice, saleprice, quantity, validity FROM products";
+
+        if(mysql_query(&conn, query)){
+            printf("Error %u: %s\n", mysql_errno(&conn), mysql_error(&conn));
+            return 0;
+        }
+
+        if(!(res = mysql_store_result(&conn))){
+            printf("Error %u: %s\n", mysql_errno(&conn), mysql_error(&conn));
+            return 0;
+        }
+
+        while((row = mysql_fetch_row(res))){
+            if(row[0] && row[1] && row[2] && row[3] && row[4] && row[5]){
+                QString id = row[0];
+                QString name = row[1];
+                QString purchaseprice = row[2];
+                QString saleprice = row[3];
+                QString quantity = row[4];
+                QString validity = row[5];
+
+                products_id.append(id);
+                products_name.append(name);
+                products_purchaseprice.append(purchaseprice);
+                products_saleprice.append(saleprice);
+                products_quantity.append(quantity);
+                products_validity.append(validity);
+
+                tamanho++;
+            }
+        }
+
+        if(!mysql_eof(res)){
+            printf("Error %u: %s\n", mysql_errno(&conn), mysql_error(&conn));
+            return 0;
+        }
+
+        mysql_free_result(res);
+        return tamanho;
+    } else {
+        cout << "Falha de conexao\n";
+        cout << "Erro << " << mysql_errno(&conn) << " : " << mysql_error(&conn) << endl;
+        return 0;
+    }
+}
+
+int Conexao::selectByCode(QString _id){
+    if(mysql_real_connect(&conn, hostname, username, password, dbname, portnumber, socketname, flags)){
+        MYSQL_RES *res; //Ponteiro que receberá os resultados.
+        MYSQL_ROW row;
+
+        string id = _id.toUtf8().constData();
+
+        string sql = "SELECT saleprice FROM products WHERE id =" + id;
+
+        char query[sql.size()];
+        strcpy(query, sql.c_str());
+
+        if(mysql_query(&conn, query)){
+            printf("Error %u: %s\n", mysql_errno(&conn), mysql_error(&conn));
+            return -1;
+        }
+
+        if(!(res = mysql_store_result(&conn))){
+            printf("Error %u: %s\n", mysql_errno(&conn), mysql_error(&conn));
+            return -1;
+        }
+
+        QString saleprice;
+
+        while((row = mysql_fetch_row(res))){
+            if(row[0]){
+                saleprice = row[0];
+                break;
+            }
+        }
+
+        string sale = saleprice.toUtf8().constData();
+        stringstream buffer;
+
+        buffer << sale;
+
+        double valor;
+        buffer >> valor;
+
+        if(!mysql_eof(res)){
+            printf("Error %u: %s\n", mysql_errno(&conn), mysql_error(&conn));
+            return false;
+        }
+
+        mysql_free_result(res);
+        return valor;
+    } else {
+        cout << "Falha de conexao\n";
+        cout << "Erro << " << mysql_errno(&conn) << " : " << mysql_error(&conn) << endl;
+        return -1;
+    }
+
+    return -2;
+}
+
+QString Conexao::getName(QString _id){
+    if(mysql_real_connect(&conn, hostname, username, password, dbname, portnumber, socketname, flags)){
+        MYSQL_RES *res; //Ponteiro que receberá os resultados.
+        MYSQL_ROW row;
+
+        string id = _id.toUtf8().constData();
+
+        string sql = "SELECT name FROM products WHERE id =" + id;
+
+        char query[sql.size()];
+        strcpy(query, sql.c_str());
+
+        if(mysql_query(&conn, query)){
+            printf("Error %u: %s\n", mysql_errno(&conn), mysql_error(&conn));
+            return "-1";
+        }
+
+        if(!(res = mysql_store_result(&conn))){
+            printf("Error %u: %s\n", mysql_errno(&conn), mysql_error(&conn));
+            return "-1";
+        }
+
+        QString name;
+
+        while((row = mysql_fetch_row(res))){
+            if(row[0]){
+                name = row[0];
+                break;
+            }
+        }
+
+        if(!mysql_eof(res)){
+            printf("Error %u: %s\n", mysql_errno(&conn), mysql_error(&conn));
+            return "false";
+        }
+
+        mysql_free_result(res);
+        return name;
+    } else {
+        cout << "Falha de conexao\n";
+        cout << "Erro << " << mysql_errno(&conn) << " : " << mysql_error(&conn) << endl;
+        return "-1";
+    }
+
+    return "-2";
 }

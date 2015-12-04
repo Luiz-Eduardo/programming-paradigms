@@ -1,0 +1,556 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_conexao" kind="class" prot="public">
+    <compoundname>Conexao</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QObject</basecompoundref>
+    <includes refid="conexao_8h" local="no">conexao.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_conexao_1a840ddef255453274939c138a5e70e78e" prot="public" static="no" mutable="no">
+        <type>QStringList</type>
+        <definition>QStringList Conexao::employees_name</definition>
+        <argsstring></argsstring>
+        <name>employees_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/conexao.h" line="35" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/conexao.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_conexao_1afe469c76fdb5fb62d82f17e479281fc3" prot="public" static="no" mutable="no">
+        <type>QStringList</type>
+        <definition>QStringList Conexao::employees_age</definition>
+        <argsstring></argsstring>
+        <name>employees_age</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/conexao.h" line="36" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/conexao.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_conexao_1af4a86c84b703836abc8581ddb695e46d" prot="public" static="no" mutable="no">
+        <type>QStringList</type>
+        <definition>QStringList Conexao::employees_email</definition>
+        <argsstring></argsstring>
+        <name>employees_email</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/conexao.h" line="37" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/conexao.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_conexao_1ae6dd52256ae13d3a08c67af499f052df" prot="public" static="no" mutable="no">
+        <type>QStringList</type>
+        <definition>QStringList Conexao::employees_role</definition>
+        <argsstring></argsstring>
+        <name>employees_role</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/conexao.h" line="38" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/conexao.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_conexao_1a037d3ee84ec8629c1a4bffef8d67378f" prot="public" static="no" mutable="no">
+        <type>QStringList</type>
+        <definition>QStringList Conexao::employees_salary</definition>
+        <argsstring></argsstring>
+        <name>employees_salary</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/conexao.h" line="39" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/conexao.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_conexao_1a0555d343539f432f30bf84f5ddb7406d" prot="public" static="no" mutable="no">
+        <type>QStringList</type>
+        <definition>QStringList Conexao::products_id</definition>
+        <argsstring></argsstring>
+        <name>products_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/conexao.h" line="41" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/conexao.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_conexao_1abe66e554804d884483dcf1e4657899bf" prot="public" static="no" mutable="no">
+        <type>QStringList</type>
+        <definition>QStringList Conexao::products_name</definition>
+        <argsstring></argsstring>
+        <name>products_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/conexao.h" line="42" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/conexao.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_conexao_1abed04b03f82ce6cb47cce91a3999ed89" prot="public" static="no" mutable="no">
+        <type>QStringList</type>
+        <definition>QStringList Conexao::products_purchaseprice</definition>
+        <argsstring></argsstring>
+        <name>products_purchaseprice</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/conexao.h" line="43" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/conexao.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_conexao_1a2a3f06465299441de03ce264557490d3" prot="public" static="no" mutable="no">
+        <type>QStringList</type>
+        <definition>QStringList Conexao::products_saleprice</definition>
+        <argsstring></argsstring>
+        <name>products_saleprice</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/conexao.h" line="44" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/conexao.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_conexao_1aaa60e00115d399944cde0869516cf0d1" prot="public" static="no" mutable="no">
+        <type>QStringList</type>
+        <definition>QStringList Conexao::products_quantity</definition>
+        <argsstring></argsstring>
+        <name>products_quantity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/conexao.h" line="45" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/conexao.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_conexao_1adaa68247f31efd7be455087a0e983f31" prot="public" static="no" mutable="no">
+        <type>QStringList</type>
+        <definition>QStringList Conexao::products_validity</definition>
+        <argsstring></argsstring>
+        <name>products_validity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/conexao.h" line="46" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/conexao.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_conexao_1ad07b7be6fc9e8b60c354debaa9469b47" prot="public" static="no" mutable="no">
+        <type>map&lt; int, string &gt;</type>
+        <definition>map&lt;int, string&gt; Conexao::vendidos</definition>
+        <argsstring></argsstring>
+        <name>vendidos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/conexao.h" line="48" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/conexao.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_conexao_1a603c91bfb3838491ba3e8caececc5b0c" prot="public" static="no" mutable="no">
+        <type>MYSQL</type>
+        <definition>MYSQL Conexao::conn</definition>
+        <argsstring></argsstring>
+        <name>conn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/conexao.h" line="52" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/conexao.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_conexao_1abbc7bc621739afc0364615ae52ba941f" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Conexao::Conexao</definition>
+        <argsstring>(QObject *parent=0)</argsstring>
+        <name>Conexao</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/conexao.h" line="50" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/conexao.cpp" bodystart="21" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_conexao_1ac108094083aa4dfba0834682adf6784f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Conexao::~Conexao</definition>
+        <argsstring>()</argsstring>
+        <name>~Conexao</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/conexao.h" line="51" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/conexao.cpp" bodystart="27" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_conexao_1a9b048f81f98738f10119f9a3e9d66af0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Conexao::addEmployee</definition>
+        <argsstring>(QString _name, QString _age, QString _role, QString _salary, QString _cpf, QString _email, QString _address)</argsstring>
+        <name>addEmployee</name>
+        <param>
+          <type>QString</type>
+          <declname>_name</declname>
+        </param>
+        <param>
+          <type>QString</type>
+          <declname>_age</declname>
+        </param>
+        <param>
+          <type>QString</type>
+          <declname>_role</declname>
+        </param>
+        <param>
+          <type>QString</type>
+          <declname>_salary</declname>
+        </param>
+        <param>
+          <type>QString</type>
+          <declname>_cpf</declname>
+        </param>
+        <param>
+          <type>QString</type>
+          <declname>_email</declname>
+        </param>
+        <param>
+          <type>QString</type>
+          <declname>_address</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/conexao.h" line="53" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/conexao.cpp" bodystart="31" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="class_conexao_1a8bd6d93f96f3e460e79bd0a29484aff5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Conexao::deletar</definition>
+        <argsstring>(string nome, int age)</argsstring>
+        <name>deletar</name>
+        <param>
+          <type>string</type>
+          <declname>nome</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>age</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/conexao.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_conexao_1a1f8f4a489c2e1ad7ba8bb5378dc9339d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Conexao::updateEmployee</definition>
+        <argsstring>(QString _name, QString _cpf, QString _salary, QString _email, QString _address, QString _role)</argsstring>
+        <name>updateEmployee</name>
+        <param>
+          <type>QString</type>
+          <declname>_name</declname>
+        </param>
+        <param>
+          <type>QString</type>
+          <declname>_cpf</declname>
+        </param>
+        <param>
+          <type>QString</type>
+          <declname>_salary</declname>
+        </param>
+        <param>
+          <type>QString</type>
+          <declname>_email</declname>
+        </param>
+        <param>
+          <type>QString</type>
+          <declname>_address</declname>
+        </param>
+        <param>
+          <type>QString</type>
+          <declname>_role</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/conexao.h" line="55" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/conexao.cpp" bodystart="141" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="class_conexao_1a5d40ad1d9c18222223c4aa404e59731d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Conexao::logar</definition>
+        <argsstring>(QString login, QString senha)</argsstring>
+        <name>logar</name>
+        <param>
+          <type>QString</type>
+          <declname>login</declname>
+        </param>
+        <param>
+          <type>QString</type>
+          <declname>senha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/conexao.h" line="56" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/conexao.cpp" bodystart="213" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="class_conexao_1a821a9c7e6d6fc2e67fd0b5cebb2fb375" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Conexao::funcionarios</definition>
+        <argsstring>()</argsstring>
+        <name>funcionarios</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/conexao.h" line="57" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/conexao.cpp" bodystart="162" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="class_conexao_1a19e6ec92c69bac27459081dc2df6b2c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Conexao::validaCpf</definition>
+        <argsstring>(QString cpf)</argsstring>
+        <name>validaCpf</name>
+        <param>
+          <type>QString</type>
+          <declname>cpf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/conexao.h" line="58" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/conexao.cpp" bodystart="257" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="class_conexao_1a628a3b1c7b05f10aa9f8a29ceab6d465" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Conexao::select</definition>
+        <argsstring>(QString name, QString &amp;cpf, QString &amp;email, QString &amp;address, QString &amp;role, QString &amp;salary)</argsstring>
+        <name>select</name>
+        <param>
+          <type>QString</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>QString &amp;</type>
+          <declname>cpf</declname>
+        </param>
+        <param>
+          <type>QString &amp;</type>
+          <declname>email</declname>
+        </param>
+        <param>
+          <type>QString &amp;</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>QString &amp;</type>
+          <declname>role</declname>
+        </param>
+        <param>
+          <type>QString &amp;</type>
+          <declname>salary</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/conexao.h" line="59" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/conexao.cpp" bodystart="89" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="class_conexao_1ae82a9a4ed8068686b5b768ad9743317d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Conexao::insertProducts</definition>
+        <argsstring>(QString _name, QString _purchasePrice, QString _sellPrice, QString _quantity, QString _validity)</argsstring>
+        <name>insertProducts</name>
+        <param>
+          <type>QString</type>
+          <declname>_name</declname>
+        </param>
+        <param>
+          <type>QString</type>
+          <declname>_purchasePrice</declname>
+        </param>
+        <param>
+          <type>QString</type>
+          <declname>_sellPrice</declname>
+        </param>
+        <param>
+          <type>QString</type>
+          <declname>_quantity</declname>
+        </param>
+        <param>
+          <type>QString</type>
+          <declname>_validity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/conexao.h" line="60" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/conexao.cpp" bodystart="296" bodyend="319"/>
+      </memberdef>
+      <memberdef kind="function" id="class_conexao_1aa0617deb68c402dae6fbd08ffef56f93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Conexao::selectProducts</definition>
+        <argsstring>()</argsstring>
+        <name>selectProducts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/conexao.h" line="61" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/conexao.cpp" bodystart="321" bodyend="372"/>
+      </memberdef>
+      <memberdef kind="function" id="class_conexao_1a0d26b08b0f383c179f580200cf508e94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Conexao::delEmployees</definition>
+        <argsstring>(QString name, QString email)</argsstring>
+        <name>delEmployees</name>
+        <param>
+          <type>QString</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>QString</type>
+          <declname>email</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/conexao.h" line="62" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/conexao.cpp" bodystart="70" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="class_conexao_1a1d30adc1b4f8a956cbc458fe75d94e26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Conexao::selectByCode</definition>
+        <argsstring>(QString _id)</argsstring>
+        <name>selectByCode</name>
+        <param>
+          <type>QString</type>
+          <declname>_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/conexao.h" line="63" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/conexao.cpp" bodystart="374" bodyend="427"/>
+      </memberdef>
+      <memberdef kind="function" id="class_conexao_1a74687ccdc642d76e84029007abd2d084" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString Conexao::getName</definition>
+        <argsstring>(QString _id)</argsstring>
+        <name>getName</name>
+        <param>
+          <type>QString</type>
+          <declname>_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luiz/Paradigmas de Programação/Estoque/conexao.h" line="64" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/conexao.cpp" bodystart="429" bodyend="474"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Classe Conexão. Classe C++ que inclui bibliotecas do Qt, C++ e MySQL para realizar a conexão entre Interface Gráfica, C++ e Banco de Dados. </para>    </briefdescription>
+    <detaileddescription>
+<para>A Classe Conexão consiste em uma Classe com suporte para Interface Gráfica responsável por realizar toda a conexão do sistema com o Banco de Dados, esta é responsável pela validação e criptografia dos dados dos funcionários que são cadastrados no Sistema de Controle de Estoque e Produção. A Classe é capaz de inserir dados, alterar dados existentes, remover dados e selecionar dados, tornando-a a Classe que gerencia o projeto inteiro. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="17">
+        <label>QObject</label>
+      </node>
+      <node id="16">
+        <label>Conexao</label>
+        <link refid="class_conexao"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="19">
+        <label>QObject</label>
+      </node>
+      <node id="18">
+        <label>Conexao</label>
+        <link refid="class_conexao"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/luiz/Paradigmas de Programação/Estoque/conexao.h" line="32" column="1" bodyfile="/home/luiz/Paradigmas de Programação/Estoque/conexao.h" bodystart="32" bodyend="69"/>
+    <listofallmembers>
+      <member refid="class_conexao_1a9b048f81f98738f10119f9a3e9d66af0" prot="public" virt="non-virtual"><scope>Conexao</scope><name>addEmployee</name></member>
+      <member refid="class_conexao_1abbc7bc621739afc0364615ae52ba941f" prot="public" virt="non-virtual"><scope>Conexao</scope><name>Conexao</name></member>
+      <member refid="class_conexao_1a603c91bfb3838491ba3e8caececc5b0c" prot="public" virt="non-virtual"><scope>Conexao</scope><name>conn</name></member>
+      <member refid="class_conexao_1a0d26b08b0f383c179f580200cf508e94" prot="public" virt="non-virtual"><scope>Conexao</scope><name>delEmployees</name></member>
+      <member refid="class_conexao_1a8bd6d93f96f3e460e79bd0a29484aff5" prot="public" virt="non-virtual"><scope>Conexao</scope><name>deletar</name></member>
+      <member refid="class_conexao_1afe469c76fdb5fb62d82f17e479281fc3" prot="public" virt="non-virtual"><scope>Conexao</scope><name>employees_age</name></member>
+      <member refid="class_conexao_1af4a86c84b703836abc8581ddb695e46d" prot="public" virt="non-virtual"><scope>Conexao</scope><name>employees_email</name></member>
+      <member refid="class_conexao_1a840ddef255453274939c138a5e70e78e" prot="public" virt="non-virtual"><scope>Conexao</scope><name>employees_name</name></member>
+      <member refid="class_conexao_1ae6dd52256ae13d3a08c67af499f052df" prot="public" virt="non-virtual"><scope>Conexao</scope><name>employees_role</name></member>
+      <member refid="class_conexao_1a037d3ee84ec8629c1a4bffef8d67378f" prot="public" virt="non-virtual"><scope>Conexao</scope><name>employees_salary</name></member>
+      <member refid="class_conexao_1a821a9c7e6d6fc2e67fd0b5cebb2fb375" prot="public" virt="non-virtual"><scope>Conexao</scope><name>funcionarios</name></member>
+      <member refid="class_conexao_1a74687ccdc642d76e84029007abd2d084" prot="public" virt="non-virtual"><scope>Conexao</scope><name>getName</name></member>
+      <member refid="class_conexao_1ae82a9a4ed8068686b5b768ad9743317d" prot="public" virt="non-virtual"><scope>Conexao</scope><name>insertProducts</name></member>
+      <member refid="class_conexao_1a5d40ad1d9c18222223c4aa404e59731d" prot="public" virt="non-virtual"><scope>Conexao</scope><name>logar</name></member>
+      <member refid="class_conexao_1a0555d343539f432f30bf84f5ddb7406d" prot="public" virt="non-virtual"><scope>Conexao</scope><name>products_id</name></member>
+      <member refid="class_conexao_1abe66e554804d884483dcf1e4657899bf" prot="public" virt="non-virtual"><scope>Conexao</scope><name>products_name</name></member>
+      <member refid="class_conexao_1abed04b03f82ce6cb47cce91a3999ed89" prot="public" virt="non-virtual"><scope>Conexao</scope><name>products_purchaseprice</name></member>
+      <member refid="class_conexao_1aaa60e00115d399944cde0869516cf0d1" prot="public" virt="non-virtual"><scope>Conexao</scope><name>products_quantity</name></member>
+      <member refid="class_conexao_1a2a3f06465299441de03ce264557490d3" prot="public" virt="non-virtual"><scope>Conexao</scope><name>products_saleprice</name></member>
+      <member refid="class_conexao_1adaa68247f31efd7be455087a0e983f31" prot="public" virt="non-virtual"><scope>Conexao</scope><name>products_validity</name></member>
+      <member refid="class_conexao_1a628a3b1c7b05f10aa9f8a29ceab6d465" prot="public" virt="non-virtual"><scope>Conexao</scope><name>select</name></member>
+      <member refid="class_conexao_1a1d30adc1b4f8a956cbc458fe75d94e26" prot="public" virt="non-virtual"><scope>Conexao</scope><name>selectByCode</name></member>
+      <member refid="class_conexao_1aa0617deb68c402dae6fbd08ffef56f93" prot="public" virt="non-virtual"><scope>Conexao</scope><name>selectProducts</name></member>
+      <member refid="class_conexao_1a1f8f4a489c2e1ad7ba8bb5378dc9339d" prot="public" virt="non-virtual"><scope>Conexao</scope><name>updateEmployee</name></member>
+      <member refid="class_conexao_1a19e6ec92c69bac27459081dc2df6b2c1" prot="public" virt="non-virtual"><scope>Conexao</scope><name>validaCpf</name></member>
+      <member refid="class_conexao_1ad07b7be6fc9e8b60c354debaa9469b47" prot="public" virt="non-virtual"><scope>Conexao</scope><name>vendidos</name></member>
+      <member refid="class_conexao_1ac108094083aa4dfba0834682adf6784f" prot="public" virt="non-virtual"><scope>Conexao</scope><name>~Conexao</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

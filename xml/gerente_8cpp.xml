@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="gerente_8cpp" kind="file">
+    <compoundname>gerente.cpp</compoundname>
+    <includes refid="gerente_8h" local="yes">gerente.h</includes>
+    <includes local="yes">ui_gerente.h</includes>
+    <incdepgraph>
+      <node id="221">
+        <label>produtos.h</label>
+        <link refid="produtos_8h"/>
+        <childnode refid="212" relation="include">
+        </childnode>
+      </node>
+      <node id="223">
+        <label>ui_gerente.h</label>
+      </node>
+      <node id="215">
+        <label>string</label>
+      </node>
+      <node id="212">
+        <label>QMainWindow</label>
+      </node>
+      <node id="217">
+        <label>adicionar.h</label>
+        <link refid="adicionar_8h"/>
+        <childnode refid="218" relation="include">
+        </childnode>
+      </node>
+      <node id="213">
+        <label>caixa.h</label>
+        <link refid="caixa_8h"/>
+        <childnode refid="212" relation="include">
+        </childnode>
+      </node>
+      <node id="218">
+        <label>QDialog</label>
+      </node>
+      <node id="211">
+        <label>gerente.h</label>
+        <link refid="gerente_8h"/>
+        <childnode refid="212" relation="include">
+        </childnode>
+        <childnode refid="213" relation="include">
+        </childnode>
+        <childnode refid="214" relation="include">
+        </childnode>
+        <childnode refid="221" relation="include">
+        </childnode>
+        <childnode refid="222" relation="include">
+        </childnode>
+      </node>
+      <node id="214">
+        <label>cadastrar.h</label>
+        <link refid="cadastrar_8h"/>
+        <childnode refid="212" relation="include">
+        </childnode>
+        <childnode refid="215" relation="include">
+        </childnode>
+        <childnode refid="216" relation="include">
+        </childnode>
+        <childnode refid="217" relation="include">
+        </childnode>
+        <childnode refid="219" relation="include">
+        </childnode>
+        <childnode refid="220" relation="include">
+        </childnode>
+      </node>
+      <node id="219">
+        <label>alterar.h</label>
+        <link refid="alterar_8h"/>
+        <childnode refid="212" relation="include">
+        </childnode>
+      </node>
+      <node id="210">
+        <label>gerente.cpp</label>
+        <link refid="gerente.cpp"/>
+        <childnode refid="211" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+      </node>
+      <node id="222">
+        <label>financas.h</label>
+        <link refid="financas_8h"/>
+        <childnode refid="212" relation="include">
+        </childnode>
+      </node>
+      <node id="220">
+        <label>delete.h</label>
+        <link refid="delete_8h"/>
+        <childnode refid="212" relation="include">
+        </childnode>
+      </node>
+      <node id="216">
+        <label>QStringList</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//includes<sp/>das<sp/>Classes<sp/>criadas<sp/>pelo<sp/>Desenvolvedor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="gerente_8h" kindref="compound">gerente.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ui_gerente.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="class_gerente_1a63ea201bae1d6d0faa0ed0a5a5e3c623" refkind="member"><highlight class="normal"><ref refid="class_gerente_1a63ea201bae1d6d0faa0ed0a5a5e3c623" kindref="member">Gerente::Gerente</ref>(QWidget<sp/>*parent)<sp/>:<sp/>QMainWindow(parent),<sp/>ui(new<sp/>Ui::<ref refid="class_gerente" kindref="compound">Gerente</ref>){</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;setupUi(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;setWindowTitle(</highlight><highlight class="stringliteral">&quot;Página<sp/>do<sp/>Gerente&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(ui-&gt;vendasButton,<sp/>SIGNAL(clicked(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">)),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(vendas()));</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(ui-&gt;cadastrarButton,<sp/>SIGNAL(clicked(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">)),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(cadastrar()));</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(ui-&gt;estoqueButton,<sp/>SIGNAL(clicked(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">)),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(estoque()));</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(ui-&gt;financasButton,<sp/>SIGNAL(clicked(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">)),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(financas()));</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="class_gerente_1a3510430c8a6c4e83883b6cab24854592" refkind="member"><highlight class="normal"><ref refid="class_gerente_1a3510430c8a6c4e83883b6cab24854592" kindref="member">Gerente::~Gerente</ref>(){</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>ui;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Gerente::vendas(){</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_gerente_1a8975424429ed3e15560bdc572c8f73da" kindref="member">caixa</ref>.show();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;close();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Gerente::cadastrar(){</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_gerente_1a2345050dbe8f33e98224060b89ed1396" kindref="member">funcionario</ref>.show();\</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Gerente::estoque(){</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_gerente_1a67426a53ebc18d277c378e657a7c8b00" kindref="member">produtos</ref>.show();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Gerente::financas(){</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_gerente_1a518d71e4ca47481a86e9080865968cb0" kindref="member">balanco</ref>.show();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/luiz/Paradigmas de Programação/Estoque/gerente.cpp"/>
+  </compounddef>
+</doxygen>

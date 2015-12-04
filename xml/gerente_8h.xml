@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="gerente_8h" kind="file">
+    <compoundname>gerente.h</compoundname>
+    <includes local="no">QMainWindow</includes>
+    <includes refid="caixa_8h" local="yes">caixa.h</includes>
+    <includes refid="cadastrar_8h" local="yes">cadastrar.h</includes>
+    <includes refid="produtos_8h" local="yes">produtos.h</includes>
+    <includes refid="financas_8h" local="yes">financas.h</includes>
+    <includedby refid="gerente_8cpp" local="yes">gerente.cpp</includedby>
+    <includedby refid="mainwindow_8h" local="yes">mainwindow.h</includedby>
+    <incdepgraph>
+      <node id="235">
+        <label>produtos.h</label>
+        <link refid="produtos_8h"/>
+        <childnode refid="226" relation="include">
+        </childnode>
+      </node>
+      <node id="229">
+        <label>string</label>
+      </node>
+      <node id="226">
+        <label>QMainWindow</label>
+      </node>
+      <node id="231">
+        <label>adicionar.h</label>
+        <link refid="adicionar_8h"/>
+        <childnode refid="232" relation="include">
+        </childnode>
+      </node>
+      <node id="227">
+        <label>caixa.h</label>
+        <link refid="caixa_8h"/>
+        <childnode refid="226" relation="include">
+        </childnode>
+      </node>
+      <node id="232">
+        <label>QDialog</label>
+      </node>
+      <node id="225">
+        <label>gerente.h</label>
+        <link refid="gerente.h"/>
+        <childnode refid="226" relation="include">
+        </childnode>
+        <childnode refid="227" relation="include">
+        </childnode>
+        <childnode refid="228" relation="include">
+        </childnode>
+        <childnode refid="235" relation="include">
+        </childnode>
+        <childnode refid="236" relation="include">
+        </childnode>
+      </node>
+      <node id="228">
+        <label>cadastrar.h</label>
+        <link refid="cadastrar_8h"/>
+        <childnode refid="226" relation="include">
+        </childnode>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="230" relation="include">
+        </childnode>
+        <childnode refid="231" relation="include">
+        </childnode>
+        <childnode refid="233" relation="include">
+        </childnode>
+        <childnode refid="234" relation="include">
+        </childnode>
+      </node>
+      <node id="233">
+        <label>alterar.h</label>
+        <link refid="alterar_8h"/>
+        <childnode refid="226" relation="include">
+        </childnode>
+      </node>
+      <node id="236">
+        <label>financas.h</label>
+        <link refid="financas_8h"/>
+        <childnode refid="226" relation="include">
+        </childnode>
+      </node>
+      <node id="234">
+        <label>delete.h</label>
+        <link refid="delete_8h"/>
+        <childnode refid="226" relation="include">
+        </childnode>
+      </node>
+      <node id="230">
+        <label>QStringList</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="240">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="239">
+        <label>mainwindow.h</label>
+        <link refid="mainwindow_8h"/>
+        <childnode refid="240" relation="include">
+        </childnode>
+        <childnode refid="241" relation="include">
+        </childnode>
+      </node>
+      <node id="237">
+        <label>gerente.h</label>
+        <link refid="gerente.h"/>
+        <childnode refid="238" relation="include">
+        </childnode>
+        <childnode refid="239" relation="include">
+        </childnode>
+      </node>
+      <node id="241">
+        <label>mainwindow.cpp</label>
+        <link refid="mainwindow_8cpp"/>
+      </node>
+      <node id="238">
+        <label>gerente.cpp</label>
+        <link refid="gerente_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_gerente" prot="public">Gerente</innerclass>
+    <innernamespace refid="namespace_ui">Ui</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>GERENTE_H</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>GERENTE_H</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QMainWindow&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="caixa_8h" kindref="compound">caixa.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cadastrar_8h" kindref="compound">cadastrar.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="produtos_8h" kindref="compound">produtos.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="financas_8h" kindref="compound">financas.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Ui<sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gerente" kindref="compound">Gerente</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="class_gerente" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gerente" kindref="compound">Gerente</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QMainWindow{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_gerente_1a63ea201bae1d6d0faa0ed0a5a5e3c623" kindref="member">Gerente</ref>(QWidget<sp/>*parent<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_gerente_1a3510430c8a6c4e83883b6cab24854592" kindref="member">~Gerente</ref>();</highlight></codeline>
+<codeline lineno="20" refid="class_gerente_1a8975424429ed3e15560bdc572c8f73da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_caixa" kindref="compound">Caixa</ref><sp/><ref refid="class_gerente_1a8975424429ed3e15560bdc572c8f73da" kindref="member">caixa</ref>;</highlight></codeline>
+<codeline lineno="21" refid="class_gerente_1a2345050dbe8f33e98224060b89ed1396" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_cadastrar" kindref="compound">Cadastrar</ref><sp/><ref refid="class_gerente_1a2345050dbe8f33e98224060b89ed1396" kindref="member">funcionario</ref>;</highlight></codeline>
+<codeline lineno="22" refid="class_gerente_1a67426a53ebc18d277c378e657a7c8b00" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_produtos" kindref="compound">Produtos</ref><sp/><ref refid="class_gerente_1a67426a53ebc18d277c378e657a7c8b00" kindref="member">produtos</ref>;</highlight></codeline>
+<codeline lineno="23" refid="class_gerente_1a518d71e4ca47481a86e9080865968cb0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_financas" kindref="compound">Financas</ref><sp/><ref refid="class_gerente_1a518d71e4ca47481a86e9080865968cb0" kindref="member">balanco</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>vendas();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>cadastrar();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>estoque();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>financas();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>Ui::Gerente<sp/>*ui;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>GERENTE_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/luiz/Paradigmas de Programação/Estoque/gerente.h"/>
+  </compounddef>
+</doxygen>
