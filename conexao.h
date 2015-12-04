@@ -63,10 +63,9 @@ public:
 
     /* Add, update, select and delete employees */
     bool addEmployee(QString _name, QString _age, QString _role, QString _salary, QString _cpf, QString _email, QString _address);
-    bool updateEmployee(QString _name, QString _cpf, QString _salary, QString _email, QString _address, QString _role);
-    bool selectEmployee(QString name, QString &cpf, QString &email, QString &address, QString &role, QString &salary);
     bool deleteEmployee(QString name, QString email);
-
+    bool selectEmployee(QString name, QString &cpf, QString &email, QString &address, QString &role, QString &salary);
+    bool updateEmployee(QString _name, QString _cpf, QString _salary, QString _email, QString _address, QString _role);
     int selectEmployees();
 
     /* Add and select products */
