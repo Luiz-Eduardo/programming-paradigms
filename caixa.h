@@ -21,6 +21,7 @@ namespace Ui {
 
 class Caixa : public QMainWindow {
     Q_OBJECT
+
     /*! @brief Variável total,
      *      do tipo double que representa o total do valor da compra do cliente
      */

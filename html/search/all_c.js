@@ -10,7 +10,7 @@ var searchData=
   ['products_5fsaleprice',['products_saleprice',['../class_conexao.html#a2a3f06465299441de03ce264557490d3',1,'Conexao']]],
   ['products_5fvalidity',['products_validity',['../class_conexao.html#adaa68247f31efd7be455087a0e983f31',1,'Conexao']]],
   ['produto',['Produto',['../struct_produto.html',1,'Produto'],['../class_produtos.html#a2a7c785f3f63e54f09b445754530629a',1,'Produtos::produto()']]],
-  ['produtos',['Produtos',['../class_produtos.html',1,'Produtos'],['../class_gerente.html#a67426a53ebc18d277c378e657a7c8b00',1,'Gerente::produtos()'],['../class_produtos.html#aa4b106134de071ee74a3aae9b73e7268',1,'Produtos::Produtos()']]],
+  ['produtos',['Produtos',['../class_produtos.html',1,'Produtos'],['../class_produtos.html#aa4b106134de071ee74a3aae9b73e7268',1,'Produtos::Produtos()'],['../class_gerente.html#a67426a53ebc18d277c378e657a7c8b00',1,'Gerente::produtos()']]],
   ['produtos_2ecpp',['produtos.cpp',['../produtos_8cpp.html',1,'']]],
   ['produtos_2eh',['produtos.h',['../produtos_8h.html',1,'']]],
   ['purchaseprice',['purchasePrice',['../struct_produto.html#a83cd49f91a2018c1de3e431c1d54fdd0',1,'Produto']]]

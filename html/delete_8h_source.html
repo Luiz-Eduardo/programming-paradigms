@@ -96,32 +96,31 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keyword">class </span><a class="code" href="class_delete.html">Delete</a>;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;}</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_delete.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_delete.html">Delete</a> : <span class="keyword">public</span> QMainWindow {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_delete.html#a3d7de30f6c22b253d1621e659eb9e4bb">Delete</a>(QWidget *parent = 0);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="class_delete.html#a8d7f363340d734e4adced38687d09722">~Delete</a>();</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_delete.html#a386825485fe9ec00a6b3ea26206963ca">   19</a></span>&#160;    Ui::Delete *<a class="code" href="class_delete.html#a386825485fe9ec00a6b3ea26206963ca">ui</a>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_delete.html#a5039aec40b2999176eab5f6d8bdabfa4">cancel</a>();</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_delete.html#ae961a4b46ae6e1e942313331a007e80a">delEmployee</a>();</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif // DELETE_H</span></div>
-<div class="ttc" id="class_delete_html_ae961a4b46ae6e1e942313331a007e80a"><div class="ttname"><a href="class_delete.html#ae961a4b46ae6e1e942313331a007e80a">Delete::delEmployee</a></div><div class="ttdeci">void delEmployee()</div><div class="ttdef"><b>Definition:</b> <a href="delete_8cpp_source.html#l00024">delete.cpp:24</a></div></div>
-<div class="ttc" id="class_delete_html"><div class="ttname"><a href="class_delete.html">Delete</a></div><div class="ttdef"><b>Definition:</b> <a href="delete_8h_source.html#l00011">delete.h:11</a></div></div>
-<div class="ttc" id="class_delete_html_a8d7f363340d734e4adced38687d09722"><div class="ttname"><a href="class_delete.html#a8d7f363340d734e4adced38687d09722">Delete::~Delete</a></div><div class="ttdeci">~Delete()</div><div class="ttdef"><b>Definition:</b> <a href="delete_8cpp_source.html#l00016">delete.cpp:16</a></div></div>
-<div class="ttc" id="class_delete_html_a3d7de30f6c22b253d1621e659eb9e4bb"><div class="ttname"><a href="class_delete.html#a3d7de30f6c22b253d1621e659eb9e4bb">Delete::Delete</a></div><div class="ttdeci">Delete(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="delete_8cpp_source.html#l00009">delete.cpp:9</a></div></div>
-<div class="ttc" id="class_delete_html_a386825485fe9ec00a6b3ea26206963ca"><div class="ttname"><a href="class_delete.html#a386825485fe9ec00a6b3ea26206963ca">Delete::ui</a></div><div class="ttdeci">Ui::Delete * ui</div><div class="ttdef"><b>Definition:</b> <a href="delete_8h_source.html#l00019">delete.h:19</a></div></div>
-<div class="ttc" id="class_delete_html_a5039aec40b2999176eab5f6d8bdabfa4"><div class="ttname"><a href="class_delete.html#a5039aec40b2999176eab5f6d8bdabfa4">Delete::cancel</a></div><div class="ttdeci">void cancel()</div><div class="ttdef"><b>Definition:</b> <a href="delete_8cpp_source.html#l00020">delete.cpp:20</a></div></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_delete.html">   27</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_delete.html">Delete</a> : <span class="keyword">public</span> QMainWindow {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_delete.html#a3d7de30f6c22b253d1621e659eb9e4bb">Delete</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="class_delete.html#a8d7f363340d734e4adced38687d09722">~Delete</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_delete.html#a386825485fe9ec00a6b3ea26206963ca">   47</a></span>&#160;    Ui::Delete *<a class="code" href="class_delete.html#a386825485fe9ec00a6b3ea26206963ca">ui</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_delete.html#a1aab28885885c1172d311578e078601b">deleteEmployee</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif // DELETE_H</span></div>
+<div class="ttc" id="class_delete_html"><div class="ttname"><a href="class_delete.html">Delete</a></div><div class="ttdoc">Classe Delete, consiste em uma QMainWindow e mostra a possibilidade de excluir funcionários já existe...</div><div class="ttdef"><b>Definition:</b> <a href="delete_8h_source.html#l00027">delete.h:27</a></div></div>
+<div class="ttc" id="class_delete_html_a8d7f363340d734e4adced38687d09722"><div class="ttname"><a href="class_delete.html#a8d7f363340d734e4adced38687d09722">Delete::~Delete</a></div><div class="ttdeci">~Delete()</div><div class="ttdoc">Destrutor da classe Delete. </div><div class="ttdef"><b>Definition:</b> <a href="delete_8cpp_source.html#l00022">delete.cpp:22</a></div></div>
+<div class="ttc" id="class_delete_html_a1aab28885885c1172d311578e078601b"><div class="ttname"><a href="class_delete.html#a1aab28885885c1172d311578e078601b">Delete::deleteEmployee</a></div><div class="ttdeci">void deleteEmployee()</div><div class="ttdoc">SLOT deleteEmployee() da classe Delete. </div><div class="ttdef"><b>Definition:</b> <a href="delete_8cpp_source.html#l00027">delete.cpp:27</a></div></div>
+<div class="ttc" id="class_delete_html_a3d7de30f6c22b253d1621e659eb9e4bb"><div class="ttname"><a href="class_delete.html#a3d7de30f6c22b253d1621e659eb9e4bb">Delete::Delete</a></div><div class="ttdeci">Delete(QWidget *parent=0)</div><div class="ttdoc">Construtor da classe Delete. </div><div class="ttdef"><b>Definition:</b> <a href="delete_8cpp_source.html#l00010">delete.cpp:10</a></div></div>
+<div class="ttc" id="class_delete_html_a386825485fe9ec00a6b3ea26206963ca"><div class="ttname"><a href="class_delete.html#a386825485fe9ec00a6b3ea26206963ca">Delete::ui</a></div><div class="ttdeci">Ui::Delete * ui</div><div class="ttdef"><b>Definition:</b> <a href="delete_8h_source.html#l00047">delete.h:47</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 4 2015 12:06:59 for Sistema de Controle e Estoque de Produção by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Dec 4 2015 14:07:19 for Sistema de Controle e Estoque de Produção by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

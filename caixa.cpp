@@ -29,7 +29,7 @@ Caixa::Caixa(QWidget *parent) : QMainWindow(parent), ui(new Ui::Caixa){
     /* Setando os campos como desativados */
     ui->saleEdit->setEnabled(false);
 
-    /* Atribuindo 0 para as variáveis total e tamanho */
+    /* Inicializando as variáveis total e tamanho */
     total = 0;
     tamanho = 0;
 }
@@ -48,7 +48,7 @@ void Caixa::nextPurchase(){
     ui->saleEdit->setText("");
     ui->changeEdit->setText("");
 
-    /* Atribuindo 0 para as variáveis total e tamanho */
+    /* Zerando as variáveis total e tamanho */
     tamanho = 0;
     total = 0;
 }

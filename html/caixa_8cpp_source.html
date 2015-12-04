@@ -91,87 +91,109 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;ui_caixa.h&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="conexao_8h.html">conexao.h</a>&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">//includes Bibliotecas Qt</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;QMessageBox&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;QStandardItem&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;QStandardItemModel&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">using namespace </span>std;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_caixa.html#ab04ad65d52273f561562a1e28672869d">   17</a></span>&#160;<a class="code" href="class_caixa.html#ab04ad65d52273f561562a1e28672869d">Caixa::Caixa</a>(QWidget *parent) : QMainWindow(parent), ui(new Ui::<a class="code" href="class_caixa.html">Caixa</a>){</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_caixa.html#a2f100135ff72c627a8a79f04533eedbc">ui</a>-&gt;setupUi(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    this-&gt;setWindowTitle(<span class="stringliteral">&quot;Controle de Caixa&quot;</span>);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    connect(<a class="code" href="class_caixa.html#a2f100135ff72c627a8a79f04533eedbc">ui</a>-&gt;nextButton, SIGNAL(clicked(<span class="keywordtype">bool</span>)), <span class="keyword">this</span> , SLOT(<a class="code" href="class_caixa.html#a23471f9609ad0ada663c5fa5519e8d17">nextPurchase</a>()));</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    connect(<a class="code" href="class_caixa.html#a2f100135ff72c627a8a79f04533eedbc">ui</a>-&gt;addButton, SIGNAL(clicked(<span class="keywordtype">bool</span>)), <span class="keyword">this</span>, SLOT(<a class="code" href="class_caixa.html#ada4ac086033bc1b89f0fb1689de236e7">addProduct</a>()));</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_caixa.html#a2f100135ff72c627a8a79f04533eedbc">ui</a>-&gt;saleEdit-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//includes Bibliotecas C++</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">//includes Bibliotecas Qt</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;QMessageBox&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;QStandardItem&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;QStandardItemModel&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">/* Construtor da classe Caixa */</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_caixa.html#ab04ad65d52273f561562a1e28672869d">   19</a></span>&#160;<a class="code" href="class_caixa.html#ab04ad65d52273f561562a1e28672869d">Caixa::Caixa</a>(QWidget *parent) : QMainWindow(parent), ui(new Ui::<a class="code" href="class_caixa.html">Caixa</a>){</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_caixa.html#a2f100135ff72c627a8a79f04533eedbc">ui</a>-&gt;setupUi(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">/* Setando título da janela como Controle de Caixa */</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    this-&gt;setWindowTitle(<span class="stringliteral">&quot;Controle de Caixa&quot;</span>);</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_caixa.html#a693f2d2f0053a8208b07f8b4e6dc83e6">total</a> = 0;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="class_caixa.html#a1806f71fd0ef06ed02268776e0d17f3d">tamanho</a> = 0;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">/* Sinais e Slots */</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    connect(<a class="code" href="class_caixa.html#a2f100135ff72c627a8a79f04533eedbc">ui</a>-&gt;nextButton, SIGNAL(clicked(<span class="keywordtype">bool</span>)), <span class="keyword">this</span> , SLOT(<a class="code" href="class_caixa.html#a23471f9609ad0ada663c5fa5519e8d17">nextPurchase</a>()));</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    connect(<a class="code" href="class_caixa.html#a2f100135ff72c627a8a79f04533eedbc">ui</a>-&gt;addButton, SIGNAL(clicked(<span class="keywordtype">bool</span>)), <span class="keyword">this</span>, SLOT(<a class="code" href="class_caixa.html#ada4ac086033bc1b89f0fb1689de236e7">addProduct</a>()));</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_caixa.html#a3c83a69e735b33cb42b90147bf94563e">   29</a></span>&#160;<a class="code" href="class_caixa.html#a3c83a69e735b33cb42b90147bf94563e">Caixa::~Caixa</a>(){</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">delete</span> <a class="code" href="class_caixa.html#a2f100135ff72c627a8a79f04533eedbc">ui</a>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_caixa.html#a23471f9609ad0ada663c5fa5519e8d17">   33</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_caixa.html#a23471f9609ad0ada663c5fa5519e8d17">Caixa::nextPurchase</a>(){</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="class_caixa.html#a2f100135ff72c627a8a79f04533eedbc">ui</a>-&gt;codeEdit-&gt;setText(<span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="class_caixa.html#a2f100135ff72c627a8a79f04533eedbc">ui</a>-&gt;quantityEdit-&gt;setText(<span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="class_caixa.html#a2f100135ff72c627a8a79f04533eedbc">ui</a>-&gt;payEdit-&gt;setText(<span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="class_caixa.html#a2f100135ff72c627a8a79f04533eedbc">ui</a>-&gt;saleEdit-&gt;setText(<span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="class_caixa.html#a2f100135ff72c627a8a79f04533eedbc">ui</a>-&gt;changeEdit-&gt;setText(<span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="class_caixa.html#a1806f71fd0ef06ed02268776e0d17f3d">tamanho</a> = 0;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">/* Setando os campos como desativados */</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="class_caixa.html#a2f100135ff72c627a8a79f04533eedbc">ui</a>-&gt;saleEdit-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">/* Inicializando as variáveis total e tamanho */</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="class_caixa.html#a693f2d2f0053a8208b07f8b4e6dc83e6">total</a> = 0;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="class_caixa.html#a1806f71fd0ef06ed02268776e0d17f3d">tamanho</a> = 0;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">/* Destrutor da classe Caixa */</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_caixa.html#a3c83a69e735b33cb42b90147bf94563e">   38</a></span>&#160;<a class="code" href="class_caixa.html#a3c83a69e735b33cb42b90147bf94563e">Caixa::~Caixa</a>(){</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">delete</span> <a class="code" href="class_caixa.html#a2f100135ff72c627a8a79f04533eedbc">ui</a>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_caixa.html#ada4ac086033bc1b89f0fb1689de236e7">   42</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_caixa.html#ada4ac086033bc1b89f0fb1689de236e7">Caixa::addProduct</a>(){</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="class_conexao.html">Conexao</a> conn;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">double</span> valor = conn.<a class="code" href="class_conexao.html#a1d30adc1b4f8a956cbc458fe75d94e26">selectByCode</a>(<a class="code" href="class_caixa.html#a2f100135ff72c627a8a79f04533eedbc">ui</a>-&gt;codeEdit-&gt;text());</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    QMessageBox token;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">if</span>(valor == -1){</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        token.setText(<span class="stringliteral">&quot;Erro de conexão&quot;</span>);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        token.exec();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>(valor == -2){</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        token.setText(<span class="stringliteral">&quot;Erro no sistema contate o desenvolvedor&quot;</span>);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        token.exec();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        QString _quantity = <a class="code" href="class_caixa.html#a2f100135ff72c627a8a79f04533eedbc">ui</a>-&gt;quantityEdit-&gt;text();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordtype">string</span> quantity = _quantity.toUtf8().constData();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        stringstream buffer;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        buffer &lt;&lt; quantity;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordtype">int</span> quantidade;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        buffer &gt;&gt; quantidade;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="code" href="class_caixa.html#a693f2d2f0053a8208b07f8b4e6dc83e6">total</a> += quantidade*valor;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="class_caixa.html#a2f100135ff72c627a8a79f04533eedbc">ui</a>-&gt;saleEdit-&gt;setText(<span class="stringliteral">&quot;R$&quot;</span> + QString::number(<a class="code" href="class_caixa.html#a693f2d2f0053a8208b07f8b4e6dc83e6">total</a>));</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <a class="code" href="class_caixa.html#a2f100135ff72c627a8a79f04533eedbc">ui</a>-&gt;codeEdit-&gt;setText(<span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="code" href="class_caixa.html#a2f100135ff72c627a8a79f04533eedbc">ui</a>-&gt;quantityEdit-&gt;setText(<span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">/* Slot nextPurchase() da classe Caixa */</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_caixa.html#a23471f9609ad0ada663c5fa5519e8d17">   43</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_caixa.html#a23471f9609ad0ada663c5fa5519e8d17">Caixa::nextPurchase</a>(){</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">/* Zerando todos os campos */</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="class_caixa.html#a2f100135ff72c627a8a79f04533eedbc">ui</a>-&gt;codeEdit-&gt;setText(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="class_caixa.html#a2f100135ff72c627a8a79f04533eedbc">ui</a>-&gt;quantityEdit-&gt;setText(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_caixa.html#a2f100135ff72c627a8a79f04533eedbc">ui</a>-&gt;payEdit-&gt;setText(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="class_caixa.html#a2f100135ff72c627a8a79f04533eedbc">ui</a>-&gt;saleEdit-&gt;setText(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="class_caixa.html#a2f100135ff72c627a8a79f04533eedbc">ui</a>-&gt;changeEdit-&gt;setText(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">/* Zerando as variáveis total e tamanho */</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="class_caixa.html#a1806f71fd0ef06ed02268776e0d17f3d">tamanho</a> = 0;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="class_caixa.html#a693f2d2f0053a8208b07f8b4e6dc83e6">total</a> = 0;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">/* Slot addProduct() da classe Caixa */</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_caixa.html#ada4ac086033bc1b89f0fb1689de236e7">   57</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_caixa.html#ada4ac086033bc1b89f0fb1689de236e7">Caixa::addProduct</a>(){</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="class_conexao.html">Conexao</a> conn; <span class="comment">//Instancia da classe Conexao</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">/* Recebe o valor pelo ID/Código */</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">double</span> valor = conn.<a class="code" href="class_conexao.html#aae67fefb72ca872bf3186892fcd55db4">getSellPrice</a>(<a class="code" href="class_caixa.html#a2f100135ff72c627a8a79f04533eedbc">ui</a>-&gt;codeEdit-&gt;text());</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">/* Símbolo responsável pela exibição de uma mensagem de controle */</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    QMessageBox token;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">/* Tratamento de erros */</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">if</span>(valor == -1){</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        token.setText(<span class="stringliteral">&quot;Erro de conexão&quot;</span>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        token.exec();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>(valor == -2){ <span class="comment">// Tratamento de erros</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        token.setText(<span class="stringliteral">&quot;Erro no sistema contate o desenvolvedor&quot;</span>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        token.exec();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="comment">/* Recebe o valor quantidade */</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        QString _quantity = <a class="code" href="class_caixa.html#a2f100135ff72c627a8a79f04533eedbc">ui</a>-&gt;quantityEdit-&gt;text();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordtype">string</span> quantity = _quantity.toUtf8().constData(); <span class="comment">//typecasting QString &gt;&gt; string</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="comment">/* typecasting string &gt;&gt; stringstream &gt;&gt; int */</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        stringstream buffer;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        buffer &lt;&lt; quantity;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordtype">int</span> quantidade;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        buffer &gt;&gt; quantidade;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="comment">/* Cálculo do Total */</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <a class="code" href="class_caixa.html#a693f2d2f0053a8208b07f8b4e6dc83e6">total</a> += quantidade*valor;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="comment">/* Setando o total, zerando o código e a quantidade */</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="code" href="class_caixa.html#a2f100135ff72c627a8a79f04533eedbc">ui</a>-&gt;saleEdit-&gt;setText(<span class="stringliteral">&quot;R$&quot;</span> + QString::number(<a class="code" href="class_caixa.html#a693f2d2f0053a8208b07f8b4e6dc83e6">total</a>));</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <a class="code" href="class_caixa.html#a2f100135ff72c627a8a79f04533eedbc">ui</a>-&gt;codeEdit-&gt;setText(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <a class="code" href="class_caixa.html#a2f100135ff72c627a8a79f04533eedbc">ui</a>-&gt;quantityEdit-&gt;setText(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
 <div class="ttc" id="caixa_8h_html"><div class="ttname"><a href="caixa_8h.html">caixa.h</a></div></div>
-<div class="ttc" id="class_conexao_html"><div class="ttname"><a href="class_conexao.html">Conexao</a></div><div class="ttdoc">Classe Conexao, é a responsável pela inclusão de bibliotecas do Qt, C++ e MySQL para realizar a conex...</div><div class="ttdef"><b>Definition:</b> <a href="conexao_8h_source.html#l00037">conexao.h:37</a></div></div>
-<div class="ttc" id="class_caixa_html_a1806f71fd0ef06ed02268776e0d17f3d"><div class="ttname"><a href="class_caixa.html#a1806f71fd0ef06ed02268776e0d17f3d">Caixa::tamanho</a></div><div class="ttdeci">int tamanho</div><div class="ttdef"><b>Definition:</b> <a href="caixa_8h_source.html#l00014">caixa.h:14</a></div></div>
-<div class="ttc" id="class_caixa_html_a23471f9609ad0ada663c5fa5519e8d17"><div class="ttname"><a href="class_caixa.html#a23471f9609ad0ada663c5fa5519e8d17">Caixa::nextPurchase</a></div><div class="ttdeci">void nextPurchase()</div><div class="ttdef"><b>Definition:</b> <a href="caixa_8cpp_source.html#l00033">caixa.cpp:33</a></div></div>
-<div class="ttc" id="class_caixa_html"><div class="ttname"><a href="class_caixa.html">Caixa</a></div><div class="ttdef"><b>Definition:</b> <a href="caixa_8h_source.html#l00011">caixa.h:11</a></div></div>
-<div class="ttc" id="class_caixa_html_a2f100135ff72c627a8a79f04533eedbc"><div class="ttname"><a href="class_caixa.html#a2f100135ff72c627a8a79f04533eedbc">Caixa::ui</a></div><div class="ttdeci">Ui::Caixa * ui</div><div class="ttdef"><b>Definition:</b> <a href="caixa_8h_source.html#l00021">caixa.h:21</a></div></div>
-<div class="ttc" id="class_caixa_html_a3c83a69e735b33cb42b90147bf94563e"><div class="ttname"><a href="class_caixa.html#a3c83a69e735b33cb42b90147bf94563e">Caixa::~Caixa</a></div><div class="ttdeci">~Caixa()</div><div class="ttdef"><b>Definition:</b> <a href="caixa_8cpp_source.html#l00029">caixa.cpp:29</a></div></div>
-<div class="ttc" id="class_caixa_html_ab04ad65d52273f561562a1e28672869d"><div class="ttname"><a href="class_caixa.html#ab04ad65d52273f561562a1e28672869d">Caixa::Caixa</a></div><div class="ttdeci">Caixa(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="caixa_8cpp_source.html#l00017">caixa.cpp:17</a></div></div>
+<div class="ttc" id="class_conexao_html"><div class="ttname"><a href="class_conexao.html">Conexao</a></div><div class="ttdoc">Classe Conexao, é a responsável pela inclusão de bibliotecas do Qt, C++ e MySQL para realizar a conex...</div><div class="ttdef"><b>Definition:</b> <a href="conexao_8h_source.html#l00038">conexao.h:38</a></div></div>
+<div class="ttc" id="class_caixa_html_a1806f71fd0ef06ed02268776e0d17f3d"><div class="ttname"><a href="class_caixa.html#a1806f71fd0ef06ed02268776e0d17f3d">Caixa::tamanho</a></div><div class="ttdeci">int tamanho</div><div class="ttdoc">Variável tamanho, do tipo inteiro que representa a quantidade de linhas da tabela de compras...</div><div class="ttdef"><b>Definition:</b> <a href="caixa_8h_source.html#l00033">caixa.h:33</a></div></div>
+<div class="ttc" id="class_caixa_html_a23471f9609ad0ada663c5fa5519e8d17"><div class="ttname"><a href="class_caixa.html#a23471f9609ad0ada663c5fa5519e8d17">Caixa::nextPurchase</a></div><div class="ttdeci">void nextPurchase()</div><div class="ttdoc">SLOT nextPurchase() da classe Caixa. </div><div class="ttdef"><b>Definition:</b> <a href="caixa_8cpp_source.html#l00043">caixa.cpp:43</a></div></div>
+<div class="ttc" id="class_caixa_html"><div class="ttname"><a href="class_caixa.html">Caixa</a></div><div class="ttdoc">Classe Caixa, é a Interface Gráfica responsável pelas vendas no caixa da empresa. ...</div><div class="ttdef"><b>Definition:</b> <a href="caixa_8h_source.html#l00022">caixa.h:22</a></div></div>
+<div class="ttc" id="class_caixa_html_a2f100135ff72c627a8a79f04533eedbc"><div class="ttname"><a href="class_caixa.html#a2f100135ff72c627a8a79f04533eedbc">Caixa::ui</a></div><div class="ttdeci">Ui::Caixa * ui</div><div class="ttdef"><b>Definition:</b> <a href="caixa_8h_source.html#l00053">caixa.h:53</a></div></div>
+<div class="ttc" id="class_caixa_html_a3c83a69e735b33cb42b90147bf94563e"><div class="ttname"><a href="class_caixa.html#a3c83a69e735b33cb42b90147bf94563e">Caixa::~Caixa</a></div><div class="ttdeci">~Caixa()</div><div class="ttdoc">Destrutor da classe Caixa. </div><div class="ttdef"><b>Definition:</b> <a href="caixa_8cpp_source.html#l00038">caixa.cpp:38</a></div></div>
+<div class="ttc" id="class_caixa_html_ab04ad65d52273f561562a1e28672869d"><div class="ttname"><a href="class_caixa.html#ab04ad65d52273f561562a1e28672869d">Caixa::Caixa</a></div><div class="ttdeci">Caixa(QWidget *parent=0)</div><div class="ttdoc">Construtor da classe Caixa. </div><div class="ttdef"><b>Definition:</b> <a href="caixa_8cpp_source.html#l00019">caixa.cpp:19</a></div></div>
 <div class="ttc" id="conexao_8h_html"><div class="ttname"><a href="conexao_8h.html">conexao.h</a></div></div>
-<div class="ttc" id="class_caixa_html_a693f2d2f0053a8208b07f8b4e6dc83e6"><div class="ttname"><a href="class_caixa.html#a693f2d2f0053a8208b07f8b4e6dc83e6">Caixa::total</a></div><div class="ttdeci">double total</div><div class="ttdef"><b>Definition:</b> <a href="caixa_8h_source.html#l00013">caixa.h:13</a></div></div>
-<div class="ttc" id="class_caixa_html_ada4ac086033bc1b89f0fb1689de236e7"><div class="ttname"><a href="class_caixa.html#ada4ac086033bc1b89f0fb1689de236e7">Caixa::addProduct</a></div><div class="ttdeci">void addProduct()</div><div class="ttdef"><b>Definition:</b> <a href="caixa_8cpp_source.html#l00042">caixa.cpp:42</a></div></div>
-<div class="ttc" id="class_conexao_html_a1d30adc1b4f8a956cbc458fe75d94e26"><div class="ttname"><a href="class_conexao.html#a1d30adc1b4f8a956cbc458fe75d94e26">Conexao::selectByCode</a></div><div class="ttdeci">int selectByCode(QString _id)</div><div class="ttdef"><b>Definition:</b> <a href="conexao_8cpp_source.html#l00373">conexao.cpp:373</a></div></div>
+<div class="ttc" id="class_caixa_html_a693f2d2f0053a8208b07f8b4e6dc83e6"><div class="ttname"><a href="class_caixa.html#a693f2d2f0053a8208b07f8b4e6dc83e6">Caixa::total</a></div><div class="ttdeci">double total</div><div class="ttdoc">Variável total, do tipo double que representa o total do valor da compra do cliente. </div><div class="ttdef"><b>Definition:</b> <a href="caixa_8h_source.html#l00028">caixa.h:28</a></div></div>
+<div class="ttc" id="class_conexao_html_aae67fefb72ca872bf3186892fcd55db4"><div class="ttname"><a href="class_conexao.html#aae67fefb72ca872bf3186892fcd55db4">Conexao::getSellPrice</a></div><div class="ttdeci">int getSellPrice(QString _id)</div><div class="ttdef"><b>Definition:</b> <a href="conexao_8cpp_source.html#l00404">conexao.cpp:404</a></div></div>
+<div class="ttc" id="class_caixa_html_ada4ac086033bc1b89f0fb1689de236e7"><div class="ttname"><a href="class_caixa.html#ada4ac086033bc1b89f0fb1689de236e7">Caixa::addProduct</a></div><div class="ttdeci">void addProduct()</div><div class="ttdoc">SLOT addProduct() da classe Alterar. </div><div class="ttdef"><b>Definition:</b> <a href="caixa_8cpp_source.html#l00057">caixa.cpp:57</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 4 2015 12:06:59 for Sistema de Controle e Estoque de Produção by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Dec 4 2015 14:07:19 for Sistema de Controle e Estoque de Produção by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

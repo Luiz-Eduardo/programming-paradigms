@@ -10,31 +10,35 @@
 #include <QStandardItem>
 #include <QStandardItemModel>
 
+/* Construtor da classe Delete */
 Financas::Financas(QWidget *parent) : QMainWindow(parent), ui(new Ui::Financas){
     ui->setupUi(this);
+
+    /* Setando o título da janela como Finanças da Empresa */
     this->setWindowTitle("Finanças da Empresa");
 
+    /* Sinais e Slots */
     connect(ui->closeButton, SIGNAL(clicked(bool)), this, SLOT(close()));
     connect(ui->expensesEdit, SIGNAL(textChanged(QString)), this, SLOT(showProfit()));
+
+    /* Inicializando as variáveis employeePayment e productExpenses */
     employeePayment = 0;
+    productExpenses = 0;
 
-    Conexao conn;
-
+    Conexao conn; //Instancia da classe Conexao.
     unsigned int tamanho = conn.selectEmployees();
 
     for(auto i : conn.employees_salary)
         employeePayment += i.toDouble();
 
 
-    productExpenses = 0;
-
-    Conexao secondConn;
-
+    Conexao secondConn; //Segunda instancia da classe Conexao.
     secondConn.selectProducts();
 
     for(int i = 0; i < secondConn.products_purchaseprice.size(); i++)
          productExpenses += (secondConn.products_purchaseprice[i].toDouble())*(secondConn.products_quantity[i].toDouble());
 
+    /* Setando os campos como desativados */
     ui->payEdit->setEnabled(false);
     ui->productsEdit->setEnabled(false);
     ui->totalEdit->setEnabled(false);
@@ -75,15 +79,16 @@ Financas::Financas(QWidget *parent) : QMainWindow(parent), ui(new Ui::Financas){
     total = 1000;
 }
 
+/* Destrutor da classe Financas */
 Financas::~Financas(){
     delete ui;
 }
 
 //Quando for digitado o campo Despesas Externas
-//QString total =
 //QString profit = (total -
 //ui->profitEdit->setText()
 
+/* Slot showProfit() da classe Financas */
 void Financas::showProfit(){
     QString expenses = ui->expensesEdit->text();
     string gastos = expenses.toUtf8().constData();
@@ -95,5 +100,4 @@ void Financas::showProfit(){
     buffer >> prejuizo;
 
     ui->profitEdit->setText("R$ " + QString::number(total - (prejuizo + employeePayment + productExpenses)));
-
 }
