@@ -30,7 +30,7 @@ using namespace std;
  *
  *  @warning Não deve ser vísivel para o usuário, apenas para o desenvolvedor, todos os dados devem
  *  permanecer criptografados.
- *
+ *  @warning É necessário a instalação do pacote libmysqlclient-dev
  * @copyright \htmlonly <a href = "https://github.com/Luiz-Eduardo"> Luiz Eduardo Barros de Araújo Filho </a> \endhtmlonly
  * e \htmlonly <a href = "https://www.facebook.com/mariaelena.nascimento"> Marielena Nascimento Silveira </a> \endhtmlonly
  */
@@ -52,6 +52,11 @@ public:
     QStringList products_quantity;
     QStringList products_validity;
 
+    /*! @brief Construtor da classe Conexao.
+     *  @param Ponteiro do tipo QObject que aponta explicitamente para 0.
+     *
+     * Construtor da classe Conexao, responsável por inicializar a conexão com o Banco de Dados.
+     */
     explicit Conexao(QObject *parent = 0);
 
     /*! @brief Destrutor da classe Conexao.
