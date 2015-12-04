@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['total',['total',['../class_financas.html#a0d2db177c47f41d66ff71eac7e7e66f6',1,'Financas']]]
+  ['funcionario',['funcionario',['../class_adicionar.html#ab5146b7067fed77e943d5eb1a89af5cb',1,'Adicionar::funcionario()'],['../class_gerente.html#a2345050dbe8f33e98224060b89ed1396',1,'Gerente::funcionario()']]]
 ];

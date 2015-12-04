@@ -1,11 +1,10 @@
 var searchData=
 [
-  ['productexpenses',['productExpenses',['../class_financas.html#adf668ad1e95bac0074f89f926a5f70be',1,'Financas']]],
-  ['products_5fid',['products_id',['../class_conexao.html#a0555d343539f432f30bf84f5ddb7406d',1,'Conexao']]],
-  ['products_5fname',['products_name',['../class_conexao.html#abe66e554804d884483dcf1e4657899bf',1,'Conexao']]],
-  ['products_5fpurchaseprice',['products_purchaseprice',['../class_conexao.html#abed04b03f82ce6cb47cce91a3999ed89',1,'Conexao']]],
-  ['products_5fquantity',['products_quantity',['../class_conexao.html#aaa60e00115d399944cde0869516cf0d1',1,'Conexao']]],
-  ['products_5fsaleprice',['products_saleprice',['../class_conexao.html#a2a3f06465299441de03ce264557490d3',1,'Conexao']]],
-  ['products_5fvalidity',['products_validity',['../class_conexao.html#adaa68247f31efd7be455087a0e983f31',1,'Conexao']]],
-  ['produtos',['produtos',['../class_gerente.html#a67426a53ebc18d277c378e657a7c8b00',1,'Gerente']]]
+  ['email',['email',['../struct_funcionario.html#ae6bf92a7e02ac9f951f4950c23f6ba47',1,'Funcionario']]],
+  ['employeepayment',['employeePayment',['../class_financas.html#a0fe4dd58e9cf24f5ef2920027975d510',1,'Financas']]],
+  ['employees_5fage',['employees_age',['../class_conexao.html#afe469c76fdb5fb62d82f17e479281fc3',1,'Conexao']]],
+  ['employees_5femail',['employees_email',['../class_conexao.html#af4a86c84b703836abc8581ddb695e46d',1,'Conexao']]],
+  ['employees_5fname',['employees_name',['../class_conexao.html#a840ddef255453274939c138a5e70e78e',1,'Conexao']]],
+  ['employees_5frole',['employees_role',['../class_conexao.html#ae6dd52256ae13d3a08c67af499f052df',1,'Conexao']]],
+  ['employees_5fsalary',['employees_salary',['../class_conexao.html#a037d3ee84ec8629c1a4bffef8d67378f',1,'Conexao']]]
 ];

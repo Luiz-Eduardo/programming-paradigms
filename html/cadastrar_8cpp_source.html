@@ -24,7 +24,7 @@
   <td style="padding-left: 0.5em;">
    <div id="projectname">Sistema de Controle e Estoque de Produção
    </div>
-   <div id="projectbrief">Sistema de Controle e Estoque de Produção criado para realização do Projeto da Terceira Unidade do DCA0201 - Paradigmas de Programação</div>
+   <div id="projectbrief">Sistema de Controle e Estoque de Produção criado para realização do Projeto da Terceira Unidade da Disciplina DCA0201 - Paradigmas de Programação</div>
   </td>
  </tr>
  </tbody>
@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -86,101 +86,115 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">cadastrar.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="cadastrar_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//includes das Classes criadas pelo Desenvolvedor</span></div>
+<a href="cadastrar_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//includes Classes do Desenvolvedor</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cadastrar_8h.html">cadastrar.h</a>&quot;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;ui_cadastrar.h&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="conexao_8h.html">conexao.h</a>&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//includes das Bibliotecas do Qt</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//includes Bibliotecas Qt</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;QStandardItemModel&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QStandardItem&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;QString&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
 <div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_cadastrar.html#a84aa3e559f92b83f205ed7222630259c">   11</a></span>&#160;<a class="code" href="class_cadastrar.html#a84aa3e559f92b83f205ed7222630259c">Cadastrar::Cadastrar</a>(QWidget *parent) : QMainWindow(parent), ui(new Ui::<a class="code" href="class_cadastrar.html">Cadastrar</a>){</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    ui-&gt;setupUi(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    this-&gt;setWindowTitle(<span class="stringliteral">&quot;Cadastrar funcionários&quot;</span>);</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="class_conexao.html">Conexao</a> connection;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> tamanho = connection.<a class="code" href="class_conexao.html#a821a9c7e6d6fc2e67fd0b5cebb2fb375">funcionarios</a>();</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    QStandardItemModel *model = <span class="keyword">new</span> QStandardItemModel(tamanho,5,<span class="keyword">this</span>); <span class="comment">//Quantidade de linhas recebida pelo metodo e 5 colunas.</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    ui-&gt;employeesView-&gt;setEditTriggers(QAbstractItemView::NoEditTriggers);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    model-&gt;setHorizontalHeaderItem(0, <span class="keyword">new</span> QStandardItem(QString(<span class="stringliteral">&quot;Nome&quot;</span>)));</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    model-&gt;setHorizontalHeaderItem(1, <span class="keyword">new</span> QStandardItem(QString(<span class="stringliteral">&quot;Idade&quot;</span>)));</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    model-&gt;setHorizontalHeaderItem(2, <span class="keyword">new</span> QStandardItem(QString(<span class="stringliteral">&quot;Email&quot;</span>)));</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    model-&gt;setHorizontalHeaderItem(3, <span class="keyword">new</span> QStandardItem(QString(<span class="stringliteral">&quot;Cargo&quot;</span>)));</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    model-&gt;setHorizontalHeaderItem(4, <span class="keyword">new</span> QStandardItem(QString(<span class="stringliteral">&quot;Salário&quot;</span>)));</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; tamanho; i++){</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        QStandardItem *name = <span class="keyword">new</span> QStandardItem(QString(connection.<a class="code" href="class_conexao.html#a840ddef255453274939c138a5e70e78e">employees_name</a>[i]));</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        QStandardItem *age = <span class="keyword">new</span> QStandardItem(QString(connection.<a class="code" href="class_conexao.html#afe469c76fdb5fb62d82f17e479281fc3">employees_age</a>[i] + <span class="stringliteral">&quot; anos&quot;</span>));</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        QStandardItem *email = <span class="keyword">new</span> QStandardItem(connection.<a class="code" href="class_conexao.html#af4a86c84b703836abc8581ddb695e46d">employees_email</a>[i]);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="class_cadastrar.html#a880379dcd001f93c782cdcceb5ec9963">ui</a>-&gt;setupUi(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="comment">/* Setando o título da janela como Cadastrar funcionários */</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    this-&gt;setWindowTitle(<span class="stringliteral">&quot;Cadastrar funcionários&quot;</span>);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_conexao.html">Conexao</a> connection; <span class="comment">//Instancia da classe Conexao.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> tamanho = connection.<a class="code" href="class_conexao.html#a821a9c7e6d6fc2e67fd0b5cebb2fb375">funcionarios</a>(); <span class="comment">//Método para selecionar os funcionários que retorna a quantidade de linhas.</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    QStandardItemModel *model = <span class="keyword">new</span> QStandardItemModel(tamanho, 5, <span class="keyword">this</span>); <span class="comment">//Quantidade de linhas recebida pelo metodo e 5 colunas.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">/* Setando os elementos da tabela como não editáveis. */</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_cadastrar.html#a880379dcd001f93c782cdcceb5ec9963">ui</a>-&gt;employeesView-&gt;setEditTriggers(QAbstractItemView::NoEditTriggers);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">/* Setando o nome das 5 colunas */</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    model-&gt;setHorizontalHeaderItem(0, <span class="keyword">new</span> QStandardItem(QString(<span class="stringliteral">&quot;Nome&quot;</span>)));</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    model-&gt;setHorizontalHeaderItem(1, <span class="keyword">new</span> QStandardItem(QString(<span class="stringliteral">&quot;Idade&quot;</span>)));</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    model-&gt;setHorizontalHeaderItem(2, <span class="keyword">new</span> QStandardItem(QString(<span class="stringliteral">&quot;Email&quot;</span>)));</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    model-&gt;setHorizontalHeaderItem(3, <span class="keyword">new</span> QStandardItem(QString(<span class="stringliteral">&quot;Cargo&quot;</span>)));</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    model-&gt;setHorizontalHeaderItem(4, <span class="keyword">new</span> QStandardItem(QString(<span class="stringliteral">&quot;Salário&quot;</span>)));</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        QStandardItem *role;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">if</span>(!connection.<a class="code" href="class_conexao.html#ae6dd52256ae13d3a08c67af499f052df">employees_role</a>[i].compare(<span class="stringliteral">&quot;1&quot;</span>))</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            role = <span class="keyword">new</span> QStandardItem(QString(<span class="stringliteral">&quot;Caixa&quot;</span>));</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(!connection.<a class="code" href="class_conexao.html#ae6dd52256ae13d3a08c67af499f052df">employees_role</a>[i].compare(<span class="stringliteral">&quot;2&quot;</span>))</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            role = <span class="keyword">new</span> QStandardItem(QString(<span class="stringliteral">&quot;Gerente&quot;</span>));</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            role = <span class="keyword">new</span> QStandardItem(QString(<span class="stringliteral">&quot;Erro&quot;</span>));</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        QString _salary = connection.<a class="code" href="class_conexao.html#a037d3ee84ec8629c1a4bffef8d67378f">employees_salary</a>[i];</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; _salary.size(); i++)</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keywordflow">if</span>(_salary[i] == <span class="charliteral">&#39;.&#39;</span>)</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                _salary[i] = <span class="charliteral">&#39;,&#39;</span>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        QStandardItem *salary = <span class="keyword">new</span> QStandardItem(QString(<span class="stringliteral">&quot;R$ &quot;</span> + _salary));</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">/* Preenchendo a tabela com a quantidade de linhas == tamanho */</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; tamanho; i++){</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        QStandardItem *name = <span class="keyword">new</span> QStandardItem(QString(connection.<a class="code" href="class_conexao.html#a840ddef255453274939c138a5e70e78e">employees_name</a>[i]));</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        QStandardItem *age = <span class="keyword">new</span> QStandardItem(QString(connection.<a class="code" href="class_conexao.html#afe469c76fdb5fb62d82f17e479281fc3">employees_age</a>[i] + <span class="stringliteral">&quot; anos&quot;</span>));</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        QStandardItem *email = <span class="keyword">new</span> QStandardItem(connection.<a class="code" href="class_conexao.html#af4a86c84b703836abc8581ddb695e46d">employees_email</a>[i]);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        QStandardItem *role;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">if</span>(!connection.<a class="code" href="class_conexao.html#ae6dd52256ae13d3a08c67af499f052df">employees_role</a>[i].compare(<span class="stringliteral">&quot;1&quot;</span>))</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            role = <span class="keyword">new</span> QStandardItem(QString(<span class="stringliteral">&quot;Caixa&quot;</span>));</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(!connection.<a class="code" href="class_conexao.html#ae6dd52256ae13d3a08c67af499f052df">employees_role</a>[i].compare(<span class="stringliteral">&quot;2&quot;</span>))</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            role = <span class="keyword">new</span> QStandardItem(QString(<span class="stringliteral">&quot;Gerente&quot;</span>));</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            role = <span class="keyword">new</span> QStandardItem(QString(<span class="stringliteral">&quot;Erro&quot;</span>));</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        model-&gt;setItem(i, 0, name);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        model-&gt;setItem(i, 1, age);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        model-&gt;setItem(i, 2, email);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        model-&gt;setItem(i, 3, role);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        model-&gt;setItem(i, 4, salary);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    ui-&gt;employeesView-&gt;setModel(model);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;   connect(ui-&gt;addButton, SIGNAL(clicked(<span class="keywordtype">bool</span>)), <span class="keyword">this</span>, SLOT(adicionar()));</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;   connect(ui-&gt;changeButton, SIGNAL(clicked()), <span class="keyword">this</span>, SLOT(change()));</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;   connect(ui-&gt;deleteButton, SIGNAL(clicked(<span class="keywordtype">bool</span>)), <span class="keyword">this</span>, SLOT(delet()));</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_cadastrar.html#a22237f919185021666bc82fce25b580c">   61</a></span>&#160;<a class="code" href="class_cadastrar.html#a22237f919185021666bc82fce25b580c">Cadastrar::~Cadastrar</a>(){</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">delete</span> ui;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keywordtype">void</span> Cadastrar::adicionar(){</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    newEmployee.show();</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">void</span> Cadastrar::back(){</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    this-&gt;close();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        QString _salary = connection.<a class="code" href="class_conexao.html#a037d3ee84ec8629c1a4bffef8d67378f">employees_salary</a>[i];</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; _salary.size(); i++)</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordflow">if</span>(_salary[i] == <span class="charliteral">&#39;.&#39;</span>)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                _salary[i] = <span class="charliteral">&#39;,&#39;</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        QStandardItem *salary = <span class="keyword">new</span> QStandardItem(QString(<span class="stringliteral">&quot;R$ &quot;</span> + _salary));</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        model-&gt;setItem(i, 0, name);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        model-&gt;setItem(i, 1, age);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        model-&gt;setItem(i, 2, email);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        model-&gt;setItem(i, 3, role);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        model-&gt;setItem(i, 4, salary);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">/* Setando o modelo da tableView (productsView) como o QStandardModel preenchido */</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="class_cadastrar.html#a880379dcd001f93c782cdcceb5ec9963">ui</a>-&gt;employeesView-&gt;setModel(model);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">/* Sinais e Slots */</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    connect(<a class="code" href="class_cadastrar.html#a880379dcd001f93c782cdcceb5ec9963">ui</a>-&gt;addButton, SIGNAL(clicked(<span class="keywordtype">bool</span>)), <span class="keyword">this</span>, SLOT(<a class="code" href="class_cadastrar.html#a25bb535e08b8ebae328f436f0923f4c7">addEmployee</a>()));</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    connect(<a class="code" href="class_cadastrar.html#a880379dcd001f93c782cdcceb5ec9963">ui</a>-&gt;changeButton, SIGNAL(clicked()), <span class="keyword">this</span>, SLOT(<a class="code" href="class_cadastrar.html#ae6a8d8e75b939149ff4469791f6e555f">changEmployee</a>()));</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    connect(<a class="code" href="class_cadastrar.html#a880379dcd001f93c782cdcceb5ec9963">ui</a>-&gt;deleteButton, SIGNAL(clicked(<span class="keywordtype">bool</span>)), <span class="keyword">this</span>, SLOT(<a class="code" href="class_cadastrar.html#a460590bc661822e87117446e25b4f76f">delEmployee</a>()));</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">/* Destrutor da classe Cadastrar */</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="class_cadastrar.html#a22237f919185021666bc82fce25b580c">   69</a></span>&#160;<a class="code" href="class_cadastrar.html#a22237f919185021666bc82fce25b580c">Cadastrar::~Cadastrar</a>(){</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">delete</span> <a class="code" href="class_cadastrar.html#a880379dcd001f93c782cdcceb5ec9963">ui</a>;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keywordtype">void</span> Cadastrar::change(){</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    changeEmployee.show();</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keywordtype">void</span> Cadastrar::delet(){</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    deleteEmployee.show();</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
-<div class="ttc" id="class_cadastrar_html_a84aa3e559f92b83f205ed7222630259c"><div class="ttname"><a href="class_cadastrar.html#a84aa3e559f92b83f205ed7222630259c">Cadastrar::Cadastrar</a></div><div class="ttdeci">Cadastrar(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="cadastrar_8cpp_source.html#l00011">cadastrar.cpp:11</a></div></div>
-<div class="ttc" id="class_conexao_html"><div class="ttname"><a href="class_conexao.html">Conexao</a></div><div class="ttdoc">Classe Conexão. Classe C++ que inclui bibliotecas do Qt, C++ e MySQL para realizar a conexão entre In...</div><div class="ttdef"><b>Definition:</b> <a href="conexao_8h_source.html#l00032">conexao.h:32</a></div></div>
-<div class="ttc" id="class_conexao_html_a840ddef255453274939c138a5e70e78e"><div class="ttname"><a href="class_conexao.html#a840ddef255453274939c138a5e70e78e">Conexao::employees_name</a></div><div class="ttdeci">QStringList employees_name</div><div class="ttdef"><b>Definition:</b> <a href="conexao_8h_source.html#l00035">conexao.h:35</a></div></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">/* Slot addEmployee() da classe Cadastrar */</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="class_cadastrar.html#a25bb535e08b8ebae328f436f0923f4c7">   74</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_cadastrar.html#a25bb535e08b8ebae328f436f0923f4c7">Cadastrar::addEmployee</a>(){</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="class_cadastrar.html#ada10c5556d8370ea1ff9a7659501eec1">newEmployee</a>.show(); <span class="comment">//Mostra a Interface Gráfica responsável por adicionar funcionários.</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">/* Slot changEmployee() da classe Cadastrar */</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="class_cadastrar.html#ae6a8d8e75b939149ff4469791f6e555f">   79</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_cadastrar.html#ae6a8d8e75b939149ff4469791f6e555f">Cadastrar::changEmployee</a>(){</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="class_cadastrar.html#abc139091374c5f283f9950708afa38d2">changeEmployee</a>.show(); <span class="comment">//Mostra a Interface Gráfica responsável por alterar funcionários.</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">/* Slot delEmployee() da classe Cadastrar */</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="class_cadastrar.html#a460590bc661822e87117446e25b4f76f">   84</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_cadastrar.html#a460590bc661822e87117446e25b4f76f">Cadastrar::delEmployee</a>(){</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="class_cadastrar.html#ad7e3674585ed439a130317b8fbc5b33b">deleteEmployee</a>.show(); <span class="comment">//Mostra a Interface Gráfica responsável por deletar funcionários.</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
+<div class="ttc" id="class_cadastrar_html_a84aa3e559f92b83f205ed7222630259c"><div class="ttname"><a href="class_cadastrar.html#a84aa3e559f92b83f205ed7222630259c">Cadastrar::Cadastrar</a></div><div class="ttdeci">Cadastrar(QWidget *parent=0)</div><div class="ttdoc">Construtor da classe Cadastrar. </div><div class="ttdef"><b>Definition:</b> <a href="cadastrar_8cpp_source.html#l00011">cadastrar.cpp:11</a></div></div>
+<div class="ttc" id="class_cadastrar_html_ae6a8d8e75b939149ff4469791f6e555f"><div class="ttname"><a href="class_cadastrar.html#ae6a8d8e75b939149ff4469791f6e555f">Cadastrar::changEmployee</a></div><div class="ttdeci">void changEmployee()</div><div class="ttdoc">SLOT changEmployee() da classe Cadastrar. </div><div class="ttdef"><b>Definition:</b> <a href="cadastrar_8cpp_source.html#l00079">cadastrar.cpp:79</a></div></div>
+<div class="ttc" id="class_cadastrar_html_a460590bc661822e87117446e25b4f76f"><div class="ttname"><a href="class_cadastrar.html#a460590bc661822e87117446e25b4f76f">Cadastrar::delEmployee</a></div><div class="ttdeci">void delEmployee()</div><div class="ttdoc">SLOT delEmployee() da classe Cadastrar. </div><div class="ttdef"><b>Definition:</b> <a href="cadastrar_8cpp_source.html#l00084">cadastrar.cpp:84</a></div></div>
+<div class="ttc" id="class_cadastrar_html_ada10c5556d8370ea1ff9a7659501eec1"><div class="ttname"><a href="class_cadastrar.html#ada10c5556d8370ea1ff9a7659501eec1">Cadastrar::newEmployee</a></div><div class="ttdeci">Adicionar newEmployee</div><div class="ttdoc">Instância da classe Adicionar. </div><div class="ttdef"><b>Definition:</b> <a href="cadastrar_8h_source.html#l00037">cadastrar.h:37</a></div></div>
+<div class="ttc" id="class_conexao_html"><div class="ttname"><a href="class_conexao.html">Conexao</a></div><div class="ttdoc">Classe Conexao, é a responsável pela inclusão de bibliotecas do Qt, C++ e MySQL para realizar a conex...</div><div class="ttdef"><b>Definition:</b> <a href="conexao_8h_source.html#l00037">conexao.h:37</a></div></div>
+<div class="ttc" id="class_conexao_html_a840ddef255453274939c138a5e70e78e"><div class="ttname"><a href="class_conexao.html#a840ddef255453274939c138a5e70e78e">Conexao::employees_name</a></div><div class="ttdeci">QStringList employees_name</div><div class="ttdef"><b>Definition:</b> <a href="conexao_8h_source.html#l00040">conexao.h:40</a></div></div>
 <div class="ttc" id="cadastrar_8h_html"><div class="ttname"><a href="cadastrar_8h.html">cadastrar.h</a></div></div>
-<div class="ttc" id="class_conexao_html_a037d3ee84ec8629c1a4bffef8d67378f"><div class="ttname"><a href="class_conexao.html#a037d3ee84ec8629c1a4bffef8d67378f">Conexao::employees_salary</a></div><div class="ttdeci">QStringList employees_salary</div><div class="ttdef"><b>Definition:</b> <a href="conexao_8h_source.html#l00039">conexao.h:39</a></div></div>
-<div class="ttc" id="class_conexao_html_a821a9c7e6d6fc2e67fd0b5cebb2fb375"><div class="ttname"><a href="class_conexao.html#a821a9c7e6d6fc2e67fd0b5cebb2fb375">Conexao::funcionarios</a></div><div class="ttdeci">int funcionarios()</div><div class="ttdef"><b>Definition:</b> <a href="conexao_8cpp_source.html#l00162">conexao.cpp:162</a></div></div>
+<div class="ttc" id="class_cadastrar_html_ad7e3674585ed439a130317b8fbc5b33b"><div class="ttname"><a href="class_cadastrar.html#ad7e3674585ed439a130317b8fbc5b33b">Cadastrar::deleteEmployee</a></div><div class="ttdeci">Delete deleteEmployee</div><div class="ttdoc">Instância da classe Delete. </div><div class="ttdef"><b>Definition:</b> <a href="cadastrar_8h_source.html#l00051">cadastrar.h:51</a></div></div>
+<div class="ttc" id="class_conexao_html_a037d3ee84ec8629c1a4bffef8d67378f"><div class="ttname"><a href="class_conexao.html#a037d3ee84ec8629c1a4bffef8d67378f">Conexao::employees_salary</a></div><div class="ttdeci">QStringList employees_salary</div><div class="ttdef"><b>Definition:</b> <a href="conexao_8h_source.html#l00044">conexao.h:44</a></div></div>
+<div class="ttc" id="class_conexao_html_a821a9c7e6d6fc2e67fd0b5cebb2fb375"><div class="ttname"><a href="class_conexao.html#a821a9c7e6d6fc2e67fd0b5cebb2fb375">Conexao::funcionarios</a></div><div class="ttdeci">int funcionarios()</div><div class="ttdef"><b>Definition:</b> <a href="conexao_8cpp_source.html#l00161">conexao.cpp:161</a></div></div>
 <div class="ttc" id="conexao_8h_html"><div class="ttname"><a href="conexao_8h.html">conexao.h</a></div></div>
-<div class="ttc" id="class_cadastrar_html"><div class="ttname"><a href="class_cadastrar.html">Cadastrar</a></div><div class="ttdef"><b>Definition:</b> <a href="cadastrar_8h_source.html#l00016">cadastrar.h:16</a></div></div>
-<div class="ttc" id="class_conexao_html_afe469c76fdb5fb62d82f17e479281fc3"><div class="ttname"><a href="class_conexao.html#afe469c76fdb5fb62d82f17e479281fc3">Conexao::employees_age</a></div><div class="ttdeci">QStringList employees_age</div><div class="ttdef"><b>Definition:</b> <a href="conexao_8h_source.html#l00036">conexao.h:36</a></div></div>
-<div class="ttc" id="class_conexao_html_ae6dd52256ae13d3a08c67af499f052df"><div class="ttname"><a href="class_conexao.html#ae6dd52256ae13d3a08c67af499f052df">Conexao::employees_role</a></div><div class="ttdeci">QStringList employees_role</div><div class="ttdef"><b>Definition:</b> <a href="conexao_8h_source.html#l00038">conexao.h:38</a></div></div>
-<div class="ttc" id="class_conexao_html_af4a86c84b703836abc8581ddb695e46d"><div class="ttname"><a href="class_conexao.html#af4a86c84b703836abc8581ddb695e46d">Conexao::employees_email</a></div><div class="ttdeci">QStringList employees_email</div><div class="ttdef"><b>Definition:</b> <a href="conexao_8h_source.html#l00037">conexao.h:37</a></div></div>
-<div class="ttc" id="class_cadastrar_html_a22237f919185021666bc82fce25b580c"><div class="ttname"><a href="class_cadastrar.html#a22237f919185021666bc82fce25b580c">Cadastrar::~Cadastrar</a></div><div class="ttdeci">~Cadastrar()</div><div class="ttdef"><b>Definition:</b> <a href="cadastrar_8cpp_source.html#l00061">cadastrar.cpp:61</a></div></div>
+<div class="ttc" id="class_cadastrar_html_abc139091374c5f283f9950708afa38d2"><div class="ttname"><a href="class_cadastrar.html#abc139091374c5f283f9950708afa38d2">Cadastrar::changeEmployee</a></div><div class="ttdeci">Alterar changeEmployee</div><div class="ttdoc">Instância da classe Alterar. </div><div class="ttdef"><b>Definition:</b> <a href="cadastrar_8h_source.html#l00044">cadastrar.h:44</a></div></div>
+<div class="ttc" id="class_cadastrar_html"><div class="ttname"><a href="class_cadastrar.html">Cadastrar</a></div><div class="ttdoc">Classe Cadastrar, é a Interface Gráfica responsável por mostrar informações dos funcionários já exist...</div><div class="ttdef"><b>Definition:</b> <a href="cadastrar_8h_source.html#l00029">cadastrar.h:29</a></div></div>
+<div class="ttc" id="class_conexao_html_afe469c76fdb5fb62d82f17e479281fc3"><div class="ttname"><a href="class_conexao.html#afe469c76fdb5fb62d82f17e479281fc3">Conexao::employees_age</a></div><div class="ttdeci">QStringList employees_age</div><div class="ttdef"><b>Definition:</b> <a href="conexao_8h_source.html#l00041">conexao.h:41</a></div></div>
+<div class="ttc" id="class_cadastrar_html_a25bb535e08b8ebae328f436f0923f4c7"><div class="ttname"><a href="class_cadastrar.html#a25bb535e08b8ebae328f436f0923f4c7">Cadastrar::addEmployee</a></div><div class="ttdeci">void addEmployee()</div><div class="ttdoc">SLOT addEmployee() da classe Cadastrar. </div><div class="ttdef"><b>Definition:</b> <a href="cadastrar_8cpp_source.html#l00074">cadastrar.cpp:74</a></div></div>
+<div class="ttc" id="class_conexao_html_ae6dd52256ae13d3a08c67af499f052df"><div class="ttname"><a href="class_conexao.html#ae6dd52256ae13d3a08c67af499f052df">Conexao::employees_role</a></div><div class="ttdeci">QStringList employees_role</div><div class="ttdef"><b>Definition:</b> <a href="conexao_8h_source.html#l00043">conexao.h:43</a></div></div>
+<div class="ttc" id="class_cadastrar_html_a880379dcd001f93c782cdcceb5ec9963"><div class="ttname"><a href="class_cadastrar.html#a880379dcd001f93c782cdcceb5ec9963">Cadastrar::ui</a></div><div class="ttdeci">Ui::Cadastrar * ui</div><div class="ttdef"><b>Definition:</b> <a href="cadastrar_8h_source.html#l00097">cadastrar.h:97</a></div></div>
+<div class="ttc" id="class_conexao_html_af4a86c84b703836abc8581ddb695e46d"><div class="ttname"><a href="class_conexao.html#af4a86c84b703836abc8581ddb695e46d">Conexao::employees_email</a></div><div class="ttdeci">QStringList employees_email</div><div class="ttdef"><b>Definition:</b> <a href="conexao_8h_source.html#l00042">conexao.h:42</a></div></div>
+<div class="ttc" id="class_cadastrar_html_a22237f919185021666bc82fce25b580c"><div class="ttname"><a href="class_cadastrar.html#a22237f919185021666bc82fce25b580c">Cadastrar::~Cadastrar</a></div><div class="ttdeci">~Cadastrar()</div><div class="ttdoc">Destrutor da classe Cadastrar. </div><div class="ttdef"><b>Definition:</b> <a href="cadastrar_8cpp_source.html#l00069">cadastrar.cpp:69</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 4 2015 08:15:03 for Sistema de Controle e Estoque de Produção by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Dec 4 2015 12:06:59 for Sistema de Controle e Estoque de Produção by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

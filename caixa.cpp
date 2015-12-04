@@ -1,4 +1,4 @@
-//includes das Classes criadas pelo Desenvolvedor
+//includes Classes do Desenvolvedor
 #include "caixa.h"
 #include "ui_caixa.h"
 #include "conexao.h"
@@ -7,7 +7,7 @@
 #include <string>
 #include <sstream>
 
-//includes das Bibliotecas do Qt
+//includes Bibliotecas Qt
 #include <QMessageBox>
 #include <QStandardItem>
 #include <QStandardItemModel>
@@ -41,7 +41,7 @@ void Caixa::nextPurchase(){
 
 void Caixa::addProduct(){
     Conexao conn;
-    double valor = conn.selectByCode(ui->codeEdit->text());
+    double valor = conn.getSellPrice(ui->codeEdit->text());
 
     QMessageBox token;
 

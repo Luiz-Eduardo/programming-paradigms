@@ -1,27 +1,34 @@
-//includes das Bibliotecas do Qt
-#include <QString>
-#include <QMessageBox>
-
-//includes das Classes criadas pelo Desenvolvedor
+//includes Classes do Desenvolvedor
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "conexao.h"
 
+//includes Bibliotecas Qt
+#include <QString>
+#include <QMessageBox>
+
+/* Construtor da classe MainWindow */
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow){
     ui->setupUi(this);
+
+    /* Setando o título da janela como Login Page */
     this->setWindowTitle("Login Page");
 
+    /* Setando o campo passEdit como do tipo Password */
     ui->linePass->setEchoMode(QLineEdit::Password);
 
-    connect(ui->pushButton, SIGNAL(clicked(bool)), this, SLOT(fechar()));
+    /* Sinais e Slots */
+    connect(ui->exitButton, SIGNAL(clicked(bool)), this, SLOT(fechar()));
     connect(ui->enterButton,SIGNAL(clicked(bool)), this, SLOT(entrar()));
     connect(ui->linePass, SIGNAL(returnPressed()), this, SLOT(entrar()));
 }
 
+/* Destrutor da classe MainWindow */
 MainWindow::~MainWindow(){
     delete ui;
 }
 
+/* Slot fechar() da classe MainWindow */
 void MainWindow::fechar(){
   QMessageBox mensagem;
 
@@ -29,11 +36,12 @@ void MainWindow::fechar(){
   mensagem.setText("Finalizando o programa");
   mensagem.exec();
 
-  exit(0);
+  this->close();
 }
 
+/* Slot entrar() da Classe MainWindow */
 void MainWindow::entrar(){
-    Conexao connection; //Instancia a classe de conexão.
+    Conexao connection; //Instancia da classe Conexão.
 
     /*
      * Ao clicar no botão, o sinal clicked() é emitido,
@@ -47,6 +55,8 @@ void MainWindow::entrar(){
     senha = ui->linePass->text();
 
     QMessageBox token;
+
+    /* Tratamento dos dados de login e senha. */
     if(!login.compare("") || !senha.compare("")){ //Campos login e/ou senha vazios.
         token.setText("Preencha todos os campos!");
         token.exec();
@@ -56,27 +66,27 @@ void MainWindow::entrar(){
     } else { //Campos login e senha preenchidos.
         int resposta = connection.logar(login, senha);
 
-        enum { FALHA, CAIXA, GERENTE };
-
         switch(resposta){
             case FALHA:{
               QMessageBox erro;
-              erro.setText("Contate o desenvolvedor");
+
+              erro.setText("Erro no sistema, contate o desenvolvedor");
               erro.exec();
             } break;
             case CAIXA: {
                 //Caso a resposta seja igual a 1: vá para a página do caixa.
                 caixa.show();
-                this->close(); //Como usuário já está logado, fecha a tela de login.
+                this->close(); //Como o usuário já está logado, a tela de login é fechada.
             } break;
             case GERENTE: {
                 //Caso a resposta seja igual a 2: vá para a página do gerente.
                 gerente.show();
-                this->close(); //Como usuário já está logado, fecha a tela de login.
+                this->close(); //Como o usuário já está logado, a tela de login é fechada.
             }  break;
             default: {
                 //Login ou senha incorretos.
                 QMessageBox usuario;
+
                 usuario.setText("Funcionário não cadastrado no sistema ou login/senha incorretos");
                 usuario.exec();
             } break;

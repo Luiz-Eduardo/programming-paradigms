@@ -1,100 +1,120 @@
-//includes das Classes criadas pelo Desenvolvedor
+//includes Classes do Desenvolvedor
 #include "adicionar.h"
 #include "ui_adicionar.h"
 #include "conexao.h"
 
-//includes das Bibliotecas do Qt
+//includes Bibliotecas Qt
 #include <QRegExp>
 #include <QMessageBox>
 
+/* Construtor da classe Adicionar */
 Adicionar::Adicionar(QWidget *parent) : QDialog(parent), ui(new Ui::Adicionar){
     ui->setupUi(this);
+
+    /* Setando o título da janela como Adicionar novo funcionário */
     this->setWindowTitle("Adicionar novo funcionário");
+
+    /* Sinais e Slots */
     connect(ui->cleanButton, SIGNAL(clicked(bool)), this, SLOT(clean()));
     connect(ui->cancelButton, SIGNAL(clicked(bool)), this, SLOT(close()));
     connect(ui->addButton, SIGNAL(clicked(bool)), this, SLOT(add()));
 }
 
+/* Destrutor da classe Adicionar */
 Adicionar::~Adicionar(){
     delete ui;
 }
 
+/* Slot clean() da classe Adicionar */
 void Adicionar::clean(){
-    ui->nameEdit->setText("");
-    ui->ageEdit->setText("");
-    ui->cpfEdit->setText("");
-    ui->salaryEdit->setText("");
-    ui->roleEdit->setText("");
-    ui->emailEdit->setText("");
-    ui->addressEdit->setText("");
+    ui->nameEdit->setText(""); //Limpa o campo nameEdit.
+    ui->ageEdit->setText(""); //Limpa o campo ageEdit.
+    ui->cpfEdit->setText(""); //Limpa o campo cpfEdit.
+    ui->salaryEdit->setText(""); //Limpa o campo salaryEdit.
+    ui->roleEdit->setText(""); //Limpa o campo roleEdit.
+    ui->emailEdit->setText(""); //Limpa o campo emailEdit.
+    ui->addressEdit->setText(""); //Limpa o campo addressEdit.
 }
 
+/* Slot add() da classe Adicionar */
 void Adicionar::add(){
-    Conexao connection;
+    Conexao connection; //Instancia a classe Conexão.
 
-    QString name, age, role, salary, address, email, cpf;
+    /* Recebendo os valores inseridos nos campos */
+    funcionario.name = ui->nameEdit->text();
+    funcionario.age = ui->ageEdit->text();
+    funcionario.role = ui->roleEdit->text();
+    funcionario.salary = ui->salaryEdit->text();
+    funcionario.address = ui->addressEdit->text();
+    funcionario.email = ui->emailEdit->text();
+    funcionario.cpf = ui->cpfEdit->text();
 
-    name = ui->nameEdit->text();
-    age = ui->ageEdit->text();
-    role = ui->roleEdit->text();
-    salary = ui->salaryEdit->text();
-    address = ui->addressEdit->text();
-    email = ui->emailEdit->text();
-    cpf = ui->cpfEdit->text();
+    /* Removendo pontos e hífens no CPF antes de inserir no Banco de Dados */
+    funcionario.cpf = funcionario.cpf.remove(QChar('.'), Qt::CaseInsensitive);
+    funcionario.cpf = funcionario.cpf.remove(QChar('-'), Qt::CaseInsensitive);
 
-    cpf = cpf.remove(QChar('.'), Qt::CaseInsensitive);
-    cpf = cpf.remove(QChar('-'), Qt::CaseInsensitive);
+    /* Colocando o campo cargo para maiúsculo antes de tratar o valor */
+    funcionario.role = funcionario.role.toUpper();
 
-    for(int i = 0; i < cpf.size(); i++){
-        if(cpf[i] == '.' || cpf[i] == '-'){
-            cpf[i] = cpf[i+1];
-        }
-    }
-
-    role = role.toUpper();
-
+    /* Símbolo responsável pela exibição de uma mensagem de controle */
     QMessageBox token;
-    QRegExp valida("\\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,4}\\b");
-    valida.setCaseSensitivity(Qt::CaseInsensitive);
-    valida.setPatternSyntax(QRegExp::RegExp);
 
-    if(!name.compare("") || !age.compare("") || !role.compare("") || !salary.compare("") || !address.compare("") || !email.compare("") || !cpf.compare("") ){ //Campos vazios.
+    /* Expressão regular responsável pela validação do email */
+    QRegExp valida("\\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,4}\\b");
+    valida.setCaseSensitivity(Qt::CaseInsensitive); //Setando a Expressão Regular como CaseInsesitive.
+    valida.setPatternSyntax(QRegExp::RegExp); //Setando a sintaxe padrão como QRegExp.
+
+    if(!funcionario.name.compare("") || !funcionario.age.compare("") || !funcionario.role.compare("") || !funcionario.salary.compare("") || !funcionario.address.compare("") || !funcionario.email.compare("") || !funcionario.cpf.compare("") ){ //Campos vazios.
         token.setText("Preencha todos os campos!");
         token.exec();
-    } else if(age.size() > 2) { //Campo linePass com o tamanho maior que 2.
+    } else if(funcionario.age.size() != 2) { //Campo ageEdit com o tamanho diferente de 2 (menores de idade ou maiores de 100 anos).
         token.setText("Digite uma idade válida!");
         token.exec();
-    } else if(!valida.exactMatch(email)){
+    } else if(!valida.exactMatch(funcionario.email)){ //Campo emailEdit diferente do aceitado pela Expressão regular.
         token.setText("Digite um email válido");
         token.exec();
-    } else {
-        for(int i = 0; i < salary.size(); i++)
-            if(salary[i] == ',')
-                salary[i] = '.';
+    } else { //Campos preenchidos corretamente.
+        /* Alterando a vírgula por ponto no salário antes de inserir no Banco de Dados */
+        for(int i = 0; i < funcionario.salary.size(); i++)
+            if(funcionario.salary[i] == ',')
+                funcionario.salary[i] = '.';
 
         bool flag = false;
 
-        for(int i = 0; i < age.size(); i++)
-            if(age[i] < '0' || age[i] > '9')
+        //Caso o valor digitado na idade não tenha sido um número.
+        for(int i = 0; i < funcionario.age.size(); i++)
+            if(funcionario.age[i] < '0' || funcionario.age[i] > '9')
                 flag = true;
 
         if(flag){
             token.setText("Digite uma idade válida!");
             token.exec();
         } else {
-            if(!role.compare("GERENTE")){
-                role = "2";
-            } else if(!role.compare("CAIXA")){
-                role = "1";
-            } else {
-                role = "0";
-            }
+            if(!funcionario.role.compare("GERENTE"))
+                funcionario.role = "2";
+             else if(!funcionario.role.compare("CAIXA"))
+                funcionario.role = "1";
+             else
+                funcionario.role = "0";
 
-            if(!connection.validaCpf(cpf)){
+            /* Teste de validação do CPF */
+            if(!connection.validaCpf(funcionario.cpf)){
                 token.setText("Digite um CPF válido!");
                 token.exec();
             } else {
-                connection.addEmployee(name, age, role, salary, cpf, email, address);
+                /* Símbolo responsável pela exibição de uma mensagem de controle */
+                QMessageBox token;
+
+                /* Adicionando o novo funcionário na Empresa */
+                if(connection.addEmployee(funcionario.name, funcionario.age, funcionario.role, funcionario.salary, funcionario.cpf, funcionario.email, funcionario.address)){
+                    token.setText("Funcionário inserido com sucesso");
+                    token.exec();
+                } else {
+                    token.setText("Falha de Conexão");
+                    token.exec();
+                }
+
+                /* Limpando todos os campos */
                 ui->nameEdit->setText("");
                 ui->ageEdit->setText("");
                 ui->roleEdit->setText("");
@@ -102,9 +122,10 @@ void Adicionar::add(){
                 ui->cpfEdit->setText("");
                 ui->emailEdit->setText("");
                 ui->addressEdit->setText("");
+
+                /* Fechando a janela */
                 this->close();
             }
-
         }
     }
 }

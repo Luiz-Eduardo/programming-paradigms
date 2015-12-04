@@ -1,13 +1,14 @@
 #ifndef CAIXA_H
 #define CAIXA_H
 
+//includes Bibliotecas Qt
 #include <QMainWindow>
 
 namespace Ui {
-class Caixa;
+    class Caixa;
 }
 
-class Caixa : public QMainWindow{
+class Caixa : public QMainWindow {
     Q_OBJECT
     double total;
     int tamanho;
@@ -18,6 +19,7 @@ public:
 
 private:
     Ui::Caixa *ui;
+
 private slots:
     void nextPurchase();
     void addProduct();

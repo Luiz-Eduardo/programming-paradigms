@@ -24,7 +24,7 @@
   <td style="padding-left: 0.5em;">
    <div id="projectname">Sistema de Controle e Estoque de Produção
    </div>
-   <div id="projectbrief">Sistema de Controle e Estoque de Produção criado para realização do Projeto da Terceira Unidade do DCA0201 - Paradigmas de Programação</div>
+   <div id="projectbrief">Sistema de Controle e Estoque de Produção criado para realização do Projeto da Terceira Unidade da Disciplina DCA0201 - Paradigmas de Programação</div>
   </td>
  </tr>
  </tbody>
@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,39 +89,43 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="financas_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef FINANCAS_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FINANCAS_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QMainWindow&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span>Ui {</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span><a class="code" href="class_financas.html">Financas</a>;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;}</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_financas.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_financas.html">Financas</a> : <span class="keyword">public</span> QMainWindow{</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_financas.html#a0fe4dd58e9cf24f5ef2920027975d510">   14</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_financas.html#a0fe4dd58e9cf24f5ef2920027975d510">employeePayment</a>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_financas.html#adf668ad1e95bac0074f89f926a5f70be">   15</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_financas.html#adf668ad1e95bac0074f89f926a5f70be">productExpenses</a>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_financas.html#a0d2db177c47f41d66ff71eac7e7e66f6">   16</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_financas.html#a0d2db177c47f41d66ff71eac7e7e66f6">total</a>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_financas.html#a5edcf40960a2ef053084b369fb1235bf">Financas</a>(QWidget *parent = 0);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_financas.html#a3acb713866dd2e6d0b5be6d75b90e829">~Financas</a>();</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    Ui::Financas *ui;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> showProfit();</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif // FINANCAS_H</span></div>
-<div class="ttc" id="class_financas_html_a0d2db177c47f41d66ff71eac7e7e66f6"><div class="ttname"><a href="class_financas.html#a0d2db177c47f41d66ff71eac7e7e66f6">Financas::total</a></div><div class="ttdeci">double total</div><div class="ttdef"><b>Definition:</b> <a href="financas_8h_source.html#l00016">financas.h:16</a></div></div>
-<div class="ttc" id="class_financas_html_a0fe4dd58e9cf24f5ef2920027975d510"><div class="ttname"><a href="class_financas.html#a0fe4dd58e9cf24f5ef2920027975d510">Financas::employeePayment</a></div><div class="ttdeci">double employeePayment</div><div class="ttdef"><b>Definition:</b> <a href="financas_8h_source.html#l00014">financas.h:14</a></div></div>
-<div class="ttc" id="class_financas_html_adf668ad1e95bac0074f89f926a5f70be"><div class="ttname"><a href="class_financas.html#adf668ad1e95bac0074f89f926a5f70be">Financas::productExpenses</a></div><div class="ttdeci">double productExpenses</div><div class="ttdef"><b>Definition:</b> <a href="financas_8h_source.html#l00015">financas.h:15</a></div></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//includes Bibliotecas Qt</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QMainWindow&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>Ui {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keyword">class </span><a class="code" href="class_financas.html">Financas</a>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;}</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_financas.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_financas.html">Financas</a> : <span class="keyword">public</span> QMainWindow {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_financas.html#a0fe4dd58e9cf24f5ef2920027975d510">   15</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_financas.html#a0fe4dd58e9cf24f5ef2920027975d510">employeePayment</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_financas.html#adf668ad1e95bac0074f89f926a5f70be">   16</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_financas.html#adf668ad1e95bac0074f89f926a5f70be">productExpenses</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_financas.html#a0d2db177c47f41d66ff71eac7e7e66f6">   17</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_financas.html#a0d2db177c47f41d66ff71eac7e7e66f6">total</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_financas.html#a5edcf40960a2ef053084b369fb1235bf">Financas</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_financas.html#a3acb713866dd2e6d0b5be6d75b90e829">~Financas</a>();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_financas.html#ae0432dffe5ddbd3e2a45a94fd084bba1">   22</a></span>&#160;    Ui::Financas *<a class="code" href="class_financas.html#ae0432dffe5ddbd3e2a45a94fd084bba1">ui</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_financas.html#a18acb7b4cbcfb46ba0c64fe6f7889187">showProfit</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif // FINANCAS_H</span></div>
+<div class="ttc" id="class_financas_html_ae0432dffe5ddbd3e2a45a94fd084bba1"><div class="ttname"><a href="class_financas.html#ae0432dffe5ddbd3e2a45a94fd084bba1">Financas::ui</a></div><div class="ttdeci">Ui::Financas * ui</div><div class="ttdef"><b>Definition:</b> <a href="financas_8h_source.html#l00022">financas.h:22</a></div></div>
+<div class="ttc" id="class_financas_html_a18acb7b4cbcfb46ba0c64fe6f7889187"><div class="ttname"><a href="class_financas.html#a18acb7b4cbcfb46ba0c64fe6f7889187">Financas::showProfit</a></div><div class="ttdeci">void showProfit()</div><div class="ttdef"><b>Definition:</b> <a href="financas_8cpp_source.html#l00087">financas.cpp:87</a></div></div>
+<div class="ttc" id="class_financas_html_a0d2db177c47f41d66ff71eac7e7e66f6"><div class="ttname"><a href="class_financas.html#a0d2db177c47f41d66ff71eac7e7e66f6">Financas::total</a></div><div class="ttdeci">double total</div><div class="ttdef"><b>Definition:</b> <a href="financas_8h_source.html#l00017">financas.h:17</a></div></div>
+<div class="ttc" id="class_financas_html_a0fe4dd58e9cf24f5ef2920027975d510"><div class="ttname"><a href="class_financas.html#a0fe4dd58e9cf24f5ef2920027975d510">Financas::employeePayment</a></div><div class="ttdeci">double employeePayment</div><div class="ttdef"><b>Definition:</b> <a href="financas_8h_source.html#l00015">financas.h:15</a></div></div>
+<div class="ttc" id="class_financas_html_adf668ad1e95bac0074f89f926a5f70be"><div class="ttname"><a href="class_financas.html#adf668ad1e95bac0074f89f926a5f70be">Financas::productExpenses</a></div><div class="ttdeci">double productExpenses</div><div class="ttdef"><b>Definition:</b> <a href="financas_8h_source.html#l00016">financas.h:16</a></div></div>
 <div class="ttc" id="class_financas_html_a5edcf40960a2ef053084b369fb1235bf"><div class="ttname"><a href="class_financas.html#a5edcf40960a2ef053084b369fb1235bf">Financas::Financas</a></div><div class="ttdeci">Financas(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="financas_8cpp_source.html#l00013">financas.cpp:13</a></div></div>
-<div class="ttc" id="class_financas_html"><div class="ttname"><a href="class_financas.html">Financas</a></div><div class="ttdef"><b>Definition:</b> <a href="financas_8h_source.html#l00010">financas.h:10</a></div></div>
+<div class="ttc" id="class_financas_html"><div class="ttname"><a href="class_financas.html">Financas</a></div><div class="ttdef"><b>Definition:</b> <a href="financas_8h_source.html#l00011">financas.h:11</a></div></div>
 <div class="ttc" id="class_financas_html_a3acb713866dd2e6d0b5be6d75b90e829"><div class="ttname"><a href="class_financas.html#a3acb713866dd2e6d0b5be6d75b90e829">Financas::~Financas</a></div><div class="ttdeci">~Financas()</div><div class="ttdef"><b>Definition:</b> <a href="financas_8cpp_source.html#l00078">financas.cpp:78</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 4 2015 08:15:03 for Sistema de Controle e Estoque de Produção by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Dec 4 2015 12:06:59 for Sistema de Controle e Estoque de Produção by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

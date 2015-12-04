@@ -1,9 +1,8 @@
-//includes das Classes criadas pelo Desenvolvedor
+//includes Classes do Desenvolvedor
 #include "mainwindow.h"
 
-//includes das Bibliotecas do Qt
+//includes Bibliotecas Qt
 #include <QApplication>
-
 
 int main(int argc, char *argv[]){
     QApplication a(argc, argv);

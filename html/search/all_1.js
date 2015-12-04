@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['balanco',['balanco',['../class_gerente.html#a518d71e4ca47481a86e9080865968cb0',1,'Gerente']]]
+  ['balanco',['balanco',['../class_gerente.html#a518d71e4ca47481a86e9080865968cb0',1,'Gerente']]],
+  ['bug_20list',['Bug List',['../bug.html',1,'']]]
 ];

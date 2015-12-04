@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['validacpf',['validaCpf',['../class_conexao.html#a19e6ec92c69bac27459081dc2df6b2c1',1,'Conexao']]],
-  ['vendidos',['vendidos',['../class_conexao.html#ad07b7be6fc9e8b60c354debaa9469b47',1,'Conexao']]]
+  ['tamanho',['tamanho',['../class_caixa.html#a1806f71fd0ef06ed02268776e0d17f3d',1,'Caixa']]],
+  ['todo_20list',['Todo List',['../todo.html',1,'']]],
+  ['total',['total',['../class_caixa.html#a693f2d2f0053a8208b07f8b4e6dc83e6',1,'Caixa::total()'],['../class_financas.html#a0d2db177c47f41d66ff71eac7e7e66f6',1,'Financas::total()']]]
 ];

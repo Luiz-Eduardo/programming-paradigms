@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['total',['total',['../class_financas.html#a0d2db177c47f41d66ff71eac7e7e66f6',1,'Financas']]]
+  ['readme',['README',['../md__r_e_a_d_m_e.html',1,'']]],
+  ['readme_2emd',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
+  ['role',['role',['../struct_funcionario.html#a33da82875a810de983612c791585c8a6',1,'Funcionario']]]
 ];

@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['select',['select',['../class_conexao.html#a628a3b1c7b05f10aa9f8a29ceab6d465',1,'Conexao']]],
-  ['selectbycode',['selectByCode',['../class_conexao.html#a1d30adc1b4f8a956cbc458fe75d94e26',1,'Conexao']]],
-  ['selectproducts',['selectProducts',['../class_conexao.html#aa0617deb68c402dae6fbd08ffef56f93',1,'Conexao']]]
+  ['nextpurchase',['nextPurchase',['../class_caixa.html#a23471f9609ad0ada663c5fa5519e8d17',1,'Caixa']]]
 ];

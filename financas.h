@@ -1,13 +1,14 @@
 #ifndef FINANCAS_H
 #define FINANCAS_H
 
+//includes Bibliotecas Qt
 #include <QMainWindow>
 
 namespace Ui {
-class Financas;
+    class Financas;
 }
 
-class Financas : public QMainWindow{
+class Financas : public QMainWindow {
     Q_OBJECT
 
 public:
@@ -19,6 +20,7 @@ public:
 
 private:
     Ui::Financas *ui;
+
 private slots:
     void showProfit();
 };

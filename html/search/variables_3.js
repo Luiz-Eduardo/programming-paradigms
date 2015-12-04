@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['funcionario',['funcionario',['../class_gerente.html#a2345050dbe8f33e98224060b89ed1396',1,'Gerente']]],
-  ['funcionarios',['funcionarios',['../class_cadastrar.html#a7d59843eb5af64922e84a9d613c2447a',1,'Cadastrar']]]
+  ['deleteemployee',['deleteEmployee',['../class_cadastrar.html#ad7e3674585ed439a130317b8fbc5b33b',1,'Cadastrar']]]
 ];

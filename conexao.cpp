@@ -1,34 +1,31 @@
-//includes das Classes criadas pelo Desenvolvedor.
+//includes Classes do Desenvolvedor
 #include "conexao.h"
 
-//includes das Bibliotecas do Qt
-#include <QMessageBox>
-
 //includes Bibliotecas do C++
-#include <cstdlib>
 #include <sstream>
 #include <ctime>
 
-#define hostname "localhost"
-#define username "root"
-#define password "2701"
-#define dbname "Estoque"
-#define socketname NULL
-#define portnumber 1563
-#define flags 0
+#define hostname "localhost" //Definição do nome do servidor.
+#define username "root" //Definição do nome do usuário do phpMyAdmin.
+#define password "2701" //Definição da senha do usuário do phpMyAdmin.
+#define dbname "Estoque" //Definição do Banco de Dados utilizado.
+#define socketname NULL //Definição do socket utilizado.
+#define portnumber 1563 //Definição da porta do Software.
+#define flags 0 //Definição da quantidade de flags.
 
-
+/* Construtor da classe Conexao */
 Conexao::Conexao(QObject *parent) : QObject(parent){
-    setlocale(LC_ALL, "Portuguese");
+    setlocale(LC_ALL, "Portuguese"); //Setando a linguagem como Português para utilizar acentos no cout.
 
-    mysql_init(&conn);
+    mysql_init(&conn); //Iniciando a conexão.
 }
 
+/* Destrutor da classe Conexao */
 Conexao::~Conexao(){
-    mysql_close(&conn);
+    mysql_close(&conn); //Fechando a conexão.
 }
 
-void Conexao::addEmployee(QString _name, QString _age, QString _role, QString _salary, QString _cpf, QString _email, QString _address){
+bool Conexao::addEmployee(QString _name, QString _age, QString _role, QString _salary, QString _cpf, QString _email, QString _address){
     if(mysql_real_connect(&conn, hostname, username, password, dbname, portnumber, socketname, flags)){
         string name = _name.toUtf8().constData();
         string age = _age.toUtf8().constData();
@@ -59,15 +56,13 @@ void Conexao::addEmployee(QString _name, QString _age, QString _role, QString _s
 
         mysql_query(&conn, query);
         mysql_query(&conn, log);
-    } else {
-        QMessageBox erro;
-        erro.setText("Falha de Conexão");
-        erro.exec();
-
+        return true;
     }
+
+    return false;
 }
 
-bool Conexao::delEmployees(QString _name, QString _email){
+bool Conexao::deleteEmployee(QString _name, QString _email){
     if(mysql_real_connect(&conn, hostname, username, password, dbname, portnumber, socketname, flags)){
         string name = _name.toUtf8().constData();
         string email = _email.toUtf8().constData();
@@ -86,7 +81,7 @@ bool Conexao::delEmployees(QString _name, QString _email){
 
 }
 
-bool Conexao::select(QString name, QString &cpf, QString &email, QString &address, QString &role, QString &salary){
+bool Conexao::selectEmployee(QString name, QString &cpf, QString &email, QString &address, QString &role, QString &salary){
     if(mysql_real_connect(&conn, hostname, username, password, dbname, portnumber, socketname, flags)){
         MYSQL_RES *res; //Ponteiro que receberá os resultados.
         MYSQL_ROW row;
@@ -159,7 +154,7 @@ bool Conexao::updateEmployee(QString _name, QString _cpf, QString _salary, QStri
     return false;
 }
 
-int Conexao::funcionarios(){
+int Conexao::selectEmployees(){
     int tamanho = 0;
 
     if(mysql_real_connect(&conn, hostname, username, password, dbname, portnumber, socketname, flags)){
@@ -301,18 +296,12 @@ bool Conexao::insertProducts(QString _name, QString _purchasePrice, QString _sel
         string quantity = _quantity.toUtf8().constData();
         string validity = _validity.toUtf8().constData();
         string sql = "INSERT INTO products(name, purchaseprice, saleprice, quantity, validity) VALUES ('" + name + "', '" + purchasePrice + "', '" + sellPrice + "', '" + quantity + "', '" + validity + "')";
-        //AES_ENCRYPT("CHAVE", "VALOR");
 
         char query[sql.size()];
         strcpy(query, sql.c_str());
 
         mysql_query(&conn, query);
         return true;
-    } else {
-        QMessageBox erro;
-        erro.setText("Falha de Conexão");
-        erro.exec();
-        return false;
     }
 
     return false;
@@ -371,7 +360,7 @@ int Conexao::selectProducts(){
     }
 }
 
-int Conexao::selectByCode(QString _id){
+int Conexao::getSellPrice(QString _id){
     if(mysql_real_connect(&conn, hostname, username, password, dbname, portnumber, socketname, flags)){
         MYSQL_RES *res; //Ponteiro que receberá os resultados.
         MYSQL_ROW row;

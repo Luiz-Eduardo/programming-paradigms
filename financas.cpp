@@ -1,4 +1,4 @@
-//includes das Classes criadas pelo Desenvolvedor
+//includes Classes do Desenvolvedor
 #include "financas.h"
 #include "ui_financas.h"
 #include "conexao.h"
@@ -6,7 +6,7 @@
 //include da Classe de Manipulação de stringstreams
 #include <sstream>
 
-//includes das Bibliotecas do Qt
+//includes Bibliotecas Qt
 #include <QStandardItem>
 #include <QStandardItemModel>
 
@@ -20,7 +20,7 @@ Financas::Financas(QWidget *parent) : QMainWindow(parent), ui(new Ui::Financas){
 
     Conexao conn;
 
-    unsigned int tamanho = conn.funcionarios();
+    unsigned int tamanho = conn.selectEmployees();
 
     for(auto i : conn.employees_salary)
         employeePayment += i.toDouble();

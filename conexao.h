@@ -18,19 +18,26 @@
 
 using namespace std;
 
-/*! @brief Classe Conexão.
- *      Classe C++ que inclui bibliotecas do Qt, C++ e MySQL para realizar a conexão entre Interface Gráfica,
- * C++ e Banco de Dados.
+/*! *  @brief Classe Conexao,
+ *  é a responsável pela inclusão de bibliotecas do Qt, C++ e MySQL para realizar
+ *  a conexão entre Interface Gráfica, C++ e Banco de Dados
  *
- * A Classe Conexão consiste em uma Classe com suporte para Interface Gráfica responsável por realizar toda a
- * conexão do sistema com o Banco de Dados, esta é responsável pela validação e criptografia dos dados dos
- * funcionários que são cadastrados no Sistema de Controle de Estoque e Produção. A Classe é capaz de inserir
- * dados, alterar dados existentes, remover dados e selecionar dados, tornando-a a Classe que gerencia o projeto
- * inteiro.
+ *  A Classe Conexão consiste em uma Classe com suporte para Interface Gráfica responsável por realizar toda a
+ *  conexão do sistema com o Banco de Dados, esta é responsável pela validação e criptografia dos dados dos
+ *  funcionários que são cadastrados no Sistema de Controle de Estoque e Produção. A Classe é capaz de inserir
+ *  dados, alterar dados existentes, remover dados e selecionar dados, tornando-a a Classe que gerencia o projeto
+ *  inteiro.
+ *
+ *  @warning Não deve ser vísivel para o usuário, apenas para o desenvolvedor, todos os dados devem
+ *  permanecer criptografados.
+ *
+ * @copyright \htmlonly <a href = "https://github.com/Luiz-Eduardo"> Luiz Eduardo Barros de Araújo Filho </a> \endhtmlonly
+ * e \htmlonly <a href = "https://www.facebook.com/mariaelena.nascimento"> Marielena Nascimento Silveira </a> \endhtmlonly
  */
 
-class Conexao : public QObject{
+class Conexao : public QObject {
     Q_OBJECT
+
 public:    
     QStringList employees_name;
     QStringList employees_age;
@@ -45,27 +52,35 @@ public:
     QStringList products_quantity;
     QStringList products_validity;
 
-    map<int, string> vendidos; //Codigo do produto e quantidade de vendas do mesmo.
-
     explicit Conexao(QObject *parent = 0);
+
+    /*! @brief Destrutor da classe Conexao.
+     *
+     * Destrutor da classe Conexao, responsável por automatizar o gerenciamento de memória, recuperando
+     * uma área de memória que antes estava inutilizada.
+     */
     ~Conexao();
-    MYSQL conn;
-    void addEmployee(QString _name, QString _age, QString _role, QString _salary, QString _cpf, QString _email, QString _address);
-    void deletar(string nome, int age);
+
+    /* Add, update, select and delete employees */
+    bool addEmployee(QString _name, QString _age, QString _role, QString _salary, QString _cpf, QString _email, QString _address);
     bool updateEmployee(QString _name, QString _cpf, QString _salary, QString _email, QString _address, QString _role);
-    int logar(QString login, QString senha);
-    int funcionarios();
-    bool validaCpf(QString cpf);
-    bool select(QString name, QString &cpf, QString &email, QString &address, QString &role, QString &salary);
+    bool selectEmployee(QString name, QString &cpf, QString &email, QString &address, QString &role, QString &salary);
+    bool deleteEmployee(QString name, QString email);
+
+    int selectEmployees();
+
+    /* Add and select products */
     bool insertProducts(QString _name, QString _purchasePrice, QString _sellPrice, QString _quantity, QString _validity);
     int selectProducts();
-    bool delEmployees(QString name, QString email);
-    int selectByCode(QString _id);
+    int getSellPrice(QString _id);
     QString getName(QString _id);
-signals:
 
-public slots:
+    /* Algoritmos de Validação */
+    int logar(QString login, QString senha);
+    bool validaCpf(QString cpf);
 
+protected:
+    MYSQL conn;
 };
 
 #endif // CONEXAO_H

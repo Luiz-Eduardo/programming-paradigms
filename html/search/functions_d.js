@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['validacpf',['validaCpf',['../class_conexao.html#a19e6ec92c69bac27459081dc2df6b2c1',1,'Conexao']]],
+  ['vendas',['vendas',['../class_gerente.html#a31295ac69915b694b1fe99ab30b422b2',1,'Gerente']]]
+];
