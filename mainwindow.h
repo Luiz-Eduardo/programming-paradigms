@@ -17,11 +17,12 @@ namespace Ui {
 /*! @brief Classe MainWindow
  *      é a Interface Gráfica responsável por logar no Software da empresa.
  *
- * A Classe MainWindow consiste em uma QMainWindow e possui uma página de Login onde as informações
- * serão tratadas e o usuário será enviado para o local apropriado de acordo com seu cargo na empresa.
+ *  A Classe MainWindow consiste em uma QMainWindow e possui uma página de Login onde as informações
+ *  serão tratadas e o usuário será enviado para o local apropriado de acordo com seu cargo na empresa.
  *
- * @copyright \htmlonly <a href = "https://github.com/Luiz-Eduardo"> Luiz Eduardo Barros de Araújo Filho </a> \endhtmlonly
- * e \htmlonly <a href = "https://www.facebook.com/mariaelena.nascimento"> Marielena Nascimento Silveira </a> \endhtmlonly
+ *  @version 0.1
+ *  @copyright \htmlonly <a href = "https://github.com/Luiz-Eduardo"> Luiz Eduardo Barros de Araújo Filho </a> \endhtmlonly
+ *  e \htmlonly <a href = "https://www.facebook.com/mariaelena.nascimento"> Marielena Nascimento Silveira </a> \endhtmlonly
  */
 
 class MainWindow : public QMainWindow {

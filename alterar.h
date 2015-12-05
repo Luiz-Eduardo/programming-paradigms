@@ -10,16 +10,17 @@ namespace Ui {
 
 /*! @brief Classe Alterar
  *      é a Interface Gráfica responsável por alterar informações dos funcionários já existentes no Banco de Dados Estoque
- * na tabela employees.
+ *      na tabela employees.
  *
- * A Classe Alterar consiste em uma QMainWindow e recebe o nome de um funcionário para que suas outras informações possam
- * ser alteradas.
+ *  A Classe Alterar consiste em uma QMainWindow e recebe o nome de um funcionário para que suas outras informações possam
+ *  ser alteradas.
  *
- * @bug Ao alterar um funcionário já existente no Banco de Dados, é necessário reiniciar o projeto para
- * que a alteração apareça na employeesView (tabela de Funcionários).
+ *  @bug Ao alterar um funcionário já existente no Banco de Dados, é necessário reiniciar o projeto para
+ *  que a alteração apareça na employeesView (tabela de Funcionários).
  *
- * @copyright \htmlonly <a href = "https://github.com/Luiz-Eduardo"> Luiz Eduardo Barros de Araújo Filho </a> \endhtmlonly
- * e \htmlonly <a href = "https://www.facebook.com/mariaelena.nascimento"> Marielena Nascimento Silveira </a> \endhtmlonly
+ *  @version 0.1
+ *  @copyright \htmlonly <a href = "https://github.com/Luiz-Eduardo"> Luiz Eduardo Barros de Araújo Filho </a> \endhtmlonly
+ *  e \htmlonly <a href = "https://www.facebook.com/mariaelena.nascimento"> Marielena Nascimento Silveira </a> \endhtmlonly
  */
 
 class Alterar : public QMainWindow {

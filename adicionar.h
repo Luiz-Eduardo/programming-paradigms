@@ -14,7 +14,8 @@ namespace Ui {
  *  Estrutura responsável por receber todos os dados que serão capazes
  *  de incluir um novo funcionário na empresa.
  *
- *  Copyright Luiz Eduardo Barros de Araújo Filho e Marielena Nascimento Silveira
+ *  @copyright \htmlonly <a href = "https://github.com/Luiz-Eduardo"> Luiz Eduardo Barros de Araújo Filho </a> \endhtmlonly
+ *  e \htmlonly <a href = "https://www.facebook.com/mariaelena.nascimento"> Marielena Nascimento Silveira </a> \endhtmlonly
  */
 
 struct Funcionario {
@@ -30,16 +31,17 @@ struct Funcionario {
 /*! @brief Classe Adicionar
  *      é a Interface Gráfica responsável por adicionar novos funcionários no projeto.
  *
- * A Classe Adicionar consiste em uma QDialog e possui os dados principais de um funcionário,
- * que serão colocados no Banco de Dados Estoque na tabela employees, além disso, inclui no Banco users um usuário
- * e senha para se logar no sistema, sendo este segundo composto de login: (primeiro nome da pessoa)
- * e senha: cpf da pessoa.
+ *  A Classe Adicionar consiste em uma QDialog e possui os dados principais de um funcionário,
+ *  que serão colocados no Banco de Dados Estoque na tabela employees, além disso, inclui no Banco users um usuário
+ *  e senha para se logar no sistema, sendo este segundo composto de login: (primeiro nome da pessoa)
+ *  e senha: cpf da pessoa.
  *
- * @bug Ao adicionar um novo funcionário a tabela employees, é necessário reiniciar o projeto para
- * que o mesmo apareça na employeesView (tabela de Funcionários).
+ *  @bug Ao adicionar um novo funcionário a tabela employees, é necessário reiniciar o projeto para
+ *  que o mesmo apareça na employeesView (tabela de Funcionários).
  *
- * @copyright \htmlonly <a href = "https://github.com/Luiz-Eduardo"> Luiz Eduardo Barros de Araújo Filho </a> \endhtmlonly
- * e \htmlonly <a href = "https://www.facebook.com/mariaelena.nascimento"> Marielena Nascimento Silveira </a> \endhtmlonly
+ *  @version 0.1
+ *  @copyright \htmlonly <a href = "https://github.com/Luiz-Eduardo"> Luiz Eduardo Barros de Araújo Filho </a> \endhtmlonly
+ *  e \htmlonly <a href = "https://www.facebook.com/mariaelena.nascimento"> Marielena Nascimento Silveira </a> \endhtmlonly
  */
 
 class Adicionar : public QDialog {

@@ -17,20 +17,22 @@ namespace Ui {
 /*! @brief Classe Gerente
  *      é a Interface Gráfica responsável por mostrar as possibilidades do Gerente na hora de gerenciar a empresa.
  *
- * A Classe Gerente consiste em uma QMainWindow e mostra as 4 possibilidades do Gerente no projeto que são elas:
- * \htmlonly
- * <ol>
- *  <li> Adicionar, alterar e remover funcionários. </li>
- *  <li> Gerenciar o Estoque da empresa</li>
- *  <li> Visualizar as finanças de acordo com as despesas externas (como impostos, manutenções...)</li>
- *  <li> Utilizar o caixa para venda de produtos</li>
- * </ol>
- * \endhtmlonly
+ *  A Classe Gerente consiste em uma QMainWindow e mostra as 4 possibilidades do Gerente no projeto que são elas:
+ *  \htmlonly
+ *  <ol>
+ *      <li> Adicionar, alterar e remover funcionários. </li>
+ *      <li> Gerenciar o Estoque da empresa</li>
+ *      <li> Visualizar as finanças de acordo com as despesas externas (como impostos, manutenções...)</li>
+ *      <li> Utilizar o caixa para venda de produtos</li>
+ *  </ol>
+ *  \endhtmlonly
  *
- * @bug Como não foi possível finalizar a classe Caixa, o total não será calculado corretamente
+ *  @bug Como não foi possível finalizar a classe Caixa, o total não será calculado corretamente
  * (será sempre 0).
- * @copyright \htmlonly <a href = "https://github.com/Luiz-Eduardo"> Luiz Eduardo Barros de Araújo Filho </a> \endhtmlonly
- * e \htmlonly <a href = "https://www.facebook.com/mariaelena.nascimento"> Marielena Nascimento Silveira </a> \endhtmlonly
+ *
+ *  @version 0.1
+ *  @copyright \htmlonly <a href = "https://github.com/Luiz-Eduardo"> Luiz Eduardo Barros de Araújo Filho </a> \endhtmlonly
+ *  e \htmlonly <a href = "https://www.facebook.com/mariaelena.nascimento"> Marielena Nascimento Silveira </a> \endhtmlonly
  */
 
 class Gerente : public QMainWindow {

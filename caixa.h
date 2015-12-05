@@ -11,14 +11,16 @@ namespace Ui {
 /*! @brief Classe Caixa
  *      é a Interface Gráfica responsável pelas vendas no caixa da empresa.
  *
- * A Classe Caixa consiste em uma QMainWindow que receberá os dados de compra de todos
- * os clientes da empresa, além disso, a classe é capaz de realizar o update - com o auxílio
- * da classe Conexao - para alterar os valores do Banco de Dados Estoque da tabela products
+ *  A Classe Caixa consiste em uma QMainWindow que receberá os dados de compra de todos
+ *  os clientes da empresa, além disso, a classe é capaz de realizar o update - com o auxílio
+ *  da classe Conexao - para alterar os valores do Banco de Dados Estoque da tabela products
  *
- * @bug Por falta de organização, não conseguimos finalizar a classe Caixa para adicionar produtos
- * ao carrinho e iniciar a próxima compra.
- * @copyright \htmlonly <a href = "https://github.com/Luiz-Eduardo"> Luiz Eduardo Barros de Araújo Filho </a> \endhtmlonly
- * e \htmlonly <a href = "https://www.facebook.com/mariaelena.nascimento"> Marielena Nascimento Silveira </a> \endhtmlonly
+ *  @bug Por falta de organização, não conseguimos finalizar a classe Caixa para adicionar produtos
+ *  ao carrinho e iniciar a próxima compra.
+ *
+ *  @version 0.1
+ *  @copyright \htmlonly <a href = "https://github.com/Luiz-Eduardo"> Luiz Eduardo Barros de Araújo Filho </a> \endhtmlonly
+ *  e \htmlonly <a href = "https://www.facebook.com/mariaelena.nascimento"> Marielena Nascimento Silveira </a> \endhtmlonly
  */
 
 class Caixa : public QMainWindow {

@@ -11,21 +11,22 @@ namespace Ui {
 /*! @brief Classe Financas
  *      é a Interface Gráfica responsável pelas Finanças da empresa.
  *
- * A Classe Financas consiste em uma QMainWindow que mostrará os dados de pagamento
- * de funcionários, as despesas com produtos e receberá o valor das despesas externas,
- * tais como:
+ *  A Classe Financas consiste em uma QMainWindow que mostrará os dados de pagamento
+ *  de funcionários, as despesas com produtos e receberá o valor das despesas externas,
+ *  tais como:
  *
- * \htmlonly
- *  <ol>
+ *  \htmlonly
+ *   <ol>
  *      <li> Impostos </li>
  *      <li> Manutenção na empresa </li>
  *      <li> Reformas </li>
  *      <li> Contas de energia, luz, aluguel...</li>
- * </ol>
- * \endhtmlonly
+ *  </ol>
+ *  \endhtmlonly
  *
- * @copyright \htmlonly <a href = "https://github.com/Luiz-Eduardo"> Luiz Eduardo Barros de Araújo Filho </a> \endhtmlonly
- * e \htmlonly <a href = "https://www.facebook.com/mariaelena.nascimento"> Marielena Nascimento Silveira </a> \endhtmlonly
+ *  @version 0.1
+ *  @copyright \htmlonly <a href = "https://github.com/Luiz-Eduardo"> Luiz Eduardo Barros de Araújo Filho </a> \endhtmlonly
+ *  e \htmlonly <a href = "https://www.facebook.com/mariaelena.nascimento"> Marielena Nascimento Silveira </a> \endhtmlonly
  */
 
 class Financas : public QMainWindow {

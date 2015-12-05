@@ -11,17 +11,18 @@ namespace Ui {
 /*! @brief Classe Delete
  *      consiste em uma QMainWindow e mostra a possibilidade de excluir funcionários já existentes.
  *
- * A Classe Delete é a Interface Gráfica responsável por demitir funcionários já existentes no Banco de Dados Estoque
- * na tabela employees através do nome e email.
+ *  A Classe Delete é a Interface Gráfica responsável por demitir funcionários já existentes no Banco de Dados Estoque
+ *  na tabela employees através do nome e email.
  *
- * @todo Criptografar dados do CPF e ao invés de pegar o email, pegar o CPF na hora de deletar,
- * para poder deletar também na tabela users.
+ *  @todo Criptografar dados do CPF e ao invés de pegar o email, pegar o CPF na hora de deletar,
+ *  para poder deletar também na tabela users.
  *
- * @bug Ao deletar um funcionário já existente no Banco de Dados, é necessário reiniciar o projeto para
- * que a exclusão apareça na employeesView (tabela de Funcionários).
+ *  @bug Ao deletar um funcionário já existente no Banco de Dados, é necessário reiniciar o projeto para
+ *  que a exclusão apareça na employeesView (tabela de Funcionários).
  *
- * @copyright \htmlonly <a href = "https://github.com/Luiz-Eduardo"> Luiz Eduardo Barros de Araújo Filho </a> \endhtmlonly
- * e \htmlonly <a href = "https://www.facebook.com/mariaelena.nascimento"> Marielena Nascimento Silveira </a> \endhtmlonly
+ *  @version 0.1
+ *  @copyright \htmlonly <a href = "https://github.com/Luiz-Eduardo"> Luiz Eduardo Barros de Araújo Filho </a> \endhtmlonly
+ *  e \htmlonly <a href = "https://www.facebook.com/mariaelena.nascimento"> Marielena Nascimento Silveira </a> \endhtmlonly
  */
 
 class Delete : public QMainWindow {

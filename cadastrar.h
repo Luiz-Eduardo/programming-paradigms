@@ -18,13 +18,14 @@ namespace Ui {
 
 /*! @brief Classe Cadastrar
  *      é a Interface Gráfica responsável por mostrar informações dos funcionários já existentes no Banco de Dados Estoque
- * na tabela employees.
+ *      na tabela employees.
  *
- * A Classe Cadastrar consiste em uma QMainWindow e mostra a tabela de funcionários já existentes e dá a possibilidade de
- * fazer alterações nos dados de determinado funcionário, além de deletar funcionários e adicionar novos.
+ *  A Classe Cadastrar consiste em uma QMainWindow e mostra a tabela de funcionários já existentes e dá a possibilidade de
+ *  fazer alterações nos dados de determinado funcionário, além de deletar funcionários e adicionar novos.
  *
- * @copyright \htmlonly <a href = "https://github.com/Luiz-Eduardo"> Luiz Eduardo Barros de Araújo Filho </a> \endhtmlonly
- * e \htmlonly <a href = "https://www.facebook.com/mariaelena.nascimento"> Marielena Nascimento Silveira </a> \endhtmlonly
+ *  @version 0.1
+ *  @copyright \htmlonly <a href = "https://github.com/Luiz-Eduardo"> Luiz Eduardo Barros de Araújo Filho </a> \endhtmlonly
+ *  e \htmlonly <a href = "https://www.facebook.com/mariaelena.nascimento"> Marielena Nascimento Silveira </a> \endhtmlonly
  */
 
 class Cadastrar : public QMainWindow {

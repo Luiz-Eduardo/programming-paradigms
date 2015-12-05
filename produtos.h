@@ -14,7 +14,9 @@ namespace Ui {
  *  Estrutura responsável por receber todos os dados que serão capazes
  *  de incluir um novo Produto no estoque da empresa.
  *
- *  @copyright Luiz Eduardo Barros de Araújo Filho e Marielena Nascimento Silveira
+ *
+ *  @copyright \htmlonly <a href = "https://github.com/Luiz-Eduardo"> Luiz Eduardo Barros de Araújo Filho </a> \endhtmlonly
+ *  e \htmlonly <a href = "https://www.facebook.com/mariaelena.nascimento"> Marielena Nascimento Silveira </a> \endhtmlonly
  */
 
 struct Produto {
@@ -29,16 +31,16 @@ struct Produto {
 /*! @brief Classe Produtos
  *      é a Interface Gráfica responsável por adicionar novos Produtos no estoque da empresa.
  *
- * A Classe Produtos consiste em uma QMainWindow e possui todos os dados importantes de um produto,
- * que serão colocados no Banco de Dados Estoque na tabela products.
+ *  A Classe Produtos consiste em uma QMainWindow e possui todos os dados importantes de um produto,
+ *  que serão colocados no Banco de Dados Estoque na tabela products.
  *
- * @todo Ao inserir novo produto testar se já não existe produto com o mesmo nome e após isso,
- * testar se o preço de compra, venda e validade são o mesmo, se sim, apenas atualizar a quantidade
- * daquele produto de acordo com o valor inserido, se não inserir como produto novo com novo código.
+ *  @todo Ao inserir novo produto testar se já não existe produto com o mesmo nome e após isso,
+ *  testar se o preço de compra, venda e validade são o mesmo, se sim, apenas atualizar a quantidade
+ *  daquele produto de acordo com o valor inserido, se não inserir como produto novo com novo código.
  *
- *
- * @copyright \htmlonly <a href = "https://github.com/Luiz-Eduardo"> Luiz Eduardo Barros de Araújo Filho </a> \endhtmlonly
- * e \htmlonly <a href = "https://www.facebook.com/mariaelena.nascimento"> Marielena Nascimento Silveira </a> \endhtmlonly
+ *  @version 0.1
+ *  @copyright \htmlonly <a href = "https://github.com/Luiz-Eduardo"> Luiz Eduardo Barros de Araújo Filho </a> \endhtmlonly
+ *  e \htmlonly <a href = "https://www.facebook.com/mariaelena.nascimento"> Marielena Nascimento Silveira </a> \endhtmlonly
  */
 class Produtos : public QMainWindow {
     Q_OBJECT
