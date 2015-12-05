@@ -409,7 +409,7 @@ int Conexao::getSellPrice(QString _id){
 
         string id = _id.toUtf8().constData(); //typecasting QString >> string
 
-        string sql = "SELECT saleprice FROM products WHERE id =" + id;
+        string sql = "SELECT saleprice FROM products WHERE id ='" + id + "'";
 
         char query[sql.size()];
         strcpy(query, sql.c_str());

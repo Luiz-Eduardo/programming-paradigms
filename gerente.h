@@ -27,6 +27,8 @@ namespace Ui {
  * </ol>
  * \endhtmlonly
  *
+ * @bug Como não foi possível finalizar a classe Caixa, o total não será calculado corretamente
+ * (será sempre 0).
  * @copyright \htmlonly <a href = "https://github.com/Luiz-Eduardo"> Luiz Eduardo Barros de Araújo Filho </a> \endhtmlonly
  * e \htmlonly <a href = "https://www.facebook.com/mariaelena.nascimento"> Marielena Nascimento Silveira </a> \endhtmlonly
  */
