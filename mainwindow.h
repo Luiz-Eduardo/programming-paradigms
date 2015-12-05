@@ -12,6 +12,8 @@ namespace Ui {
     class MainWindow;
 }
 
+/** @mainpage manageFast - Cause time isn't just money
+  */
 /*! @brief Classe MainWindow
  *      é a Interface Gráfica responsável por logar no Software da empresa.
  *

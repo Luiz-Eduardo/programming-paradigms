@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['readme',['README',['../md__r_e_a_d_m_e.html',1,'']]]
+  ['managefast_20_2d_20cause_20time_20isn_27t_20just_20money',['manageFast - Cause time isn&apos;t just money',['../index.html',1,'']]]
 ];

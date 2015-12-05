@@ -43,6 +43,3 @@ FORMS    += mainwindow.ui \
 
 # sudo apt-get install libmysqlclient-dev
 LIBS += -lmysqlclient
-
-RESOURCES += \
-    resources.qrc

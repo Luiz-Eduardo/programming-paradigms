@@ -16,7 +16,7 @@ var indexSectionsWithContent =
   6: "c",
   7: "cfg",
   8: "dfhpsu",
-  9: "brt"
+  9: "bmrt"
 };
 
 var indexSectionNames =
