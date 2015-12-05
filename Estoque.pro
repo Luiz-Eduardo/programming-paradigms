@@ -5,6 +5,7 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = Estoque
 TEMPLATE = app
 
+# Using C++ 11 version
 CONFIG += c++11
 
 SOURCES += main.cpp\
@@ -40,6 +41,7 @@ FORMS    += mainwindow.ui \
     produtos.ui \
     financas.ui
 
+# sudo apt-get install libmysqlclient-dev
 LIBS += -lmysqlclient
 
 RESOURCES += \
