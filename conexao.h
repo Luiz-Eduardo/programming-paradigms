@@ -112,23 +112,110 @@ public:
     ~Conexao();
 
     /* Add, update, select and delete employees */
+    /*!
+     * @brief addEmployee
+     * @param _name
+     * @param _age
+     * @param _role
+     * @param _salary
+     * @param _cpf
+     * @param _email
+     * @param _address
+     * @return
+     */
     bool addEmployee(QString _name, QString _age, QString _role, QString _salary, QString _cpf, QString _email, QString _address);
+
+    /*!
+     * @brief deleteEmployee
+     * @param name
+     * @param email
+     * @return
+     */
     bool deleteEmployee(QString name, QString email);
+
+    /*!
+     * @brief selectEmployee
+     * @param name
+     * @param cpf
+     * @param email
+     * @param address
+     * @param role
+     * @param salary
+     * @return
+     */
     bool selectEmployee(QString name, QString &cpf, QString &email, QString &address, QString &role, QString &salary);
+
+    /*!
+     * @brief updateEmployee
+     * @param _name
+     * @param _cpf
+     * @param _salary
+     * @param _email
+     * @param _address
+     * @param _role
+     * @return
+     */
     bool updateEmployee(QString _name, QString _cpf, QString _salary, QString _email, QString _address, QString _role);
+
+    /*!
+     * @brief selectEmployees
+     * @return
+     */
     int selectEmployees();
 
     /* Add and select products */
+    /*!
+     * @brief insertProducts
+     * @param _name
+     * @param _purchasePrice
+     * @param _sellPrice
+     * @param _quantity
+     * @param _validity
+     * @return
+     */
     bool insertProducts(QString _name, QString _purchasePrice, QString _sellPrice, QString _quantity, QString _validity);
+
+    /*!
+     * @brief selectProducts
+     * @return
+     */
     int selectProducts();
+
+    /*!
+     * @brief getSellPrice
+     * @param _id
+     * @return
+     */
     int getSellPrice(QString _id);
+
+    /*!
+     * @brief getName
+     * @param _id
+     * @return
+     */
     QString getName(QString _id);
 
     /* Algoritmos de Validação */
+    /*!
+     * @brief Método responsável por logar o usuário no sistema.
+     * @param login variável login recebida da classe MainWindow
+     * @param senha variável senha recebida da classe MainWindow
+     * @return retorna o cargo do usuário ou flags relatando erros.
+     */
     int logar(QString login, QString senha);
+
+    /*!
+     * @brief Método responsável pela validação de cpf do usuário.
+     * @param cpf parâmetro recebido da classe Adicionar
+     * @return Caso o CPF seja válido retorna true, caso contrário retorna false.
+     *
+     */
     bool validaCpf(QString cpf);
 
 protected:
+    /*!
+     * @brief Variável responsável pela conexão com o Banco de Dados.
+     */
     MYSQL conn;
 };
 
