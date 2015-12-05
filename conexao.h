@@ -32,6 +32,9 @@ using namespace std;
  *  permanecer criptografados.
  *  @warning É necessário a instalação do pacote libmysqlclient-dev
  *
+ *  @bug Funcionário é deletado da tabela employees, porém não da tabela users, ou seja, o funcionário ainda tem
+ *  acesso ao sistema.
+ *
  *  @version 0.1
  *  @copyright \htmlonly <a href = "https://github.com/Luiz-Eduardo"> Luiz Eduardo Barros de Araújo Filho </a> \endhtmlonly
  *  e \htmlonly <a href = "https://www.facebook.com/mariaelena.nascimento"> Marielena Nascimento Silveira </a> \endhtmlonly
@@ -113,100 +116,106 @@ public:
 
     /* Add, update, select and delete employees */
     /*!
-     * @brief addEmployee
-     * @param _name
-     * @param _age
-     * @param _role
-     * @param _salary
-     * @param _cpf
-     * @param _email
-     * @param _address
-     * @return
+     * @brief Método responsável por inserir novos funcionários a empresa.
+     * @param _name nome do funcionário a ser inserido, parâmetro recebido da classe Adicionar.
+     * @param _age idade do funcionário a ser inserido, parâmetro recebido da classe Adicionar.
+     * @param _role cargo do funcionário a ser inserido, parâmetro recebido da classe Adicionar.
+     * @param _salary salário do funcionário a ser inserido, parâmetro recebido da classe Adicionar.
+     * @param _cpf cpf do funcionário a ser inserido, parâmetro recebido da classe Adicionar.
+     * @param _email email do funcionário a ser inserido, parâmetro recebido da classe Adicionar.
+     * @param _address endereço do funcionário a ser inserido, parâmetro recebido da classe Adicionar.
+     * @return retorna true caso o funcionário tenha sido inserido,
+     * caso contrário retorna false.
      */
     bool addEmployee(QString _name, QString _age, QString _role, QString _salary, QString _cpf, QString _email, QString _address);
 
     /*!
-     * @brief deleteEmployee
-     * @param name
-     * @param email
-     * @return
+     * @brief Método responsável por deletar funcionários da empresa.
+     * @param name nome do funcionário a ser deletado, parâmetro recebido da classe Delete.
+     * @param email email do funcionário a ser deletado, parâmetro recebido da classe Delete.
+     * @return retorna true caso o funcionário tenha sido deletado,
+     * caso contrário retorna false.
      */
     bool deleteEmployee(QString name, QString email);
 
     /*!
-     * @brief selectEmployee
-     * @param name
-     * @param cpf
-     * @param email
-     * @param address
-     * @param role
-     * @param salary
-     * @return
+     * @brief Método responsável por selecionar um funcionário da empresa.
+     * @param name nome do funcionário a ser selecionado, parâmetro recebido da classe Alterar.
+     * @param cpf cpf do funcionário selecionado.
+     * @param email email do funcionário selecionado.
+     * @param address endereço do funcionário selecionado.
+     * @param role cargo do funcionário selecionado.
+     * @param salary salário do funcionário selecionado.
+     * @return retorna true caso o funcionário tenha sido selecionado,
+     * caso contrário retorna false.
      */
     bool selectEmployee(QString name, QString &cpf, QString &email, QString &address, QString &role, QString &salary);
 
     /*!
-     * @brief updateEmployee
-     * @param _name
-     * @param _cpf
-     * @param _salary
-     * @param _email
-     * @param _address
-     * @param _role
-     * @return
+     * @brief Método responsável por atualizar um funcionário já existente.
+     * @param _name nome do funcionário que será atualizado, parâmetro recebido da classe Alterar
+     * @param _cpf cpf do funcionário que será atualizado.
+     * @param _salary salário do funcionário que será atualizado.
+     * @param _email email do funcionário que será atualizado.
+     * @param _address endereço do funcionário que será atualizado.
+     * @param _role cargo do funcionário que será atualizado.
+     * @return retorna true caso o funcionário tenha sido alterado,
+     * caso contrário retorna false.
      */
     bool updateEmployee(QString _name, QString _cpf, QString _salary, QString _email, QString _address, QString _role);
 
     /*!
-     * @brief selectEmployees
-     * @return
+     * @brief Método responsável por selecionar todos os funcionários na tabela employees.
+     * @return retorna a quantidade de funcionários.
      */
     int selectEmployees();
 
     /* Add and select products */
     /*!
-     * @brief insertProducts
-     * @param _name
-     * @param _purchasePrice
-     * @param _sellPrice
-     * @param _quantity
-     * @param _validity
+     * @brief Método responsável por inserir produtos na tabela products.
+     * @param _name nome do produto a ser inserido, parâmetro recebido da classe Produtos
+     * @param _purchasePrice preço de venda do produto a ser inserido, parâmetro recebido da classe Produtos
+     * @param _sellPrice preço de venda do produto a ser inserido, parâmetro recebido da classe Produtos
+     * @param _quantity quantidade do produto a ser inserido, parâmetro recebido da classe Produtos
+     * @param _validity validade do produto a ser inserido, parâmetro recebido da classe Produtos
      * @return
      */
     bool insertProducts(QString _name, QString _purchasePrice, QString _sellPrice, QString _quantity, QString _validity);
 
     /*!
-     * @brief selectProducts
-     * @return
+     * @brief Método responsável por selecionar todos os produtos na tabela products.
+     * @return retorna a quantidade de produtos.
      */
     int selectProducts();
 
     /*!
-     * @brief getSellPrice
-     * @param _id
-     * @return
+     * @brief Método responsável por selecionar um preço de venda a partir de um id.
+     * @param _id id do produto  pesquisado, parâmetro recebido da classe Caixa
+     * @return retorna um int valor, caso o código do produto seja encontrado,
+     * caso contrário retorna flags relatando erros.
      */
     int getSellPrice(QString _id);
 
     /*!
-     * @brief getName
-     * @param _id
-     * @return
+     * @brief Método responsável por selecionar um nome a partir de um id.
+     * @param _id id do produto pesquisado, parâmetro recebido da classe Caixa
+     * @return retorna um QString nome, caso o código do produto seja encontrado,
+     * caso contrário retorna flags relatando erros.
      */
     QString getName(QString _id);
 
     /* Algoritmos de Validação */
     /*!
      * @brief Método responsável por logar o usuário no sistema.
-     * @param login variável login recebida da classe MainWindow
-     * @param senha variável senha recebida da classe MainWindow
+     * @param login login do usuário que tenta logar, parâmetro recebido da classe MainWindow
+     * @param senha senha do usuário que tenta logar, parâmetro recebido da classe MainWindow
      * @return retorna o cargo do usuário ou flags relatando erros.
      */
     int logar(QString login, QString senha);
 
     /*!
      * @brief Método responsável pela validação de cpf do usuário.
-     * @param cpf parâmetro recebido da classe Adicionar
+     * @param cpf cpf do funcionário a ser adicionado, parâmetro recebido da classe Adicionar
      * @return Caso o CPF seja válido retorna true, caso contrário retorna false.
      *
      */
