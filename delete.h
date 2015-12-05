@@ -8,7 +8,7 @@ namespace Ui {
     class Delete;
 }
 
-/*! @brief Classe Delete,
+/*! @brief Classe Delete
  *      consiste em uma QMainWindow e mostra a possibilidade de excluir funcionários já existentes.
  *
  * A Classe Delete é a Interface Gráfica responsável por demitir funcionários já existentes no Banco de Dados Estoque

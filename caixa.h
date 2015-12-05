@@ -8,7 +8,7 @@ namespace Ui {
     class Caixa;
 }
 
-/*! @brief Classe Caixa,
+/*! @brief Classe Caixa
  *      é a Interface Gráfica responsável pelas vendas no caixa da empresa.
  *
  * A Classe Caixa consiste em uma QMainWindow que receberá os dados de compra de todos

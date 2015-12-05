@@ -26,7 +26,7 @@ struct Produto {
 
 };
 
-/*! @brief Classe Produtos,
+/*! @brief Classe Produtos
  *      é a Interface Gráfica responsável por adicionar novos Produtos no estoque da empresa.
  *
  * A Classe Produtos consiste em uma QMainWindow e possui todos os dados importantes de um produto,

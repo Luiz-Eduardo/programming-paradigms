@@ -16,7 +16,7 @@ namespace Ui {
     class Cadastrar;
 }
 
-/*! @brief Classe Cadastrar,
+/*! @brief Classe Cadastrar
  *      é a Interface Gráfica responsável por mostrar informações dos funcionários já existentes no Banco de Dados Estoque
  * na tabela employees.
  *

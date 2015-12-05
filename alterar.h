@@ -8,7 +8,7 @@ namespace Ui {
     class alterar;
 }
 
-/*! @brief Classe Alterar,
+/*! @brief Classe Alterar
  *      é a Interface Gráfica responsável por alterar informações dos funcionários já existentes no Banco de Dados Estoque
  * na tabela employees.
  *

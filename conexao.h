@@ -18,7 +18,7 @@
 
 using namespace std;
 
-/*! *  @brief Classe Conexao,
+/*! *  @brief Classe Conexao
  *  é a responsável pela inclusão de bibliotecas do Qt, C++ e MySQL para realizar
  *  a conexão entre Interface Gráfica, C++ e Banco de Dados
  *

@@ -14,7 +14,7 @@ namespace Ui {
     class Gerente;
 }
 
-/*! @brief Classe Gerente,
+/*! @brief Classe Gerente
  *      é a Interface Gráfica responsável por mostrar as possibilidades do Gerente na hora de gerenciar a empresa.
  *
  * A Classe Gerente consiste em uma QMainWindow e mostra as 4 possibilidades do Gerente no projeto que são elas:

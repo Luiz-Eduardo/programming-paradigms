@@ -27,7 +27,7 @@ struct Funcionario {
     QString cpf; //Campo cpf.
 };
 
-/*! @brief Classe Adicionar,
+/*! @brief Classe Adicionar
  *      é a Interface Gráfica responsável por adicionar novos funcionários no projeto.
  *
  * A Classe Adicionar consiste em uma QDialog e possui os dados principais de um funcionário,

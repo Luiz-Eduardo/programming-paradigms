@@ -21,6 +21,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Logo Projeto.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Sistema de Controle e Estoque de Produção
    </div>
@@ -94,7 +95,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Classe <a class="el" href="class_conexao.html" title="Classe Conexao, é a responsável pela inclusão de bibliotecas do Qt, C++ e MySQL para realizar a conex...">Conexao</a>, é a responsável pela inclusão de bibliotecas do Qt, C++ e MySQL para realizar a conexão entre Interface Gráfica, C++ e Banco de Dados.  
+<p>Classe <a class="el" href="class_conexao.html" title="Classe Conexao é a responsável pela inclusão de bibliotecas do Qt, C++ e MySQL para realizar a conexã...">Conexao</a> é a responsável pela inclusão de bibliotecas do Qt, C++ e MySQL para realizar a conexão entre Interface Gráfica, C++ e Banco de Dados.  
  <a href="class_conexao.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="conexao_8h_source.html">conexao.h</a>&gt;</code></p>
@@ -110,9 +111,10 @@ Inheritance diagram for Conexao:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:abbc7bc621739afc0364615ae52ba941f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_conexao.html#abbc7bc621739afc0364615ae52ba941f">Conexao</a> (QObject *parent=0)</td></tr>
+<tr class="memdesc:abbc7bc621739afc0364615ae52ba941f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor da classe <a class="el" href="class_conexao.html" title="Classe Conexao é a responsável pela inclusão de bibliotecas do Qt, C++ e MySQL para realizar a conexã...">Conexao</a>.  <a href="#abbc7bc621739afc0364615ae52ba941f">More...</a><br/></td></tr>
 <tr class="separator:abbc7bc621739afc0364615ae52ba941f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac108094083aa4dfba0834682adf6784f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_conexao.html#ac108094083aa4dfba0834682adf6784f">~Conexao</a> ()</td></tr>
-<tr class="memdesc:ac108094083aa4dfba0834682adf6784f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destrutor da classe <a class="el" href="class_conexao.html" title="Classe Conexao, é a responsável pela inclusão de bibliotecas do Qt, C++ e MySQL para realizar a conex...">Conexao</a>.  <a href="#ac108094083aa4dfba0834682adf6784f">More...</a><br/></td></tr>
+<tr class="memdesc:ac108094083aa4dfba0834682adf6784f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destrutor da classe <a class="el" href="class_conexao.html" title="Classe Conexao é a responsável pela inclusão de bibliotecas do Qt, C++ e MySQL para realizar a conexã...">Conexao</a>.  <a href="#ac108094083aa4dfba0834682adf6784f">More...</a><br/></td></tr>
 <tr class="separator:ac108094083aa4dfba0834682adf6784f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a926169bc4fcafad1891100b5c92c1517"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_conexao.html#a926169bc4fcafad1891100b5c92c1517">addEmployee</a> (QString _name, QString _age, QString _role, QString _salary, QString _cpf, QString _email, QString _address)</td></tr>
 <tr class="separator:a926169bc4fcafad1891100b5c92c1517"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,14 +170,14 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a603c91bfb3838491ba3e8caececc5b0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Classe <a class="el" href="class_conexao.html" title="Classe Conexao, é a responsável pela inclusão de bibliotecas do Qt, C++ e MySQL para realizar a conex...">Conexao</a>, é a responsável pela inclusão de bibliotecas do Qt, C++ e MySQL para realizar a conexão entre Interface Gráfica, C++ e Banco de Dados. </p>
+<div class="textblock"><p>Classe <a class="el" href="class_conexao.html" title="Classe Conexao é a responsável pela inclusão de bibliotecas do Qt, C++ e MySQL para realizar a conexã...">Conexao</a> é a responsável pela inclusão de bibliotecas do Qt, C++ e MySQL para realizar a conexão entre Interface Gráfica, C++ e Banco de Dados. </p>
 <ul>
 <li>A Classe Conexão consiste em uma Classe com suporte para Interface Gráfica responsável por realizar toda a conexão do sistema com o Banco de Dados, esta é responsável pela validação e criptografia dos dados dos funcionários que são cadastrados no Sistema de Controle de Estoque e Produção. A Classe é capaz de inserir dados, alterar dados existentes, remover dados e selecionar dados, tornando-a a Classe que gerencia o projeto inteiro.</li>
 </ul>
-<dl class="section warning"><dt>Warning</dt><dd>Não deve ser vísivel para o usuário, apenas para o desenvolvedor, todos os dados devem permanecer criptografados.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Não deve ser vísivel para o usuário, apenas para o desenvolvedor, todos os dados devem permanecer criptografados. </dd>
+<dd>
+É necessário a instalação do pacote libmysqlclient-dev </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd> <a href = "https://github.com/Luiz-Eduardo"> Luiz Eduardo Barros de Araújo Filho </a>  e <a href = "https://www.facebook.com/mariaelena.nascimento"> Marielena Nascimento Silveira </a>  </dd></dl>
-
-<p>Definition at line <a class="el" href="conexao_8h_source.html#l00038">38</a> of file <a class="el" href="conexao_8h_source.html">conexao.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="abbc7bc621739afc0364615ae52ba941f"></a>
 <div class="memitem">
@@ -199,7 +201,14 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="conexao_8cpp_source.html#l00017">17</a> of file <a class="el" href="conexao_8cpp_source.html">conexao.cpp</a>.</p>
+<p>Construtor da classe <a class="el" href="class_conexao.html" title="Classe Conexao é a responsável pela inclusão de bibliotecas do Qt, C++ e MySQL para realizar a conexã...">Conexao</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Ponteiro</td><td>do tipo QObject que aponta explicitamente para 0.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Construtor da classe <a class="el" href="class_conexao.html" title="Classe Conexao é a responsável pela inclusão de bibliotecas do Qt, C++ e MySQL para realizar a conexã...">Conexao</a>, responsável por inicializar a conexão com o Banco de Dados. </p>
 
 </div>
 </div>
@@ -216,10 +225,8 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Destrutor da classe <a class="el" href="class_conexao.html" title="Classe Conexao, é a responsável pela inclusão de bibliotecas do Qt, C++ e MySQL para realizar a conex...">Conexao</a>. </p>
-<p>Destrutor da classe <a class="el" href="class_conexao.html" title="Classe Conexao, é a responsável pela inclusão de bibliotecas do Qt, C++ e MySQL para realizar a conex...">Conexao</a>, responsável por automatizar o gerenciamento de memória, recuperando uma área de memória que antes estava inutilizada. </p>
-
-<p>Definition at line <a class="el" href="conexao_8cpp_source.html#l00024">24</a> of file <a class="el" href="conexao_8cpp_source.html">conexao.cpp</a>.</p>
+<p>Destrutor da classe <a class="el" href="class_conexao.html" title="Classe Conexao é a responsável pela inclusão de bibliotecas do Qt, C++ e MySQL para realizar a conexã...">Conexao</a>. </p>
+<p>Destrutor da classe <a class="el" href="class_conexao.html" title="Classe Conexao é a responsável pela inclusão de bibliotecas do Qt, C++ e MySQL para realizar a conexã...">Conexao</a>, responsável por automatizar o gerenciamento de memória, recuperando uma área de memória que antes estava inutilizada. </p>
 
 </div>
 </div>
@@ -278,8 +285,6 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="conexao_8cpp_source.html#l00029">29</a> of file <a class="el" href="conexao_8cpp_source.html">conexao.cpp</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="aaa542fe8f05397bc89b5b0e3f58da928"></a>
@@ -306,8 +311,6 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="conexao_8cpp_source.html#l00078">78</a> of file <a class="el" href="conexao_8cpp_source.html">conexao.cpp</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a74687ccdc642d76e84029007abd2d084"></a>
@@ -324,8 +327,6 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="conexao_8cpp_source.html#l00464">464</a> of file <a class="el" href="conexao_8cpp_source.html">conexao.cpp</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="aae67fefb72ca872bf3186892fcd55db4"></a>
@@ -341,8 +342,6 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="conexao_8cpp_source.html#l00404">404</a> of file <a class="el" href="conexao_8cpp_source.html">conexao.cpp</a>.</p>
 
 </div>
 </div>
@@ -388,8 +387,6 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="conexao_8cpp_source.html#l00324">324</a> of file <a class="el" href="conexao_8cpp_source.html">conexao.cpp</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a5d40ad1d9c18222223c4aa404e59731d"></a>
@@ -415,8 +412,6 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="conexao_8cpp_source.html#l00235">235</a> of file <a class="el" href="conexao_8cpp_source.html">conexao.cpp</a>.</p>
 
 </div>
 </div>
@@ -468,8 +463,6 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="conexao_8cpp_source.html#l00099">99</a> of file <a class="el" href="conexao_8cpp_source.html">conexao.cpp</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="aabf283f54813fa9f7beb8445b3bf9a75"></a>
@@ -485,8 +478,6 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="conexao_8cpp_source.html#l00179">179</a> of file <a class="el" href="conexao_8cpp_source.html">conexao.cpp</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="aa0617deb68c402dae6fbd08ffef56f93"></a>
@@ -501,8 +492,6 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="conexao_8cpp_source.html#l00346">346</a> of file <a class="el" href="conexao_8cpp_source.html">conexao.cpp</a>.</p>
 
 </div>
 </div>
@@ -554,8 +543,6 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="conexao_8cpp_source.html#l00156">156</a> of file <a class="el" href="conexao_8cpp_source.html">conexao.cpp</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a19e6ec92c69bac27459081dc2df6b2c1"></a>
@@ -571,8 +558,6 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="conexao_8cpp_source.html#l00284">284</a> of file <a class="el" href="conexao_8cpp_source.html">conexao.cpp</a>.</p>
 
 </div>
 </div>
@@ -595,8 +580,6 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="conexao_8h_source.html#l00082">82</a> of file <a class="el" href="conexao_8h_source.html">conexao.h</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="afe469c76fdb5fb62d82f17e479281fc3"></a>
@@ -608,8 +591,6 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="conexao_8h_source.html#l00043">43</a> of file <a class="el" href="conexao_8h_source.html">conexao.h</a>.</p>
 
 </div>
 </div>
@@ -623,8 +604,6 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="conexao_8h_source.html#l00044">44</a> of file <a class="el" href="conexao_8h_source.html">conexao.h</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a840ddef255453274939c138a5e70e78e"></a>
@@ -636,8 +615,6 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="conexao_8h_source.html#l00042">42</a> of file <a class="el" href="conexao_8h_source.html">conexao.h</a>.</p>
 
 </div>
 </div>
@@ -651,8 +628,6 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="conexao_8h_source.html#l00045">45</a> of file <a class="el" href="conexao_8h_source.html">conexao.h</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a037d3ee84ec8629c1a4bffef8d67378f"></a>
@@ -664,8 +639,6 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="conexao_8h_source.html#l00046">46</a> of file <a class="el" href="conexao_8h_source.html">conexao.h</a>.</p>
 
 </div>
 </div>
@@ -679,8 +652,6 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="conexao_8h_source.html#l00048">48</a> of file <a class="el" href="conexao_8h_source.html">conexao.h</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="abe66e554804d884483dcf1e4657899bf"></a>
@@ -692,8 +663,6 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="conexao_8h_source.html#l00049">49</a> of file <a class="el" href="conexao_8h_source.html">conexao.h</a>.</p>
 
 </div>
 </div>
@@ -707,8 +676,6 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="conexao_8h_source.html#l00050">50</a> of file <a class="el" href="conexao_8h_source.html">conexao.h</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="aaa60e00115d399944cde0869516cf0d1"></a>
@@ -720,8 +687,6 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="conexao_8h_source.html#l00052">52</a> of file <a class="el" href="conexao_8h_source.html">conexao.h</a>.</p>
 
 </div>
 </div>
@@ -735,8 +700,6 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="conexao_8h_source.html#l00051">51</a> of file <a class="el" href="conexao_8h_source.html">conexao.h</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="adaa68247f31efd7be455087a0e983f31"></a>
@@ -749,18 +712,16 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="conexao_8h_source.html#l00053">53</a> of file <a class="el" href="conexao_8h_source.html">conexao.h</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="conexao_8h_source.html">conexao.h</a></li>
-<li><a class="el" href="conexao_8cpp_source.html">conexao.cpp</a></li>
+<li><a class="el" href="conexao_8cpp.html">conexao.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 4 2015 14:07:19 for Sistema de Controle e Estoque de Produção by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 5 2015 12:54:05 for Sistema de Controle e Estoque de Produção by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

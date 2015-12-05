@@ -12,7 +12,7 @@ namespace Ui {
     class MainWindow;
 }
 
-/*! @brief Classe MainWindow,
+/*! @brief Classe MainWindow
  *      é a Interface Gráfica responsável por logar no Software da empresa.
  *
  * A Classe MainWindow consiste em uma QMainWindow e possui uma página de Login onde as informações

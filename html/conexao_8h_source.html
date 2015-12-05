@@ -21,6 +21,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Logo Projeto.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Sistema de Controle e Estoque de Produção
    </div>
@@ -123,49 +124,49 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_conexao.html#aaa60e00115d399944cde0869516cf0d1">   52</a></span>&#160;    QStringList <a class="code" href="class_conexao.html#aaa60e00115d399944cde0869516cf0d1">products_quantity</a>;</div>
 <div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_conexao.html#adaa68247f31efd7be455087a0e983f31">   53</a></span>&#160;    QStringList <a class="code" href="class_conexao.html#adaa68247f31efd7be455087a0e983f31">products_validity</a>;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_conexao.html">Conexao</a>(QObject *parent = 0);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    ~<a class="code" href="class_conexao.html">Conexao</a>();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">/* Add, update, select and delete employees */</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">bool</span> addEmployee(QString _name, QString _age, QString _role, QString _salary, QString _cpf, QString _email, QString _address);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">bool</span> deleteEmployee(QString name, QString email);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">bool</span> selectEmployee(QString name, QString &amp;cpf, QString &amp;email, QString &amp;address, QString &amp;role, QString &amp;salary);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">bool</span> updateEmployee(QString _name, QString _cpf, QString _salary, QString _email, QString _address, QString _role);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">int</span> selectEmployees();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">/* Add and select products */</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">bool</span> insertProducts(QString _name, QString _purchasePrice, QString _sellPrice, QString _quantity, QString _validity);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">int</span> selectProducts();</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">int</span> getSellPrice(QString _id);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    QString getName(QString _id);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">/* Algoritmos de Validação */</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">int</span> logar(QString login, QString senha);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">bool</span> validaCpf(QString cpf);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="class_conexao.html#a603c91bfb3838491ba3e8caececc5b0c">   82</a></span>&#160;    MYSQL <a class="code" href="class_conexao.html#a603c91bfb3838491ba3e8caececc5b0c">conn</a>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;};</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif // CONEXAO_H</span></div>
-<div class="ttc" id="class_conexao_html_a0555d343539f432f30bf84f5ddb7406d"><div class="ttname"><a href="class_conexao.html#a0555d343539f432f30bf84f5ddb7406d">Conexao::products_id</a></div><div class="ttdeci">QStringList products_id</div><div class="ttdef"><b>Definition:</b> <a href="conexao_8h_source.html#l00048">conexao.h:48</a></div></div>
-<div class="ttc" id="class_conexao_html_abe66e554804d884483dcf1e4657899bf"><div class="ttname"><a href="class_conexao.html#abe66e554804d884483dcf1e4657899bf">Conexao::products_name</a></div><div class="ttdeci">QStringList products_name</div><div class="ttdef"><b>Definition:</b> <a href="conexao_8h_source.html#l00049">conexao.h:49</a></div></div>
-<div class="ttc" id="class_conexao_html"><div class="ttname"><a href="class_conexao.html">Conexao</a></div><div class="ttdoc">Classe Conexao, é a responsável pela inclusão de bibliotecas do Qt, C++ e MySQL para realizar a conex...</div><div class="ttdef"><b>Definition:</b> <a href="conexao_8h_source.html#l00038">conexao.h:38</a></div></div>
-<div class="ttc" id="class_conexao_html_a840ddef255453274939c138a5e70e78e"><div class="ttname"><a href="class_conexao.html#a840ddef255453274939c138a5e70e78e">Conexao::employees_name</a></div><div class="ttdeci">QStringList employees_name</div><div class="ttdef"><b>Definition:</b> <a href="conexao_8h_source.html#l00042">conexao.h:42</a></div></div>
-<div class="ttc" id="class_conexao_html_a2a3f06465299441de03ce264557490d3"><div class="ttname"><a href="class_conexao.html#a2a3f06465299441de03ce264557490d3">Conexao::products_saleprice</a></div><div class="ttdeci">QStringList products_saleprice</div><div class="ttdef"><b>Definition:</b> <a href="conexao_8h_source.html#l00051">conexao.h:51</a></div></div>
-<div class="ttc" id="class_conexao_html_a037d3ee84ec8629c1a4bffef8d67378f"><div class="ttname"><a href="class_conexao.html#a037d3ee84ec8629c1a4bffef8d67378f">Conexao::employees_salary</a></div><div class="ttdeci">QStringList employees_salary</div><div class="ttdef"><b>Definition:</b> <a href="conexao_8h_source.html#l00046">conexao.h:46</a></div></div>
-<div class="ttc" id="class_conexao_html_abed04b03f82ce6cb47cce91a3999ed89"><div class="ttname"><a href="class_conexao.html#abed04b03f82ce6cb47cce91a3999ed89">Conexao::products_purchaseprice</a></div><div class="ttdeci">QStringList products_purchaseprice</div><div class="ttdef"><b>Definition:</b> <a href="conexao_8h_source.html#l00050">conexao.h:50</a></div></div>
-<div class="ttc" id="class_conexao_html_aaa60e00115d399944cde0869516cf0d1"><div class="ttname"><a href="class_conexao.html#aaa60e00115d399944cde0869516cf0d1">Conexao::products_quantity</a></div><div class="ttdeci">QStringList products_quantity</div><div class="ttdef"><b>Definition:</b> <a href="conexao_8h_source.html#l00052">conexao.h:52</a></div></div>
-<div class="ttc" id="class_conexao_html_afe469c76fdb5fb62d82f17e479281fc3"><div class="ttname"><a href="class_conexao.html#afe469c76fdb5fb62d82f17e479281fc3">Conexao::employees_age</a></div><div class="ttdeci">QStringList employees_age</div><div class="ttdef"><b>Definition:</b> <a href="conexao_8h_source.html#l00043">conexao.h:43</a></div></div>
-<div class="ttc" id="class_conexao_html_ae6dd52256ae13d3a08c67af499f052df"><div class="ttname"><a href="class_conexao.html#ae6dd52256ae13d3a08c67af499f052df">Conexao::employees_role</a></div><div class="ttdeci">QStringList employees_role</div><div class="ttdef"><b>Definition:</b> <a href="conexao_8h_source.html#l00045">conexao.h:45</a></div></div>
-<div class="ttc" id="class_conexao_html_af4a86c84b703836abc8581ddb695e46d"><div class="ttname"><a href="class_conexao.html#af4a86c84b703836abc8581ddb695e46d">Conexao::employees_email</a></div><div class="ttdeci">QStringList employees_email</div><div class="ttdef"><b>Definition:</b> <a href="conexao_8h_source.html#l00044">conexao.h:44</a></div></div>
-<div class="ttc" id="class_conexao_html_a603c91bfb3838491ba3e8caececc5b0c"><div class="ttname"><a href="class_conexao.html#a603c91bfb3838491ba3e8caececc5b0c">Conexao::conn</a></div><div class="ttdeci">MYSQL conn</div><div class="ttdef"><b>Definition:</b> <a href="conexao_8h_source.html#l00082">conexao.h:82</a></div></div>
-<div class="ttc" id="class_conexao_html_adaa68247f31efd7be455087a0e983f31"><div class="ttname"><a href="class_conexao.html#adaa68247f31efd7be455087a0e983f31">Conexao::products_validity</a></div><div class="ttdeci">QStringList products_validity</div><div class="ttdef"><b>Definition:</b> <a href="conexao_8h_source.html#l00053">conexao.h:53</a></div></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_conexao.html">Conexao</a>(QObject *parent = 0);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    ~<a class="code" href="class_conexao.html">Conexao</a>();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">/* Add, update, select and delete employees */</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">bool</span> addEmployee(QString _name, QString _age, QString _role, QString _salary, QString _cpf, QString _email, QString _address);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">bool</span> deleteEmployee(QString name, QString email);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">bool</span> selectEmployee(QString name, QString &amp;cpf, QString &amp;email, QString &amp;address, QString &amp;role, QString &amp;salary);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">bool</span> updateEmployee(QString _name, QString _cpf, QString _salary, QString _email, QString _address, QString _role);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">int</span> selectEmployees();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">/* Add and select products */</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">bool</span> insertProducts(QString _name, QString _purchasePrice, QString _sellPrice, QString _quantity, QString _validity);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">int</span> selectProducts();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">int</span> getSellPrice(QString _id);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    QString getName(QString _id);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="comment">/* Algoritmos de Validação */</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">int</span> logar(QString login, QString senha);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">bool</span> validaCpf(QString cpf);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="class_conexao.html#a603c91bfb3838491ba3e8caececc5b0c">   87</a></span>&#160;    MYSQL <a class="code" href="class_conexao.html#a603c91bfb3838491ba3e8caececc5b0c">conn</a>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;};</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif // CONEXAO_H</span></div>
+<div class="ttc" id="class_conexao_html_a0555d343539f432f30bf84f5ddb7406d"><div class="ttname"><a href="class_conexao.html#a0555d343539f432f30bf84f5ddb7406d">Conexao::products_id</a></div><div class="ttdeci">QStringList products_id</div><div class="ttdef"><b>Definition:</b> conexao.h:48</div></div>
+<div class="ttc" id="class_conexao_html_abe66e554804d884483dcf1e4657899bf"><div class="ttname"><a href="class_conexao.html#abe66e554804d884483dcf1e4657899bf">Conexao::products_name</a></div><div class="ttdeci">QStringList products_name</div><div class="ttdef"><b>Definition:</b> conexao.h:49</div></div>
+<div class="ttc" id="class_conexao_html"><div class="ttname"><a href="class_conexao.html">Conexao</a></div><div class="ttdoc">Classe Conexao é a responsável pela inclusão de bibliotecas do Qt, C++ e MySQL para realizar a conexã...</div><div class="ttdef"><b>Definition:</b> conexao.h:38</div></div>
+<div class="ttc" id="class_conexao_html_a840ddef255453274939c138a5e70e78e"><div class="ttname"><a href="class_conexao.html#a840ddef255453274939c138a5e70e78e">Conexao::employees_name</a></div><div class="ttdeci">QStringList employees_name</div><div class="ttdef"><b>Definition:</b> conexao.h:42</div></div>
+<div class="ttc" id="class_conexao_html_a2a3f06465299441de03ce264557490d3"><div class="ttname"><a href="class_conexao.html#a2a3f06465299441de03ce264557490d3">Conexao::products_saleprice</a></div><div class="ttdeci">QStringList products_saleprice</div><div class="ttdef"><b>Definition:</b> conexao.h:51</div></div>
+<div class="ttc" id="class_conexao_html_a037d3ee84ec8629c1a4bffef8d67378f"><div class="ttname"><a href="class_conexao.html#a037d3ee84ec8629c1a4bffef8d67378f">Conexao::employees_salary</a></div><div class="ttdeci">QStringList employees_salary</div><div class="ttdef"><b>Definition:</b> conexao.h:46</div></div>
+<div class="ttc" id="class_conexao_html_abed04b03f82ce6cb47cce91a3999ed89"><div class="ttname"><a href="class_conexao.html#abed04b03f82ce6cb47cce91a3999ed89">Conexao::products_purchaseprice</a></div><div class="ttdeci">QStringList products_purchaseprice</div><div class="ttdef"><b>Definition:</b> conexao.h:50</div></div>
+<div class="ttc" id="class_conexao_html_aaa60e00115d399944cde0869516cf0d1"><div class="ttname"><a href="class_conexao.html#aaa60e00115d399944cde0869516cf0d1">Conexao::products_quantity</a></div><div class="ttdeci">QStringList products_quantity</div><div class="ttdef"><b>Definition:</b> conexao.h:52</div></div>
+<div class="ttc" id="class_conexao_html_afe469c76fdb5fb62d82f17e479281fc3"><div class="ttname"><a href="class_conexao.html#afe469c76fdb5fb62d82f17e479281fc3">Conexao::employees_age</a></div><div class="ttdeci">QStringList employees_age</div><div class="ttdef"><b>Definition:</b> conexao.h:43</div></div>
+<div class="ttc" id="class_conexao_html_ae6dd52256ae13d3a08c67af499f052df"><div class="ttname"><a href="class_conexao.html#ae6dd52256ae13d3a08c67af499f052df">Conexao::employees_role</a></div><div class="ttdeci">QStringList employees_role</div><div class="ttdef"><b>Definition:</b> conexao.h:45</div></div>
+<div class="ttc" id="class_conexao_html_af4a86c84b703836abc8581ddb695e46d"><div class="ttname"><a href="class_conexao.html#af4a86c84b703836abc8581ddb695e46d">Conexao::employees_email</a></div><div class="ttdeci">QStringList employees_email</div><div class="ttdef"><b>Definition:</b> conexao.h:44</div></div>
+<div class="ttc" id="class_conexao_html_a603c91bfb3838491ba3e8caececc5b0c"><div class="ttname"><a href="class_conexao.html#a603c91bfb3838491ba3e8caececc5b0c">Conexao::conn</a></div><div class="ttdeci">MYSQL conn</div><div class="ttdef"><b>Definition:</b> conexao.h:87</div></div>
+<div class="ttc" id="class_conexao_html_adaa68247f31efd7be455087a0e983f31"><div class="ttname"><a href="class_conexao.html#adaa68247f31efd7be455087a0e983f31">Conexao::products_validity</a></div><div class="ttdeci">QStringList products_validity</div><div class="ttdef"><b>Definition:</b> conexao.h:53</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 4 2015 14:07:19 for Sistema de Controle e Estoque de Produção by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 5 2015 12:54:05 for Sistema de Controle e Estoque de Produção by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

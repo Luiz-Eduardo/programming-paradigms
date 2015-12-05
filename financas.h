@@ -8,7 +8,7 @@ namespace Ui {
     class Financas;
 }
 
-/*! @brief Classe Financas,
+/*! @brief Classe Financas
  *      é a Interface Gráfica responsável pelas Finanças da empresa.
  *
  * A Classe Financas consiste em uma QMainWindow que mostrará os dados de pagamento
